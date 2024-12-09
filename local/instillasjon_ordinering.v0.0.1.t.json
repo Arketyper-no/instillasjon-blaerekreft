@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "83f6d1602026159c892a5176d873c1a0",
+      "MD5-CAM-1.0.1" : "9c3eedbf0e34bca0b2b57ebe0a2af4c8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -11680,18 +11680,6 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
-                          "defaultValue" : {
-                            "defining_code" : {
-                              "terminology_id" : {
-                                "value" : "SNOMED-CT",
-                                "@type" : "TERMINOLOGY_ID"
-                              },
-                              "code_string" : "110474005",
-                              "@type" : "CODE_PHRASE"
-                            },
-                            "value" : "Whole body hyperbaric oxygen therapy (procedure)",
-                            "@type" : "DV_CODED_TEXT"
-                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
@@ -11706,8 +11694,8 @@
                               "selectedTerminologies" : [ "SNOMED-CT" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
-                                "code" : "110474005",
-                                "value" : "Whole body hyperbaric oxygen therapy (procedure)"
+                                "code" : "18011004",
+                                "value" : "Instillation of urinary bladder (procedure)"
                               } ]
                             } ]
                           } ],
@@ -11794,8 +11782,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "49601007",
-                                    "value" : "Disorder of cardiovascular system (disorder)"
+                                    "code" : "165232002",
+                                    "value" : "Urinary incontinence (finding)"
                                   } ]
                                 } ]
                               } ],
@@ -11904,8 +11892,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "50043002",
-                                    "value" : "Disorder of respiratory system (disorder)"
+                                    "code" : "162116003",
+                                    "value" : "Increased frequency of urination (finding)"
                                   } ]
                                 } ]
                               } ],
@@ -11934,7 +11922,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.9" ],
+                                  "constraint" : [ "ac0.13" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -11947,219 +11935,6 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0040.2",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
-                      "nodeId" : "at0022.3",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0004.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Utligningsproblemer",
-                                "@type" : "DV_TEXT"
-                              },
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "value",
-                                "children" : [ {
-                                  "@type" : "C_STRING",
-                                  "rmTypeName" : "STRING",
-                                  "constraint" : [ "Utligningsproblemer" ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "1..1",
-                          "nodeId" : "at0005.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.11" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0040.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
-                      "nodeId" : "at0022.4",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0004.4",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "1..1",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "0..1",
-                                  "terminologyId" : {
-                                    "value" : "SNOMED-CT"
-                                  },
-                                  "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                                  "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "48694002",
-                                    "value" : "Anxiety (finding)"
-                                  } ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "1..1",
-                          "nodeId" : "at0005.4",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.12" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0040.4",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "value",
@@ -12218,40 +11993,16 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Specific problem or diagnosis (2)",
-            "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.9",
-            "description" : ""
-          },
-          "at0022.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Specific problem or diagnosis (3)",
-            "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
-          },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Specific problem or diagnosis (4)",
+            "code" : "at0022",
+            "text" : "Specific problem or diagnosis (2)",
             "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
           }
         },
@@ -12265,26 +12016,13 @@
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
-            "text" : "Hjerte",
-            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
-          },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Lunge",
+            "text" : "Urinlekkasje",
             "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Har pasienten kjent kardiovaskulær sykdom?",
-            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
-            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0005.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.2",
-            "text" : "Har pasienten kjent lungesykdom?",
+            "text" : "Har pasienten urinlekkasje?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -12294,41 +12032,16 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
-            "description" : ""
-          },
-          "at0022.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.3",
-            "text" : "Utligningsproblemer",
+            "code" : "at0022.2",
+            "text" : "Hyppig vannlating",
             "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
-          "at0005.3" : {
+          "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.3",
-            "text" : "Har pasienten kjente utligningsproblemer?",
-            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
-            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.4",
-            "text" : "Klaustrofobi/angst/engstelse",
-            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
-          },
-          "at0005.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.4",
-            "text" : "Har pasienten kjent klaustrofobi/angst/engstelse?",
+            "code" : "at0005.2",
+            "text" : "Har pasienten problemer med hyppig vannlating?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
@@ -12340,40 +12053,16 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Bestimmter Zustand (2)",
-            "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
-            "description" : ""
-          },
-          "at0022.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Bestimmter Zustand (3)",
-            "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
-          },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Bestimmter Zustand (4)",
+            "code" : "at0022",
+            "text" : "Bestimmter Zustand (2)",
             "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
           }
         },
@@ -12384,40 +12073,16 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0022.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "*Specifieke aandoening (2)",
-            "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
-            "description" : ""
-          },
-          "at0022.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "*Specifieke aandoening (3)",
-            "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
-          },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
-          "at0022.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "*Specifieke aandoening (4)",
+            "code" : "at0022",
+            "text" : "*Specifieke aandoening (2)",
             "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
           }
         }
@@ -12484,6 +12149,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.12",
           "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
