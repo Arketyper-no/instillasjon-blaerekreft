@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "f47ff61a3630e2708f31aad760673540",
+      "MD5-CAM-1.0.1" : "46dec47e13365fe84dd52f96803cf9c4",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -222,7 +222,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Instillasjonsbehandling ordinering",
+          "text" : "Instillasjonsbehandling ordinering1",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
@@ -13524,7 +13524,56 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7B42A0B00ABA73D4EFF46CE693FB4376"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about situations or events where the individual has been, or may have been, exposed to a harmful agent. (en)",
+          "keywords" : [ ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about situations or events where the individual has been, or may have been, exposed to a harmful agent.\r\n\r\nExamples of agents and groupings of agents are 'hepatitis C' and 'blood borne infectious agents'; or 'asbestos' and 'carcinogenic substances'.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation related to exposure, for example:\r\n--- Have you been to a malaria endemic area in the last 6 weeks?\r\n--- Have you had a bee sting in the last 8 weeks?\r\n--- Have you worked in a slaughterhouse in the last 3 months? \r\n--- Have you ever lived or worked in a building with asbestos?\r\n--- Have you ever shared used injection needles?\r\n--- Have you eaten chicken from ACME Chicken Company in the last 24 hours?\r\n--- Did your parents smoke inside the house when you were a child?\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about exposure that has happened at any time in the past and information about exposure within a specified time interval - for example the difference between \"Have you ever used any drug by injection?\" compared to \"Have you injected any drug during the last 6 months?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of exposure it is recommended that clinical system record and persist the specific details about the exposure using a relevant exposure archetype, for example the EVALUATION.exposure to record details about the actual exposure. (en)",
+          "misuse" : "*Not to be used to record persistent details about a known or identified exposure. Use the EVALUATION.exposure archetype for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about exposure to potentially harmful psychosocial factors like poverty, or traumatic experiences like bullying or war. Use an appropriate screening questionnaire archetype for this purpose.\r\n\r\nNot to be used to record information about substance use such as cigarette smoking or alcohol use. Use the OBSERVATION.substance_use_screening or an appropriate EVALUATION archetype for this purpose. (en)",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om situasjoner eller hendelser der individet har blitt eller kan ha blitt eksponert for en skadelig agens.",
+          "keywords" : [ ],
+          "use" : "Bruk for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om situasjoner eller hendelser der individet har blitt eller kan ha blitt eksponert for en skadelig agens.\r\n\r\nEksempler på agenser og grupper av agenser er \"hepatitt C\" og \"blodbårne smittsomme organismer\", eller \"asbest\" og \"kreftfremkallende stoffer\".\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Har du vært i et malariaområde de siste 6 ukene?\r\n--- Har du blitt stukket av bier de siste 8 ukene?\r\n--- Har du jobbet i et slakteri de siste 3 månedene?\r\n--- Har du noensinne bodd eller jobbet i en bygning med asbest?\r\n--- Har du noensinne delt brukte sprøyter?\r\n--- Har du spist rå eller bløtkokte egg utenfor Norge de siste to ukene?\r\n--- Røykte foreldrene dine inne da du var barn?\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om eksponering på et hvilket som helst tidspunkt og spørsmål om eksponering i et tidsintervall. For eksempel; \"Har du noen gang brukt sprøyte med rusmiddel eller kroppsbyggermidler?\" sammenlignet med \"Har du brukt sprøyte med rusmiddel eller kroppsbyggermidler siste 6 mnd?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at en eksponering er tilstede, anbefales det at spesifikke detaljer om eksponeringen registreres og lagres i pasientjournalen i en egnet eksponeringsarketype, for eksempel arketypen EVALUATION.exposure for å registrere detaljer om eksponeringen.",
+          "misuse" : "Brukes ikke for å registrere persistente detaljer om en kjent eller identifisert eksponering. Bruk arketypen EVALUATION.exposure for dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om eksponering for potensielt skadelige psykososiale faktorer som fattigdom, eller traumatiske opplevelser som mobbing eller krig. Bruk en annen passende kartleggingsspørsmål-arketype til dette formålet.\r\n\r\nBrukes ikke til å registrere informasjon om egen bruk av substanser som tobakk eller alkohol. Bruk arketypen OBSERVATION.substance_use_screening eller en passende EVALUATION-arketype til dette formålet.",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about situations or events where the individual has been, or may have been, exposed to a harmful agent.",
+          "keywords" : [ ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about situations or events where the individual has been, or may have been, exposed to a harmful agent.\r\n\r\nExamples of agents and groupings of agents are 'hepatitis C' and 'blood borne infectious agents'; or 'asbestos' and 'carcinogenic substances'.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation related to exposure, for example:\r\n--- Have you been to a malaria endemic area in the last 6 weeks?\r\n--- Have you had a bee sting in the last 8 weeks?\r\n--- Have you worked in a slaughterhouse in the last 3 months? \r\n--- Have you ever lived or worked in a building with asbestos?\r\n--- Have you ever shared used injection needles?\r\n--- Have you eaten chicken from ACME Chicken Company in the last 24 hours?\r\n--- Did your parents smoke inside the house when you were a child?\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about exposure that has happened at any time in the past and information about exposure within a specified time interval - for example the difference between \"Have you ever used any drug by injection?\" compared to \"Have you injected any drug during the last 6 months?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of exposure it is recommended that clinical system record and persist the specific details about the exposure using a relevant exposure archetype, for example the EVALUATION.exposure to record details about the actual exposure.",
+          "misuse" : "Not to be used to record persistent details about a known or identified exposure. Use the EVALUATION.exposure archetype for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about exposure to potentially harmful psychosocial factors like poverty, or traumatic experiences like bullying or war. Use an appropriate screening questionnaire archetype for this purpose.\r\n\r\nNot to be used to record information about substance use such as cigarette smoking or alcohol use. Use the OBSERVATION.substance_use_screening or an appropriate EVALUATION archetype for this purpose.",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exposure_screening.v1",
     "differential" : true,
