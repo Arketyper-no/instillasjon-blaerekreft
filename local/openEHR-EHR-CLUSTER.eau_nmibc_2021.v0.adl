@@ -29,7 +29,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["references"] = <"Sylvester RJ, Rodríguez O, Hernández V, Turturica D, Bauerová L, Bruins HM, Bründl J, van der Kwast TH, Brisuda A, Rubio-Briones J, Seles M, Hentschel AE, Kusuma VRM, Huebner N, Cotte J, Mertens LS, Volanis D, Cussenot O, Subiela Henríquez JD, de la Peña E, Pisano F, Pešl M, van der Heijden AG, Herdegen S, Zlotta AR, Hacek J, Calatrava A, Mannweiler S, Bosschieter J, Ashabere D, Haitel A, Côté JF, El Sheikh S, Lunelli L, Algaba F, Alemany I, Soria F, Runneboom W, Breyer J, Nieuwenhuijzen JA, Llorente C, Molinaro L, Hulsbergen-van de Kaa CA, Evert M, Kiemeney LALM, N'Dow J, Plass K, Čapoun O, Soukup V, Dominguez-Escrig JL, Cohen D, Palou J, Gontero P, Burger M, Zigeuner R, Mostafid AH, Shariat SF, Rouprêt M, Compérat EM, Babjuk M, van Rhijn BWG. European Association of Urology (EAU) Prognostic Factor Risk Groups for Non-muscle-invasive Bladder Cancer (NMIBC) Incorporating the WHO 2004/2016 and WHO 1973 Classification Systems for Grade: An Update from the EAU NMIBC Guidelines Panel. Eur Urol. 2021 Apr;79(4):480-488. doi: 10.1016/j.eururo.2020.12.033. Epub 2021 Jan 6. PubMed PMID: 33419683.">
-		["MD5-CAM-1.0.1"] = <"cf7300a5b24836e4314343a310b838cf">
+		["MD5-CAM-1.0.1"] = <"364699953f12f85a5075b4902561c658">
 		["build_uid"] = <"b71072ad-1d6a-36d4-ba76-3b2a047ff712">
 	>
 
@@ -43,12 +43,24 @@ definition
 			}
 			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Tumor status
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0009,    -- Primary
+							at0010]    -- Recurrent
+						}
+					}
 				}
 			}
 			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Maximum tumor diameter
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0011,    -- < 3 cm
+							at0012]    -- ≥ 3 cm
+						}
+					}
 				}
 			}
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Risk group
@@ -106,6 +118,22 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Maximum tumor diameter">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Primary">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Recurrent">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"< 3 cm">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"≥ 3 cm">
 					description = <"">
 				>
 			>
