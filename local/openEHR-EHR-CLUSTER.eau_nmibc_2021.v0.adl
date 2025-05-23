@@ -29,7 +29,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["references"] = <"Sylvester RJ, Rodríguez O, Hernández V, Turturica D, Bauerová L, Bruins HM, Bründl J, van der Kwast TH, Brisuda A, Rubio-Briones J, Seles M, Hentschel AE, Kusuma VRM, Huebner N, Cotte J, Mertens LS, Volanis D, Cussenot O, Subiela Henríquez JD, de la Peña E, Pisano F, Pešl M, van der Heijden AG, Herdegen S, Zlotta AR, Hacek J, Calatrava A, Mannweiler S, Bosschieter J, Ashabere D, Haitel A, Côté JF, El Sheikh S, Lunelli L, Algaba F, Alemany I, Soria F, Runneboom W, Breyer J, Nieuwenhuijzen JA, Llorente C, Molinaro L, Hulsbergen-van de Kaa CA, Evert M, Kiemeney LALM, N'Dow J, Plass K, Čapoun O, Soukup V, Dominguez-Escrig JL, Cohen D, Palou J, Gontero P, Burger M, Zigeuner R, Mostafid AH, Shariat SF, Rouprêt M, Compérat EM, Babjuk M, van Rhijn BWG. European Association of Urology (EAU) Prognostic Factor Risk Groups for Non-muscle-invasive Bladder Cancer (NMIBC) Incorporating the WHO 2004/2016 and WHO 1973 Classification Systems for Grade: An Update from the EAU NMIBC Guidelines Panel. Eur Urol. 2021 Apr;79(4):480-488. doi: 10.1016/j.eururo.2020.12.033. Epub 2021 Jan 6. PubMed PMID: 33419683.">
-		["MD5-CAM-1.0.1"] = <"364699953f12f85a5075b4902561c658">
+		["MD5-CAM-1.0.1"] = <"03983dd555e818e9a2603c3d7e9c81fd">
 		["build_uid"] = <"b71072ad-1d6a-36d4-ba76-3b2a047ff712">
 	>
 
@@ -38,7 +38,13 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Age
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0013,    -- ≤ 70 years
+							at0014]    -- > 70 years
+						}
+					}
 				}
 			}
 			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Tumor status
@@ -63,7 +69,52 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Risk group
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Stage
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0016,    -- Ta
+							at0017]    -- T1
+						}
+					}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Concomitant CIS
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0019,    -- No
+							at0020]    -- Yes
+						}
+					}
+				}
+			}
+			ELEMENT[at0021] occurrences matches {0..1} matches {    -- WHO grade 2004/2016
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0022,    -- LMP-LG
+							at0023]    -- HG
+						}
+					}
+				}
+			}
+			ELEMENT[at0024] occurrences matches {0..1} matches {    -- WHO grade 1973
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0025,    -- G1
+							at0026,    -- G2
+							at0027]    -- G3
+						}
+					}
+				}
+			}
+			ELEMENT[at0001] matches {    -- Risk group
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -102,11 +153,11 @@ ontology
 				>
 				["at0004"] = <
 					text = <"High Risk">
-					description = <"All T1 HG/G3 without CIS, EXCEPT those included in the very high-risk group OR All CIS patients, EXCEPT those included in the very high-risk group.">
+					description = <"All T1 HG/G3 without CIS, EXCEPT those included in the very high-risk group OR All CIS patients, EXCEPT those included in the very high-risk group OR Ta LG/G2 or T1G1, no CIS with all 3 risk factors OR Ta HG/G3 or T1 LG, no CIS with at least 2 risk factors OR T1G2 no CIS with at least 1 risk factor.">
 				>
 				["at0005"] = <
 					text = <"Very High Risk">
-					description = <"">
+					description = <"Ta HG/G3 and CIS with all 3 risk factors OR T1G2 and CIS with at least 2 risk factors OR T1 HG/G3 and CIS with at least 1 risk factor OR T1 HG/G3 no CIS with all 3 risk factors.">
 				>
 				["at0006"] = <
 					text = <"Age">
@@ -134,6 +185,66 @@ ontology
 				>
 				["at0012"] = <
 					text = <"≥ 3 cm">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"≤ 70 years">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"> 70 years">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Stage">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Ta">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"T1">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Concomitant CIS">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"WHO grade 2004/2016">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"LMP-LG">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"HG">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"WHO grade 1973">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"G1">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"G2">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"G3">
 					description = <"">
 				>
 			>
