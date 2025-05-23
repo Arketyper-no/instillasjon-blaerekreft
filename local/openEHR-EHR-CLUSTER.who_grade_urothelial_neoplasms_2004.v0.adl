@@ -6,16 +6,27 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
+		["date"] = <"2025-05-23">
 		["name"] = <"Silje Ljosland Bakke">
 		["organisation"] = <"Helse Vest IKT AS">
 		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
-		["date"] = <"2025-05-23">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,8 +37,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aedff3c3f34918fbf32fb85277a9e205">
+		["MD5-CAM-1.0.1"] = <"8c5551c8ccd4220df0e81e6c50d51c43">
 		["build_uid"] = <"2b1f6cfa-1603-326c-8bd0-2b5e89b627fd">
+		["references"] = <"Epstein JI, Amin MB, Reuter VR, Mostofi FK. The World Health Organization/International Society of Urological Pathology consensus classification of urothelial (transitional cell) neoplasms of the urinary bladder. Bladder Consensus Conference Committee. Am J Surg Pathol. 1998 Dec;22(12):1435-48. doi: 10.1097/00000478-199812000-00001. Review. PubMed PMID: 9850170.">
 	>
 
 definition
@@ -75,6 +87,34 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Papillary carcinoma, high-grade">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*WHO histological grade of urothelial neoplasms (2004) (en)">
+					description = <"*WHO grade urothelial neoplasms 2004 (en)">
+				>
+				["at0001"] = <
+					text = <"*Grade (en)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*Papilloma (en)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"*Papillary urothelial neoplasm of low malignant potential (en)">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"*Papillary carcinoma, low-grade (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Papillary carcinoma, high-grade (en)">
 					description = <"">
 				>
 			>
