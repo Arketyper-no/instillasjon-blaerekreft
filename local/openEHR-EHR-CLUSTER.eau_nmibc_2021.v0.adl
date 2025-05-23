@@ -1,0 +1,47 @@
+archetype (adl_version=1.4; uid=4d5f3868-2d01-4e80-a305-ce5bd4b4956a)
+	openEHR-EHR-CLUSTER.eau_nmibc_2021.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Helse Vest IKT AS">
+		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
+		["date"] = <"2025-05-23">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"Sylvester RJ, Rodríguez O, Hernández V, Turturica D, Bauerová L, Bruins HM, Bründl J, van der Kwast TH, Brisuda A, Rubio-Briones J, Seles M, Hentschel AE, Kusuma VRM, Huebner N, Cotte J, Mertens LS, Volanis D, Cussenot O, Subiela Henríquez JD, de la Peña E, Pisano F, Pešl M, van der Heijden AG, Herdegen S, Zlotta AR, Hacek J, Calatrava A, Mannweiler S, Bosschieter J, Ashabere D, Haitel A, Côté JF, El Sheikh S, Lunelli L, Algaba F, Alemany I, Soria F, Runneboom W, Breyer J, Nieuwenhuijzen JA, Llorente C, Molinaro L, Hulsbergen-van de Kaa CA, Evert M, Kiemeney LALM, N'Dow J, Plass K, Čapoun O, Soukup V, Dominguez-Escrig JL, Cohen D, Palou J, Gontero P, Burger M, Zigeuner R, Mostafid AH, Shariat SF, Rouprêt M, Compérat EM, Babjuk M, van Rhijn BWG. European Association of Urology (EAU) Prognostic Factor Risk Groups for Non-muscle-invasive Bladder Cancer (NMIBC) Incorporating the WHO 2004/2016 and WHO 1973 Classification Systems for Grade: An Update from the EAU NMIBC Guidelines Panel. Eur Urol. 2021 Apr;79(4):480-488. doi: 10.1016/j.eururo.2020.12.033. Epub 2021 Jan 6. PubMed PMID: 33419683.">
+		["MD5-CAM-1.0.1"] = <"d0d568fc0e80906530aa141020e7c059">
+		["build_uid"] = <"b71072ad-1d6a-36d4-ba76-3b2a047ff712">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- EAU NMIBC 2021 scoring model
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"EAU NMIBC 2021 scoring model">
+					description = <"EAU NMIBC 2021">
+				>
+			>
+		>
+	>
