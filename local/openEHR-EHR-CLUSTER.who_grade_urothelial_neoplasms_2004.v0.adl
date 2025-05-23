@@ -1,0 +1,82 @@
+archetype (adl_version=1.4; uid=0407eb04-131a-4ee1-9b5f-53c3d1c59ffd)
+	openEHR-EHR-CLUSTER.who_grade_urothelial_neoplasms_2004.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Helse Vest IKT AS">
+		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
+		["date"] = <"2025-05-23">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"aedff3c3f34918fbf32fb85277a9e205">
+		["build_uid"] = <"2b1f6cfa-1603-326c-8bd0-2b5e89b627fd">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- WHO histological grade of urothelial neoplasms (2004)
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Grade
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Papilloma
+							at0003,    -- Papillary urothelial neoplasm of low malignant potential
+							at0004,    -- Papillary carcinoma, low-grade
+							at0005]    -- Papillary carcinoma, high-grade
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"WHO histological grade of urothelial neoplasms (2004)">
+					description = <"WHO grade urothelial neoplasms 2004">
+				>
+				["at0001"] = <
+					text = <"Grade">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Papilloma">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Papillary urothelial neoplasm of low malignant potential">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Papillary carcinoma, low-grade">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Papillary carcinoma, high-grade">
+					description = <"">
+				>
+			>
+		>
+	>
