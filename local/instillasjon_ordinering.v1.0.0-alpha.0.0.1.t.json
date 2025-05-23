@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b3535a6445eae4f7661c15523847eed1",
+      "MD5-CAM-1.0.1" : "a982ee41514eec81fbaeb0a59ade7436",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -11759,7 +11759,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "03983dd555e818e9a2603c3d7e9c81fd"
+        "PARENT:MD5-CAM-1.0.1" : "a6f1cc345f399d00056bb903f4d47177"
       },
       "details" : { }
     },
@@ -11820,6 +11820,14 @@
             "code" : "ac0.1",
             "description" : ""
           }
+        },
+        "nb" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -11844,7 +11852,17 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "d8307c1f-9bfa-4b9e-9c90-989ea5c00341",
@@ -11856,7 +11874,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "aedff3c3f34918fbf32fb85277a9e205"
+        "PARENT:MD5-CAM-1.0.1" : "8c5551c8ccd4220df0e81e6c50d51c43"
       },
       "details" : { }
     },
@@ -11877,7 +11895,8 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : { },
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11895,7 +11914,17 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
