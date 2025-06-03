@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "22269eef4ac4cc469b97f96d65e3228d",
+      "MD5-CAM-1.0.1" : "9cf508dac6b2b04ab1a99cc9e353ebf7",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -229,7 +229,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Instillasjonsbehandling ordinering",
+          "text" : "Blærekreft instillasjonsbehandling ordinering",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
       }
