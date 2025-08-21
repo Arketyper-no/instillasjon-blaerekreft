@@ -25,21 +25,31 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"Å støtte dokumentasjonen av histologisk gradering av ikke-invasive uroteliale svulster basert på WHO-klassifiseringen fra 2004.">
+			keywords = <"Urotelial, blære, svulst, neoplasme, karsinom, histologi, patologi, grad, gradering, klassifisering, WHO, 2004, ikke-invasiv", ...>
 			copyright = <"© openEHR Foundation">
+			use = <"Å dokumentere den histologiske graden av ikke-invasive uroteliale svulster i pasientjournaler, som støtter klinisk beslutningstaking, behandlingsplanlegging og kommunikasjon mellom helsepersonell. Denne informasjonen bidrar til vurdering av prognose og veileder videre behandling basert på WHO 2004-klassifiseringen.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To support the documentation of histological grading of noninvasive urothelial tumors based on the 2004 WHO classification.">
+			keywords = <"Urothelial","bladder","tumor","neoplasm","carcinoma","histology","pathology","grade","grading","classification","WHO","2004","noninvasive">
+			use = <"To document the histological grade of noninvasive urothelial tumors in patient records, supporting clinical decision-making, treatment planning, and communication among healthcare professionals. This information aids in prognosis assessment and guides subsequent management based on the WHO 2004 classification.
+
+">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Epstein JI, Amin MB, Reuter VR, Mostofi FK. The World Health Organization/International Society of Urological Pathology consensus classification of urothelial (transitional cell) neoplasms of the urinary bladder. Bladder Consensus Conference Committee. Am J Surg Pathol. 1998 Dec;22(12):1435-48. doi: 10.1097/00000478-199812000-00001. Review. PubMed PMID: 9850170.
+
+Eble JN, Sauter G, Epstein J, Sesterhenn I (eds). Pathology and Genetics of Tumours of the Urinary System and Male Genital Organs. WHO Classification of Tumours, 3rd Edition, Volume 7. 2004. ISBN: 978-92-832-2415-0.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8c5551c8ccd4220df0e81e6c50d51c43">
+		["MD5-CAM-1.0.1"] = <"f3c07e8dbe6ab4c760a93136dca05a24">
 		["build_uid"] = <"2b1f6cfa-1603-326c-8bd0-2b5e89b627fd">
-		["references"] = <"Epstein JI, Amin MB, Reuter VR, Mostofi FK. The World Health Organization/International Society of Urological Pathology consensus classification of urothelial (transitional cell) neoplasms of the urinary bladder. Bladder Consensus Conference Committee. Am J Surg Pathol. 1998 Dec;22(12):1435-48. doi: 10.1097/00000478-199812000-00001. Review. PubMed PMID: 9850170.">
 	>
 
 definition
@@ -51,7 +61,7 @@ definition
 						defining_code matches {
 							[local::
 							at0002,    -- Papilloma
-							at0003,    -- Papillary urothelial neoplasm of low malignant potential
+							at0003,    -- Papillary urothelial neoplasm of low malignant potential (PUNLMP)
 							at0004,    -- Papillary carcinoma, low-grade
 							at0005]    -- Papillary carcinoma, high-grade
 						}
@@ -67,7 +77,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"WHO histological grade of urothelial neoplasms (2004)">
-					description = <"WHO grade urothelial neoplasms 2004">
+					description = <"To record the histological grading of noninvasive urothelial tumors according to the 2004 WHO classification.">
 				>
 				["at0001"] = <
 					text = <"Grade">
@@ -75,47 +85,47 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Papilloma">
-					description = <"">
+					description = <"A benign, exophytic urothelial lesion with normal cytology and architecture.">
 				>
 				["at0003"] = <
-					text = <"Papillary urothelial neoplasm of low malignant potential">
-					description = <"">
+					text = <"Papillary urothelial neoplasm of low malignant potential (PUNLMP)">
+					description = <"A noninvasive papillary urothelial lesion with minimal atypia and low risk of progression.">
 				>
 				["at0004"] = <
 					text = <"Papillary carcinoma, low-grade">
-					description = <"">
+					description = <"A noninvasive tumor with mild to moderate atypia and intermediate risk of recurrence and progression.">
 				>
 				["at0005"] = <
 					text = <"Papillary carcinoma, high-grade">
-					description = <"">
+					description = <"A noninvasive lesion with marked atypia and high risk of recurrence and invasion.">
 				>
 			>
 		>
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*WHO histological grade of urothelial neoplasms (2004) (en)">
-					description = <"*WHO grade urothelial neoplasms 2004 (en)">
+					text = <"*WHO histological grade of urothelial neoplasms (2004)(en)">
+					description = <"*Å registrere den histologiske graderingen av ikke-invasive uroteliale svulster i henhold til WHO-klassifiseringen fra 2004.">
 				>
 				["at0001"] = <
-					text = <"*Grade (en)">
+					text = <"Grad">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"*Papilloma (en)">
-					description = <"">
+					text = <"Papillom">
+					description = <"En benign (godartet), eksophytisk urotelial lesjon med normal cytologi og arkitektur.">
 				>
 				["at0003"] = <
-					text = <"*Papillary urothelial neoplasm of low malignant potential (en)">
-					description = <"">
+					text = <"*Papillary urothelial neoplasm of low malignant potential (PUNLMP)(en)">
+					description = <"*A noninvasive papillary urothelial lesion with minimal atypia and low risk of progression.">
 				>
 				["at0004"] = <
-					text = <"*Papillary carcinoma, low-grade (en)">
-					description = <"">
+					text = <"*Papillary carcinoma, low-grade(en)">
+					description = <"*En ikke-invasiv svulst med mild til moderat atypi og middels risiko for residiv og progresjon.">
 				>
 				["at0005"] = <
-					text = <"*Papillary carcinoma, high-grade (en)">
-					description = <"">
+					text = <"*Papillary carcinoma, high-grade(en)">
+					description = <"*En ikke-invasiv lesjon med uttalt atypi og høy risiko for residiv og invasjon.">
 				>
 			>
 		>
