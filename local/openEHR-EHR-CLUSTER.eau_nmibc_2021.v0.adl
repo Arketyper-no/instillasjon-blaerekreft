@@ -25,22 +25,30 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"Å stratifisere pasienter med ikke-muskelinvasiv blærekreft (NMIBC) i prognostiske risikogrupper ved bruk av EAU 2021-modellen basert på WHO 2004/2016- eller WHO 1973-graderingssystemer, for å støtte klinisk beslutningstaking angående behandling etter transuretral reseksjon av blæresvulst (TURBT).">
+			keywords = <"EAU","NMIBC","blærekreft","risikostratifisering","TURBT","WHO","2004/2016","WHO","1973","ikke-muskelinvasiv","urotelialt","karsinom","prognostisk","gruppe","behandlingsplanlegging.">
 			copyright = <"© openEHR Foundation">
+			use = <"Å registrere den prognostiske risikogruppeklassifiseringen av pasienter med ikke-muskelinvasiv blærekreft (NMIBC) i henhold til European Association of Urology (EAU) 2021-modellen, basert på WHO 2004/2016- eller WHO 1973-graderingssystemene. Dette støtter strukturert dokumentasjon og muliggjør klinisk beslutningstaking etter transuretral reseksjon av blæresvulst (TURBT).">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record the prognostic factor risk group for non–muscle-invasive bladder cancer according to The European Association of Urology (EAU) 2021.">
-			use = <"Use to record the prognostic factor risk group for non–muscle-invasive bladder cancer according to The European Association of Urology (EAU) 2021.">
+			purpose = <"To stratify patients with non–muscle-invasive bladder cancer (NMIBC) into prognostic risk groups using the EAU 2021 model based on WHO 2004/2016 or WHO 1973 grading systems, to support clinical decision-making regarding treatment following transurethral resection of bladder tumor (TURBT).">
+			keywords = <"EAU","NMIBC","bladder","cancer","risk","stratification","TURBT","WHO","2004/2016","WHO","1973","non–muscle-invasive","urothelial","carcinoma","prognostic","group","treatment","planning.">
+			use = <"To record the prognostic risk group classification of patients with non–muscle-invasive bladder cancer (NMIBC) according to the European Association of Urology (EAU) 2021 model, based on the WHO 2004/2016 or WHO 1973 grading systems. This supports structured documentation and enables clinical decision-making following transurethral resection of bladder tumour (TURBT).">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["references"] = <"Sylvester RJ, Rodríguez O, Hernández V, Turturica D, Bauerová L, Bruins HM, Bründl J, van der Kwast TH, Brisuda A, Rubio-Briones J, Seles M, Hentschel AE, Kusuma VRM, Huebner N, Cotte J, Mertens LS, Volanis D, Cussenot O, Subiela Henríquez JD, de la Peña E, Pisano F, Pešl M, van der Heijden AG, Herdegen S, Zlotta AR, Hacek J, Calatrava A, Mannweiler S, Bosschieter J, Ashabere D, Haitel A, Côté JF, El Sheikh S, Lunelli L, Algaba F, Alemany I, Soria F, Runneboom W, Breyer J, Nieuwenhuijzen JA, Llorente C, Molinaro L, Hulsbergen-van de Kaa CA, Evert M, Kiemeney LALM, N'Dow J, Plass K, Čapoun O, Soukup V, Dominguez-Escrig JL, Cohen D, Palou J, Gontero P, Burger M, Zigeuner R, Mostafid AH, Shariat SF, Rouprêt M, Compérat EM, Babjuk M, van Rhijn BWG. European Association of Urology (EAU) Prognostic Factor Risk Groups for Non-muscle-invasive Bladder Cancer (NMIBC) Incorporating the WHO 2004/2016 and WHO 1973 Classification Systems for Grade: An Update from the EAU NMIBC Guidelines Panel. Eur Urol. 2021 Apr;79(4):480-488. doi: 10.1016/j.eururo.2020.12.033. Epub 2021 Jan 6. PubMed PMID: 33419683.">
+		["references"] = <"Sylvester RJ, Rodríguez O, Hernández V, Turturica D, Bauerová L, Bruins HM, Bründl J, van der Kwast TH, Brisuda A, Rubio-Briones J, Seles M, Hentschel AE, Kusuma VRM, Huebner N, Cotte J, Mertens LS, Volanis D, Cussenot O, Subiela Henríquez JD, de la Peña E, Pisano F, Pešl M, van der Heijden AG, Herdegen S, Zlotta AR, Hacek J, Calatrava A, Mannweiler S, Bosschieter J, Ashabere D, Haitel A, Côté JF, El Sheikh S, Lunelli L, Algaba F, Alemany I, Soria F, Runneboom W, Breyer J, Nieuwenhuijzen JA, Llorente C, Molinaro L, Hulsbergen-van de Kaa CA, Evert M, Kiemeney LALM, N'Dow J, Plass K, Čapoun O, Soukup V, Dominguez-Escrig JL, Cohen D, Palou J, Gontero P, Burger M, Zigeuner R, Mostafid AH, Shariat SF, Rouprêt M, Compérat EM, Babjuk M, van Rhijn BWG. European Association of Urology (EAU) Prognostic Factor Risk Groups for Non-muscle-invasive Bladder Cancer (NMIBC) Incorporating the WHO 2004/2016 and WHO 1973 Classification Systems for Grade: An Update from the EAU NMIBC Guidelines Panel. Eur Urol. 2021 Apr;79(4):480-488. doi: 10.1016/j.eururo.2020.12.033. Epub 2021 Jan 6. PubMed PMID: 33419683.
+
+Compérat EM, Burger M, Gontero P, Mostafid AH, Palou J, Rouprêt M, van Rhijn BWG, Shariat SF, Sylvester RJ, Zigeuner R, Babjuk M. Grading of Urothelial Carcinoma and The New \"World Health Organisation Classification of Tumours of the Urinary System and Male Genital Organs 2016\". Eur Urol Focus. 2019 May;5(3):457-466. doi: 10.1016/j.euf.2018.01.003. Epub 2018 Jan 20. PubMed PMID: 29366854.
+
+Humphrey PA, Moch H, Cubilla AL, Ulbright TM, Reuter VE. The 2016 WHO Classification of Tumours of the Urinary System and Male Genital Organs—Part B: Prostate and Bladder Tumours. Eur Urol. 2016 Sep;70(1):93-105. doi: 10.1016/j.eururo.2016.02.028. PubMed PMID: 26996659.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a6f1cc345f399d00056bb903f4d47177">
+		["MD5-CAM-1.0.1"] = <"00cbf604ba467224f4b2413d7c376ff5">
 		["build_uid"] = <"b71072ad-1d6a-36d4-ba76-3b2a047ff712">
 	>
 
@@ -65,6 +73,17 @@ definition
 							[local::
 							at0009,    -- Primary
 							at0010]    -- Recurrent
+						}
+					}
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Number of tumors
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029,    -- Single
+							at0030]    -- Multiple
 						}
 					}
 				}
@@ -147,7 +166,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EAU NMIBC 2021 risk groups">
-					description = <"The European Association of Urology (EAU) prognostic factor risk groups for non–muscle-invasive bladder cancer (NMIBC) 2021 version, based on the WHO 2004/2016 or the WHO 1973 grading classification system. It is used to provide recommendations for patient treatment after transurethral resection of bladder tumor (TURBT).">
+					description = <"The European Association of Urology (EAU) 2021 prognostic factor risk groups for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on tumour characteristics, patient age, and grading systems (WHO 2004/2016 or WHO 1973). The classification supports treatment recommendations after transurethral resection of bladder tumour (TURBT).">
 				>
 				["at0001"] = <
 					text = <"Risk group">
@@ -212,11 +231,11 @@ ontology
 				>
 				["at0016"] = <
 					text = <"Ta">
-					description = <"">
+					description = <"Non-invasive papillary tumor confined to the urothelium.">
 				>
 				["at0017"] = <
 					text = <"T1">
-					description = <"">
+					description = <"Tumor invasion into the lamina propria, sparing the muscularis propria.">
 				>
 				["at0018"] = <
 					text = <"Concomitant CIS">
@@ -236,11 +255,11 @@ ontology
 				>
 				["at0022"] = <
 					text = <"LMP-LG">
-					description = <"">
+					description = <"Non-invasive papillary tumours with minimal atypia and orderly cells.">
 				>
 				["at0023"] = <
 					text = <"HG">
-					description = <"">
+					description = <"Tumours with significant architectural and nuclear atypia, frequent mitoses, and loss of normal cell structure.">
 				>
 				["at0024"] = <
 					text = <"WHO grade 1973">
@@ -248,14 +267,28 @@ ontology
 				>
 				["at0025"] = <
 					text = <"G1">
-					description = <"">
+					description = <"Well-differentiated tumours with minimal atypia and orderly architecture.">
 				>
 				["at0026"] = <
 					text = <"G2">
-					description = <"">
+					description = <"Moderately differentiated tumours with intermediate atypia and architectural irregularities.">
 				>
 				["at0027"] = <
 					text = <"G3">
+					description = <"Poorly differentiated tumours with marked atypia, disorganized structure, and frequent mitoses.
+
+">
+				>
+				["at0028"] = <
+					text = <"Number of tumors">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Single">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Multiple">
 					description = <"">
 				>
 			>
@@ -263,116 +296,128 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EAU NMIBC 2021 risk groups (en)">
-					description = <"*The European Association of Urology (EAU) prognostic factor risk groups for non–muscle-invasive bladder cancer (NMIBC) 2021 version, based on the WHO 2004/2016 or the WHO 1973 grading classification system. It is used to provide recommendations for patient treatment after transurethral resection of bladder tumor (TURBT). (en)">
+					text = <"EAU NMIBC 2021 risikogrupper">
+					description = <"Den europeiske foreningen for urologi (EAU) sin prognostiske faktorrisikogrupper for ikke-muskelinvasiv blærekreft (NMIBC) fra 2021 stratifiserer pasienter basert på tumorkarakteristikker, pasientens alder og graderingssystemer (WHO 2004/2016 eller WHO 1973). Klassifiseringen støtter behandlingsanbefalinger etter transuretral reseksjon av blæresvulst (TURBT).">
 				>
 				["at0001"] = <
-					text = <"*Risk group (en)">
+					text = <"Risikogruppe">
 					description = <"">
 					comment = <"*Additional clinical risk factors are: age > 70; multiple papillary tumours; and tumour diameter > 3 cm. (en)">
 				>
 				["at0002"] = <
-					text = <"*Low Risk (en)">
-					description = <"*A primary, single, TaT1 LG/G1 tumour < 3 cm in diameter without CIS in a patient ≤ 70 years OR A primary Ta LG/G1 tumour without CIS with at most ONE of the additional clinical risk factors. (en)">
+					text = <"Lav risiko">
+					description = <"En primær, enkeltstående TaT1 LG/G1-svulst < 3 cm i diameter uten CIS hos en pasient ≤ 70 år ELLER en primær Ta LG/G1-svulst uten CIS med maksimalt ÉN av de ytterligere kliniske risikofaktorene.">
 				>
 				["at0003"] = <
-					text = <"*Intermediate Risk (en)">
-					description = <"*Patients without CIS who are not included in either the low-, high-, or very high-risk groups. (en)">
+					text = <"Middels risiko">
+					description = <"Pasienter uten CIS som ikke er inkludert i verken lav-, høy- eller svært høyrisikogruppene.">
 				>
 				["at0004"] = <
-					text = <"*High Risk (en)">
-					description = <"*All T1 HG/G3 without CIS, EXCEPT those included in the very high-risk group OR All CIS patients, EXCEPT those included in the very high-risk group OR Ta LG/G2 or T1G1, no CIS with all 3 risk factors OR Ta HG/G3 or T1 LG, no CIS with at least 2 risk factors OR T1G2 no CIS with at least 1 risk factor. (en)">
+					text = <"Høy risiko">
+					description = <"Alle T1 HG/G3 uten CIS, UNNTAK av de som er inkludert i gruppen med svært høy risiko ELLER Alle CIS-pasienter, UNNTAK av de som er inkludert i gruppen med svært høy risiko ELLER Ta LG/G2 eller T1G1, ingen CIS med alle 3 risikofaktorer ELLER Ta HG/G3 eller T1 LG, ingen CIS med minst 2 risikofaktorer ELLER T1G2 ingen CIS med minst 1 risikofaktor.">
 				>
 				["at0005"] = <
-					text = <"*Very High Risk (en)">
-					description = <"*Ta HG/G3 and CIS with all 3 risk factors OR T1G2 and CIS with at least 2 risk factors OR T1 HG/G3 and CIS with at least 1 risk factor OR T1 HG/G3 no CIS with all 3 risk factors. (en)">
+					text = <"Svært høy risiko">
+					description = <"Ta HG/G3 og CIS med alle 3 risikofaktorer ELLER T1G2 og CIS med minst 2 risikofaktorer ELLER T1 HG/G3 og CIS med minst 1 risikofaktor ELLER T1 HG/G3 ingen CIS med alle 3 risikofaktorer.">
 				>
 				["at0006"] = <
-					text = <"*Age (en)">
+					text = <"Alder">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Tumor status (en)">
+					text = <"Tumorstatus">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Maximum tumor diameter (en)">
+					text = <"Maksimal tumordiameter">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*Primary (en)">
+					text = <"Primær">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*Recurrent (en)">
+					text = <"Gjentakende">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*< 3 cm (en)">
+					text = <"< 3 cm">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*≥ 3 cm (en)">
+					text = <"≥ 3 cm">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*≤ 70 years (en)">
+					text = <"≤ 70 år">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*> 70 years (en)">
+					text = <"> 70 år">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"*Stage (en)">
+					text = <"Stadie">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"*Ta (en)">
-					description = <"">
+					text = <"Ta">
+					description = <"Ikke-invasiv papillær tumor begrenset til urotelet.">
 				>
 				["at0017"] = <
-					text = <"*T1 (en)">
-					description = <"">
+					text = <"T1">
+					description = <"Tumorinvasjon i lamina propria, skånende muscularis propria.">
 				>
 				["at0018"] = <
-					text = <"*Concomitant CIS (en)">
+					text = <"Samtidig CIS">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*No (en)">
+					text = <"Ingen">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*WHO grade 2004/2016 (en)">
+					text = <"WHO-karakter 2004/2016">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*LMP-LG (en)">
-					description = <"">
+					text = <"LMP-LG">
+					description = <"Ikke-invasive papillære svulster med minimal atypi og ordnede celler.">
 				>
 				["at0023"] = <
-					text = <"*HG (en)">
-					description = <"">
+					text = <"HG">
+					description = <"Svulster med betydelig arkitektonisk og nukleær atypi, hyppige mitoser og tap av normal cellestruktur.">
 				>
 				["at0024"] = <
-					text = <"*WHO grade 1973 (en)">
+					text = <"WHO-karakter 1973">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"*G1 (en)">
-					description = <"">
+					text = <"G1">
+					description = <"Godt differensierte svulster med minimal atypi og ordnet arkitektur.">
 				>
 				["at0026"] = <
-					text = <"*G2 (en)">
-					description = <"">
+					text = <"G2">
+					description = <"Moderat differensierte svulster med intermediær atypi og arkitektoniske uregelmessigheter.">
 				>
 				["at0027"] = <
-					text = <"*G3 (en)">
+					text = <"G3">
+					description = <" Dårlig differensierte svulster med markert atypi, uorganisert struktur og hyppige mitoser.">
+				>
+				["at0028"] = <
+					text = <"Antall svulster">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Enkelt">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Flere">
 					description = <"">
 				>
 			>
