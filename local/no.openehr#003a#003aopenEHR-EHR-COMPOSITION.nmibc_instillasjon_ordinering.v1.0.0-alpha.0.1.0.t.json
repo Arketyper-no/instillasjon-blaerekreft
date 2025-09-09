@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "61269cd52084defa3b386f22d59a83aa",
+      "MD5-CAM-1.0.1" : "5ad91ed478ef807dd60dca8349d1e726",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -996,7 +996,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "C7E905A0E7F694058B2240B92B8885F5"
+        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000"
       },
       "details" : {
         "de" : {
@@ -1042,6 +1042,36 @@
           "use" : "Use to create a framework for recording answers to pre-defined screening questions about diagnostic investigations or groups of investigations. The scope of diagnostic investigations includes all modalities of imaging examinations and the broadest range of laboratory and anatomical pathology tests. In addition, this archetype can also be used to record when other diagnostic tests have been carried out, such as cardiac stress testing, hearing and vision testing, electrocardiography (ECG) and electroencephalography (EEG).\r\n\r\nCommon use cases include, but are not limited to:\r\n- Patient self-reporting\r\n- Creating a patient profile in a disease registry\r\n- Systematic questioning in any consultation related to patterns of investigation administration\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. Each data element would usually be renamed in a template to represent the specific question asked. Where value sets have been proposed for common use cases, these can be adapted to align with local requirements by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. \r\n\r\nUtilising this framework within a template can enable documentation of a broad range of question/answer pairs such as:\r\n- Have you ever had your cholesterol level tested? Yes, No, Unknown.\r\n- Have you been tested for rubella antibodies? Yes, No, Unknown.\r\n- Have you ever been screened for sickle cell disease? Yes, No, Unknown.\r\n- When was your last Chest X-ray?\r\n- What was the result of your most recent INR test?\r\n- What were the findings of the electrocardiogram?\r\n- Did the infant pass/fail a Neonatal hearing screen?\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about an investigation or test that has been done at any time in the past and information about an investigation or test done within a specified time interval - for example, the difference between \"Have you ever had an INR test?\" compared to \"Have you had an INR test during the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies an investigation has been carried out, additional details required for persistence as part of a clinical record can be captured using specific test result archetypes.",
           "misuse" : "Not to be used for recording an order for an investigation - use INSTRUCTION.service_request for this purpose.\r\n\r\nNot to be used for recording the progress of activities performed as part of an investigation - use appropriate ACTION archetypes for this purpose.\r\n\r\nNot to be used to record formal diagnostic test results - use appropriate OBSERVATIONS for this purpose. For example, the OBSERVATION.laboratory_test_result or OBSERVATION.imaging_examination_result.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones, incluyendo, entre otros, diagnóstico por imagen y pruebas de laboratorio.",
+          "keywords" : [ "investigación, screening, cuestionario, prevención, imagen, laboratorio, patología, sangre, muestra, esputo, EMG, ECG, audición, prueba, examen, líquido cefalorraquídeo, biopsia, EEG, resonancia magnética, tomografía computarizada, rayos X, TEP, ultrasonido, espirometría" ],
+          "use" : "Usado para crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones. El alcance de las investigaciones diagnósticas incluye todas las modalidades de diagnóstico por imagen y la más amplia gama de pruebas de laboratorio y de anatomía patológica. Además, este arquetipo también se puede utilizar para registrar cuándo se han realizado otras pruebas diagnósticas, como pruebas de esfuerzo cardíaco, pruebas de audición y visión, electrocardiograma (ECG) y electroencefalograma (EEG).\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Autoinforme del paciente\r\n- Creación de un perfil de paciente en un registro de enfermedades.\r\n- Cuestionamiento sistemático en cualquier consulta relacionada con patrones de gestión de investigaciones.\r\n\r\nLa semántica de este arquetipo es intencionalmente vaga y consultar este arquetipo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. Por lo general, se cambiaría el nombre de cada elemento de datos en una plantilla para representar la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para alinearse con los requisitos locales utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico.\r\n\r\nLa utilización de esta estructura dentro de una plantilla puede permitir la documentación de una amplia gama de preguntas/respuestas, como por ejemplo:\r\n- ¿Le han mirado en alguna ocasión su nivel de colesterol? Sí, No, Desconocido.\r\n- ¿Le han realizado la prueba de anticuerpos contra la rubéola? Sí, No, Desconocido.\r\n- ¿Alguna vez le han hecho pruebas de detección de anemia falciforme? Sí, No, Desconocido.\r\n- ¿Cuándo fue su última radiografía de tórax?\r\n- ¿Cuál fue el resultado de su prueba de INR más reciente?\r\n- ¿Cuáles fueron los hallazgos detectados en el electrocardiograma?\r\n- ¿El bebé pasó/falló la prueba de audición neonatal?\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un momento determinado o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre una investigación o prueba que se realizó en cualquier momento en el pasado, e información sobre una investigación o prueba realizada dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Alguna vez te has hecho una prueba de INR?\" en comparación con \"¿Se ha realizado una prueba de INR en las últimas cuatro semanas?\".\r\n\r\nLa fuente de información de una respuesta del cuestionario puede variar según el contexto, pero puede ifentificarse de forma específica utilizando el elemento 'Proveedor de información' en el Modelo de Referencia.\r\n\r\nEste arquetipo ha sido diseñado para usarse como herramienta de detección o para registrar datos en formato de cuestionario simple para su uso en situaciones como un registro de enfermedades. Si el cuestionario identifica que se ha llevado a cabo una investigación, se pueden registrar detalles adicionales necesarios para su persistencia como parte de un registro clínico, utilizando arquetipos de resultados de pruebas específicos.",
+          "misuse" : "No debe utilizarse para registrar una orden para una investigación; usar INSTRUCTION.service_request para este propósito.\r\n\r\nNo debe utilizarse para registrar el progreso de las actividades realizadas como parte de una investigación; usar arquetipos del tipo ACTION apropiados para este propósito.\r\n\r\nNo debe utilizarse para registrar resultados de pruebas de diagnóstico formales; usar OBSERVATIONS apropiadas para este propósito. Por ejemplo, OBSERVATION.laboratory_test_result u OBSERVATION.imaging_examination_result.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca, incloent-hi, entre d'altres, diagnòstic per imatge i proves de laboratori.",
+          "keywords" : [ "investigació, screening, qüestionari, prevenció, imatge, laboratori, patologia, sang, mostra, esput, EMG, ECG, audició, prova, examen, líquid cefaloraquidi, biòpsia, EEG, ressonància magnètica, tomografia computaritzada, raigs X, TEP, ultrasò, espirometria" ],
+          "use" : "Usat per crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca. L'abast de les investigacions diagnòstiques inclou totes les modalitats de diagnòstic per imatge i la gamma més àmplia de proves de laboratori i d'anatomia patològica. A més, aquest arquetip també es pot utilitzar per registrar quan s'han realitzat altres proves diagnòstiques, com ara proves d'esforç cardíac, proves d'audició i visió, electrocardiograma (ECG) i electroencefalograma (EEG).\r\n\r\nEls casos d'ús comuns inclouen, entre d'altres:\r\n- Autoinforme del pacient\r\n- Creació dun perfil de pacient en un registre de malalties.\r\n- Qüestionament sistemàtic a qualsevol consulta relacionada amb patrons de gestió d'investigacions.\r\n\r\nLa semàntica d'aquest arquetip és intencionalment vaga i consultar aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En general, es canviaria el nom de cada element de dades a una plantilla per representar la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, es poden adaptar per alinear-se amb els requisits locals utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic.\r\n\r\nLa utilització d'aquesta estructura dins d'una plantilla pot permetre la documentació d'una àmplia gamma de preguntes/respostes, com ara:\r\n- Us han mirat en alguna ocasió el seu nivell de colesterol? Sí, No, Desconegut.\r\n- Li han realitzat la prova d'anticossos contra la rubèola? Sí, No, Desconegut.\r\n- Alguna vegada us han fet proves de detecció d'anèmia falciforme? Sí, No, Desconegut.\r\n- Quan va ser la seva darrera radiografia de tòrax?\r\n- Quin va ser el resultat de la prova d'INR més recent?\r\n- Quines van ser les troballes detectades a l'electrocardiograma?\r\n- El nadó va passar/fallar la prova d'audició neonatal?\r\n\r\nL'estructura EVENT del model de referència es pot fer servir per especificar si les preguntes es relacionen amb un moment determinat o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que enregistra informació sobre una investigació o prova que es va realitzar en qualsevol moment en el passat, i informació sobre una investigació o prova realitzada dins d'un interval de temps específic; per exemple, la diferència entre \"Alguna vegada t'has fet una prova d'INR?\" en comparació amb \"¿S'ha realitzat una prova d'INR en les darreres quatre setmanes?\".\r\n\r\nLa font d'informació d'una resposta del qüestionari pot variar segons el context, però es pot identificar de manera específica utilitzant l'element 'Proveïdor d'informació' al Model de Referència.\r\n\r\nAquest arquetip ha estat dissenyat per fer-se servir com a eina de detecció o per registrar dades en format de qüestionari simple per al seu ús en situacions com un registre de malalties. Si el qüestionari identifica que s'ha dut a terme una investigació, es poden registrar detalls addicionals necessaris per a la seva persistència com a part d'un registre clínic utilitzant arquetips de resultats de proves específics.",
+          "misuse" : "No s'ha d'utilitzar per registrar una ordre per a una investigació; utilitzar INSTRUCTION.service_request per a aquest propòsit.\r\n\r\nNo s'ha de fer servir per registrar el progrés de les activitats realitzades com a part d'una investigació; utilitzar arquetips del tipus ACTION apropiats per a aquest propòsit.\r\n\r\nNo s'ha de fer servir per registrar resultats de proves de diagnòstic formals; utilitzar OBSERVATIONS apropiades per a aquest propòsit. Per exemple, OBSERVATION.laboratory_test_result o OBSERVATION.imaging_examination_result.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1432,7 +1462,7 @@
                                 "children" : [ {
                                   "@type" : "C_STRING",
                                   "rmTypeName" : "STRING",
-                                  "constraint" : [ "TB-IGRA" ]
+                                  "constraint" : [ "Biopsi" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -1460,7 +1490,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.10" ],
+                                  "constraint" : [ "ac0.11" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -1576,7 +1606,7 @@
           "at0026.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026",
-            "text" : "*Specific investigation (en) (3)",
+            "text" : "*Specific investigation (en)",
             "description" : "*Details about a specified investigation or grouping of investigations relevant for the screening purpose. (en)",
             "comment" : "*Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations. (en)"
           }
@@ -1619,16 +1649,60 @@
           "at0026.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.3",
-            "text" : "Cystoskopi",
+            "text" : "Tatt biopsi",
             "description" : "Detaljer om en spesifikk undersøkelse eller gruppe av undersøkelser som er innenfor kartleggingsformålet.",
             "comment" : "Bruk separate instanser av dette CLUSTER'et for å skille mellom spesifikke undersøkelser eller gruppering av undersøkelser."
           },
           "at0024.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.3",
-            "text" : "Er det gjort cystoskopi?",
+            "text" : "Er det tatt biopsi?",
             "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          }
+        },
+        "es" : {
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0026.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigación específica (2)",
+            "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
+            "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
+          },
+          "at0026.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigación específica (3)",
+            "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
+            "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
+          }
+        },
+        "ca" : {
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0026.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigació específica (2)",
+            "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
+            "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
+          },
+          "at0026.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigació específica (3)",
+            "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
+            "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
           }
         }
       },
@@ -1679,6 +1753,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.10",
           "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0036", "at0037" ]
         }
       }
     },
@@ -1720,6 +1799,34 @@
         "name" : "Kanika Kuwelker, John Tore Valand, Vebjørn Arntzen",
         "organisation" : "Helse Vest IKT, Helse Bergen, Oslo University Hospital",
         "email" : "kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -1948,6 +2055,24 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.17",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-exam-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.21",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-management_screening-001.v2",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -6494,7 +6619,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "16eb7143b017b0ddc59a738de4abfc81",
-        "PARENT:MD5-CAM-1.0.1" : "A421A4C6D27D92CEA4EE508BF58712CD",
+        "PARENT:MD5-CAM-1.0.1" : "942CF0FB3C54F2949348CF29B1DD1E2D",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -6543,6 +6668,36 @@
             "codeString" : "nl"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de dépistage prédéfinies concernant des questions, des problèmes ou des diagnostics.",
+          "keywords" : [ "Condition", "état", "maladie", "syndrome", "questionnaire", "dépistage", "problème" ],
+          "use" : "À utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur les enjeux, les problèmes ou les diagnostics. \r\nCet archétype a été délibérément modélisé de manière souple afin d'englober le plus large éventail possible de questions et de problèmes, ainsi que de diagnostics.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- L'interrogation systématique lors d'une consultation, par exemple :\r\n--- Diagnostic de cancer ? Oui, Non, Inconnu.\r\n--- Diagnostic de COVID 19 ou de grippe au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n--- Avez-vous des inquiétudes ou des préoccupations ? Oui, Non, Inconnu.\r\n- Questions spécifiques liées à la surveillance des maladies.\r\n\r\nLa sémantique de cet archétype est volontairement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps spécifié - par exemple la différence entre \"Avez-vous la grippe ?\" et \"Avez-vous eu la grippe au cours des 4 dernières semaines ?\"\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le questionnaire de dépistage identifie la présence d'un problème ou d'un diagnostic, il est recommandé que le système clinique enregistre et conserve les détails spécifiques du problème ou du diagnostic (tels que la date de reconnaissance clinique) en utilisant l'archétype EVALUATION.problem_diagnosis.",
+          "misuse" : "Ne doit pas être utilisé pour créer un cadre permettant d'enregistrer des réponses à des questions de dépistage prédéfinies concernant des procédures qui ont été effectuées dans le passé. Utilisez OBSERVATION.procedure_screening à cette fin.\r\n\r\nNe pas utiliser pour créer un cadre permettant d'enregistrer des réponses à des questions de sélection prédéfinies sur les effets indésirables, utiliser un archétype approprié à cet effet.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utilisez OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics.",
+          "keywords" : [ "Condició", "estat", "malaltia", "síndrome", "sondeig", "detecció", "qüestió" ],
+          "use" : "Utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics. \r\n\r\nAquest arquetip s'ha modelat deliberadament amb poca exactitud perquè incloure un rang el més ampli possible de qüestions i preguntes, així com de diagnòstics. \r\n\r\nEls casos d’ús més freqüents, però no limitats a: \r\n\r\n-Preguntar sistemàticament en qualsevol consulta. Per exemple: \r\n\r\n---Diagnosticat amb càncer? Sí, No, Desconegut. \r\n\r\n---Diagnosticat amb COVID 19o grip en els últims dotze mesos? Sí, No, Desconegut. \r\n\r\n---Té alguna preocupació? Sí, No, Desconegut. \r\n\r\n-Sondeig específic relacionat amb la vigilància de malalties. \r\n\r\nLa semàntica d’aquest arquetip és intencionalment laxa, i consultar aquest arquetip només serà útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es tornarà a nomenar en una pregunta específica. Quan s’hagi proposat els conjunts de valors per casos d’ús comú, aquests poden adaptar-se per al seu ús local utilitzant DV_TEXT o DV_BOOLEAN per ajustar-se a cada cas d’ús específic. \r\n\r\nL'estructura EVENT del model de referència es pot utilitzar per especificar si les preguntes estan relacionades a un moment donat o a un període de temps. Utilitzar una instància separada d’aquest arquetip per a distingir entre un sondeig que registra informació sobre un procediment que s’ha realitzat en qualsevol moment del passat i la informació sobre un procediment dins d’un interval de temps específic. Per exemple, la diferència entre “Vostè té grip?” comparat amb “Vostè ha tingut grip en les últimes 4 setmanes?” \r\n\r\nLa font d’informació en una resposta al sondeig pot variar en diferents contexts, però es pot identificar utilitzant l’element “Proveïdor d’informació” del Model de Referència. \r\n\r\nAquest arquetip s’ha dissenyat per a utilitzar-lo com ferramenta de detecció o per a registrar dades senzilles en format de sondeig per al seu ús en situacions com un registre de malalties. Si el sondeig de detecció identifica la presència d’un problema o diagnòstic, es recomana que es registri el sistema clínic i continuï els detalls específics sobre el problema o diagnòstic (com la data de reconeixement clínic), utilitzant l’arquetip EVALUATION.problem_diagnosis.",
+          "misuse" : "No utilitzar per a registrar detalls sobre la presència o absència d'un problema o diagnòstic fora del context de l'objectiu de detecció. Utilitzar EVALUATION.problem_diagnosis o EVALUATION.exclusion_specific per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre els procediments que s'han realitzat en el passat. Utilitzar OBSERVATION.procedure_screening per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre reaccions adverses. Utilitzar un arquetip apropiat per aquest propòsit. \r\n\r\nNo utilitzar per a registrar dades sobre una llista de selecció simple on una pregunta es pot enregistrar tant com \"\"present\"\" o \"\"indeterminada\"\". Utilitzar OBSERVATION.selection_list per aquest propòsit.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7135,6 +7290,34 @@
             "text" : "*Specifieke aandoening (3)",
             "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
           }
+        },
+        "ca" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.8",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.8",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -7254,6 +7437,36 @@
       },
       "author" : { },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Luxembourg Institute of Health (LIH)",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7277,7 +7490,7 @@
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "864eb675bb5a631e3ec277c66716e80e",
-        "PARENT:MD5-CAM-1.0.1" : "A711BD81809E053525691C2737149C88",
+        "PARENT:MD5-CAM-1.0.1" : "72B3FFF2A9CC7B57BE58854C62F894CB",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -7326,6 +7539,21 @@
             "codeString" : "it"
           },
           "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de sélection prédéfinies sur la gestion clinique liée aux procédures chirurgicales/opératoires qui ont été effectuées dans le passé.",
+          "keywords" : [ "Procédure, chirurgie, opération, évaluation, enquête, questionnaire, dépistage" ],
+          "use" : "A utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur la gestion clinique liée à des procédures chirurgicales/opératoires qui ont été effectuées dans le passé.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- des questions spécifiques sur les interventions antérieures avant l'admission à l'hôpital\r\n- Interrogation systématique lors d'une consultation, par exemple : --- Avez-vous déjà eu une appendicite ?\r\n--- Avez-vous déjà subi une appendicectomie ? Oui, Non, Inconnu.\r\n--- Avez-vous subi une arthroplastie de la hanche ou du genou au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n\r\nLa sémantique de cet archétype est intentionnellement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps donné - par exemple la différence entre \"Avez-vous déjà subi une opération de la hanche ou du genou ?\" et \"Avez-vous subi une opération de la hanche ou du genou au cours des 12 derniers mois ?\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le processus de dépistage identifie une procédure terminée, il est recommandé que le système clinique enregistre et conserve les détails spécifiques de la procédure (tels que la durée de la procédure) à l'aide de l'archétype ACTION.procedure.",
+          "misuse" : "Ne pas utiliser pour enregistrer des détails sur la présence ou l'absence d'une procédure, en dehors d'un contexte de dépistage. Utiliser ACTION.procedure ou EVALUATION.exclusion_specific à cette fin.\r\n\r\nNe doit pas être utilisé pour enregistrer une prise en charge clinique non chirurgicale ou non invasive. Utilisez OBSERVATION.management_screening à cette fin.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utiliser OBSERVATION.selection_list à cette fin.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7828,6 +8056,14 @@
             "description" : "*Timing of the procedure. (en)",
             "comment" : "*Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)"
           }
+        },
+        "fr" : {
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.11",
+            "description" : ""
+          }
         }
       },
       "termBindings" : { },
@@ -7956,6 +8192,20 @@
         "codeString" : "it"
       },
       "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Luxembourg Institute of Health (LIH)",
+        "email" : "vanessapereira@protonmail.com"
+      },
       "otherDetails" : { }
     } ]
   }, {
@@ -8601,7 +8851,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7B42A0B00ABA73D4EFF46CE693FB4376"
+        "PARENT:MD5-CAM-1.0.1" : "98BBAA0C3BB6698B97D688E6063FDD59"
       },
       "details" : {
         "de" : {
@@ -9416,7 +9666,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "D05F7D6B585B61B2AE4189D7F6E56B5F"
+        "PARENT:MD5-CAM-1.0.1" : "ef7e72edae188ed740c063f3121d82eb"
       },
       "details" : {
         "de" : {
@@ -9557,8 +9807,74 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0070.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "FEST"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "FEST" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "FEST",
+                            "code" : "ID_ECED16AE-42BF-4FEB-BBA7-57940A7318E1",
+                            "value" : "BCG"
+                          }, {
+                            "terminologyId" : "FEST",
+                            "code" : "ID_C51D65A4-1833-4899-B55A-BC0DDCDDB137",
+                            "value" : "Mitomycin"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0091.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "2.16.578.1.12.4.1.1.7477"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "2.16.578.1.12.4.1.1.7477" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "2.16.578.1.12.4.1.1.7477",
+                            "code" : "44",
+                            "value" : "Intravesikal bruk"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -9571,7 +9887,35 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0094.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "2.16.578.1.12.4.1.1.7804"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "2.16.578.1.12.4.1.1.7804" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "2.16.578.1.12.4.1.1.7804",
+                            "code" : "200000002047",
+                            "value" : "Instillasjon"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -9959,6 +10303,15 @@
                   "nodeId" : "at0167.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0177.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-therapeutic_direction-001.v1",
+                  "referenceType" : "archetypeOverlay"
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -9981,7 +10334,21 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0004.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -10323,6 +10690,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0109.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -10566,6 +10934,55 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0016.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "529" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0016" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0153.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -10908,7 +11325,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11397,6 +11813,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0039.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -11603,7 +12020,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0020.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -11685,7 +12112,17 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0147.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -11698,7 +12135,17 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0143.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -11748,17 +12195,12 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "occurrences" : "0..1",
               "nodeId" : "at0103.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_IDENTIFIER",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "attributes" : [ ],
@@ -11782,7 +12224,38 @@
         "es-ar" : { },
         "ru" : { },
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Avbrutt",
+            "description" : "Legemiddelet er seponert etter at første dose er administrert, men før planlagt fullførelse av ordineringen."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Avlyst",
+            "description" : "Den planlagte medisineringen er avbrutt før den første dosen er administrert."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Pågående",
+            "description" : "Legemiddelet er inntatt av eller administrert til pasienten for første gang. Selv om dette i noen bruksområder som f.eks. sykehus kan utledes fra den første av en rekke administreringer, må det i andre bruksområder som f.eks. allmennpraksis spesifiseres spesifikt siden administreringer ikke dokumenteres på samme måte."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Fullført",
+            "description" : "Medisineringen er fullført som ordinert."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Planlagt",
+            "description" : "Tidspunktet eller vilkår for å starte medisineringen er satt."
+          }
+        },
         "pt-br" : { },
         "de" : { },
         "sv" : { },
@@ -12903,6 +13376,1133 @@
         "codeString" : "nb"
       },
       "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "065bf408-6e77-446f-8262-4da013dfab13",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "37BAF292F297B9A6F46D86B8931811C0"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exam.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-exam-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0011.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0005.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-exam-001.v2",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0009",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : { },
+        "sl" : { },
+        "es-ar" : { },
+        "en" : { },
+        "nb" : { },
+        "es" : { },
+        "pt-br" : { },
+        "zh-cn" : { },
+        "de" : { },
+        "sv" : { },
+        "ca" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "8f979b4f-384d-468b-a434-9f76df062f27",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nina Schewe",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "schewe.nina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Sofia Janstad",
+        "organisation" : "SLL",
+        "email" : "sofia.lang-janstad@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen and Einar Fosse, John Tore Valand, Vebjørn Arntzen",
+        "organisation" : "Haukeland University Hospital Bergen, Norway; UNN HF Centre for Integrated Care and Telemedicine, Helse Bergen, Oslo University Hospital",
+        "email" : "lbla@helse-bergen.no; Einar.Fosse@unn.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
+      },
+      "accreditation" : "MD, DEAA, MBA, specialist in tropical medic",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Edgardo Vazquez",
+        "organisation" : "VinculoMedico"
+      },
+      "accreditation" : "Medical Doctor",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima",
+        "organisation" : "Core Consulting",
+        "email" : "adriana.kitajima@coreconsulting.com.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "Uroš Rajkovič, Biljana Prinčič, Anđela Pavlović",
+        "organisation" : "Slovenia, Better",
+        "email" : "andjela.pavlovic@better.care"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Anđela Pavlović, andjela.pavlovic@better.care, Better, Slovenia"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "BIPH",
+        "email" : "linforest@163.com"
+      },
+      "accreditation" : "?",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos",
+        "organisation" : "CaboLabs"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ddafd8ed-aec7-41ee-bbab-58fc41d622f8",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4A4792B1A3E5D5A7098512523784E291"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-exam-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "89837001",
+                    "value" : "urinblære"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0012.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "1295388007",
+                    "value" : "Gjenværende svulst etter operasjon"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0006.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Clinical interpretation (2)",
+            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible."
+          }
+        },
+        "nb" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.2",
+            "text" : "Tilheling",
+            "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.",
+            "comment" : "For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig."
+          }
+        },
+        "pt-br" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Interpretação clínica (2)",
+            "description" : "Palavra, frase ou breve descrição que represente o significado clínico e o significado dos resultados do exame físico.",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        },
+        "de" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Klinische Interpretation (2)",
+            "description" : "Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.",
+            "comment" : "Zum Beispiel: „Ohne Befund“ oder „Mäßige Entzündung vorhanden“. Wenn möglich, wird die Codierung der „Klinischen Interpretation“ mit einer Terminologie bevorzugt."
+          }
+        },
+        "sv" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Klinisk tolkning (2)",
+            "description" : "Ord, fras eller kort beskrivning av fyndens kliniska betydelse.",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        },
+        "el" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Κλινική αξιολόγηση (2)",
+            "description" : "Μία λέξη, φράση ή σύντομη περιγραφή που αντιπροσωπεύει την κλινική σημασία και σημασία των ευρημάτων της φυσικής εξέτασης.",
+            "comment" : "Για παράδειγμα: «Δεν ανιχνεύθηκε ανωμαλία» ή «Υπάρχει μέτρια φλεγμονή». Προτιμάται η κωδικοποίηση της «κλινικής ερμηνείας» με ορολογία, όπου είναι δυνατόν."
+          }
+        },
+        "es" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "*Clinical interpretation(en) (2)",
+            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible.(en)"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "58ce9361-9c83-4bea-a4b6-ddfc25d4d170",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nina Schewe, Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "schewe.nina@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Erik Sundvall",
+        "organisation" : "Region Östergötland + Linköping University",
+        "email" : "erik.sundvall@regionostergotland.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, Vebjørn Arntzen",
+        "organisation" : "Nasjonal IKT HF, Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima",
+        "organisation" : "Hospital Alemão Oswaldo Cruz - HAOC",
+        "email" : "adrianakitajima@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "el"
+      },
+      "author" : {
+        "name" : "Erasmia Partafylla",
+        "organisation" : "Sigmasoft",
+        "email" : "c.partafylla@sigmasoft.gr"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "8194ed2b-7e45-425c-8ad4-99a22a416c44",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "182A23C49E45E1C560537841A1D0EA4B"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.management_screening.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-management_screening-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0034.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0039.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_BOOLEAN",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "Informasjon om alternative behandlingsmuligheter" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0035.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Informert pasienten om andre behandlingsmuligheter enn instillasjonsbehandling",
+            "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          }
+        },
+        "de" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "it" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0040", "at0041", "at0042", "at0045" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3960793d-07b0-4cff-b19b-1aa37e5cd08d",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Nina Schewe, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, nina.schewe@plri.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, Marit Alice Venheim, John Tore Valand, Liv Laugen",
+        "organisation" : "Helse Vest IKT AS, Helse Bergen, ​Oslo University Hospital, Norway",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no, marit.alice.venheim@helse-vest-ikt.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "f580cf0a-f8a3-4044-bfa3-f592f9244020",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "F599CFD8A1049A510A4D4DAA1B1C9EB9"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.therapeutic_direction.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-therapeutic_direction-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0057.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "Integer",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0066.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "1 år", "3 år" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0172.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "upperUnbounded" : true,
+                    "lowerUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0177.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0178.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0179.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0067", "at0068" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "ae8d32e2-6f18-4634-9489-1931d6758104",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, Marit Alice Venheim",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no, marit.alice.venheim@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Beatriz de Faria Leao",
+        "organisation" : "BLEAO Informática em Saúde",
+        "email" : "bfleao@terra.com.br"
+      },
+      "accreditation" : "MD, PhD",
       "otherDetails" : { }
     } ]
   } ],
