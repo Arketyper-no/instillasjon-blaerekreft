@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "97a5de17a4cfbf4820c1d9c1949d0c4b",
+      "MD5-CAM-1.0.1" : "0a582e31fa8737c49e3168ab53c46612",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1856,6 +1856,13 @@
             "text" : "Er det tatt spirometri siste 6 måneder?",
             "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Fjernes?",
+            "description" : "Spørsmål og tilhørende svar som er knyttet til kartlegging om diagnostiske undersøkelser har vært utført eller ikke.",
+            "comment" : "Svarene kan være selvrapporterte."
           }
         }
       },
