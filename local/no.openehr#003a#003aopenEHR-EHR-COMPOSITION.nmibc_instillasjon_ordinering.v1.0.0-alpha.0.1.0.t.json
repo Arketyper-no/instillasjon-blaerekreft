@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "43b430caaa743289afa6bffc78554658",
+      "MD5-CAM-1.0.1" : "e6739d84e4e7ebb97b7e088893445252",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -14776,6 +14776,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0066.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -15086,7 +15087,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "cf20e3510088e822fe6bf1a9a1c39926"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "*To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973). (en)",
+          "keywords" : [ "*Urothelial (en)", "*bladder (en)", "*tumor (en)", "*neoplasm (en)", "*carcinoma (en)", "*histology (en)", "*pathology (en)", "*grade (en)", "*grading (en)", "*classification (en)", "*WHO (en)", "*1973 (en)" ],
+          "use" : "*Use to record the histological grade of according to the WHO Histological Typing of Urinary Bladder Tumours (1973).\n\nThis archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result archetype context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate. (en)",
+          "misuse" : "*Not to be used to record the 2004/2016 revision of the WHO histological grade of urothelial neoplasms. Use the CLUSTER.who_grade_urothelial_neoplasms_2004 archetype for this purpose. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).",
+          "keywords" : [ "Urothelial", "bladder", "tumor", "neoplasm", "carcinoma", "histology", "pathology", "grade", "grading", "classification", "WHO", "1973" ],
+          "use" : "Use to record the histological grade of according to the WHO Histological Typing of Urinary Bladder Tumours (1973).\n\nThis archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result archetype context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
+          "misuse" : "Not to be used to record the 2004/2016 revision of the WHO histological grade of urothelial neoplasms. Use the CLUSTER.who_grade_urothelial_neoplasms_2004 archetype for this purpose.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.who_grade_urothelial_neoplasms_1973.v0",
     "differential" : true,
