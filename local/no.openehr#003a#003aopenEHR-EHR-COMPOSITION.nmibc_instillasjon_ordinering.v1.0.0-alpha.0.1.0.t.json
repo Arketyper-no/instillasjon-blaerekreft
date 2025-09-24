@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e6739d84e4e7ebb97b7e088893445252",
+      "MD5-CAM-1.0.1" : "8746d7a98bf3ee1169290bf4d579a7db",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -9068,20 +9068,10 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.2" ],
+                                  "constraint" : [ "ac0.4" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_BOOLEAN",
-                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -9149,10 +9139,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
           }
         },
@@ -9161,12 +9151,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
             "description" : ""
           },
           "at0009.1" : {
@@ -9181,6 +9165,12 @@
             "text" : "Kommer pasienten fra et område der tuberkulose er endemisk?",
             "description" : "Har den spesifiserte eksponeringssituasjonen hendt?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         },
         "de" : {
@@ -9190,10 +9180,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
@@ -9209,6 +9199,16 @@
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
+          "members" : [ "at0012", "at0013" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0012", "at0013" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
           "members" : [ "at0012", "at0013" ]
         }
       }
