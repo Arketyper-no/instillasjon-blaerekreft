@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7ac669bdf5903f22f550322cbc5c04cd",
+      "MD5-CAM-1.0.1" : "f69a276eb71b53edb0dbf86736da030c",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -3667,7 +3667,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -3767,7 +3766,15 @@
         "en" : { },
         "es-ar" : { },
         "pt-br" : { },
-        "nb" : { },
+        "nb" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Katetertype",
+            "description" : "Kategori eller type medisinsk utstyr.",
+            "comment" : "Brukes ikke om kategori som er dokumentert i \"Navn på medisinsk utstyr\".\r\n\r\nEksempel: Hvis utstyret er navngitt som \"urinkateter\", kan typen registreres som \"inneliggende kateter\" eller \"engangskateter\". Koding med en terminologi er ønskelig om mulig, og dette kan inkludere GTIN/EAN-nummer."
+          }
+        },
         "de" : { },
         "sv" : { }
       },
