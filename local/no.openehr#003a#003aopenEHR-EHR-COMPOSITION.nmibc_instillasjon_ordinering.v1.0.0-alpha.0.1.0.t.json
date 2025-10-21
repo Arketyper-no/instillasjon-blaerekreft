@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "79386f8312babf19ad3eb655909b8bb6",
+      "MD5-CAM-1.0.1" : "a768798be61fa355f654d88284740294",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2088,6 +2088,15 @@
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-management_screening-001.v2",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "INSTRUCTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.23",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -8139,6 +8148,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.16",
           "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0031", "at0032" ]
         }
       }
     },
@@ -15215,7 +15229,88 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5E574D6BBAB51E31A81716AD14B6781D"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation eines manuellen Zusammenfassen von gesundheitsbezogenen Ereignissen, die aus Sicht eines Gesundheitsdienstleisters zum Zeitpunkt der Aufzeichnung aktuell sind.",
+          "keywords" : [ "Kommentar", "Notiz", "Anmerkung", "Fortschritt", "Ablauf" ],
+          "use" : "Verwenden Sie diesen Archetyp, um eine Beschreibung über aktuelle gesundheitsbezogene Ereignisse und Aktivitäten aus der Sicht eines Gesundheitsdienstleisters manuell zu synthetisieren und aufzuzeichnen. \r\n\r\nDiese unstrukturierte Beschreibung kann den Gesundheitszustand und die Befunde des Patienten enthalten, die zum Zeitpunkt der Aufzeichnung aktuell sind. Am häufigsten bezieht sich diese Beschreibung wahrscheinlich auf Notizen zur Krankenpflege am Ende einer Schicht oder auf die täglichen Notizen von Gesundheitsdienstleistern wie einem Arzt oder einem Physiotherapeuten. In der Praxis ist Fortschrittbericht eine Meta-Beobachtung, die die vorhandene strukturierte Patientenakte ergänzt und es ermöglicht, subtile, subjektive oder interpretative Informationen über den Patienten auszudrücken, die ansonsten möglicherweise nicht allein durch strukturierte Daten offensichtlich sind, und der EHR-Aufzeichnung Ausgewogenheit und Sinnzusammenhang verleiht. In vielen Situationen wird dieser Archetyp zusammen mit anderen strukturierteren Archetypen in einer einzigen COMPOSITION zusammengefasst. \r\n\r\nDieser Archetyp kann auch verwendet werden, wenn keine strukturierten Archetypen verfügbar sind oder um Fortschrittberichte aufzuzeichnen, die aus alten Systemen importiert wurden.",
+          "misuse" : "Nicht zur Repräsentation bestimmter strukturierter oder semistrukturierter Gesundheitsinformationen verwenden. Beispielsweise sollten detaillierte Informationen zu Problemen / Diagnosen, Testergebnissen und Vitalzeichen, Untersuchungsergebnissen und Patientengeschichte / -anamnese unter Verwendung der spezifischen relevanten EVALUATION- oder OBSERVATION-Archetypen dargestellt werden.\r\n\r\nDarf nicht verwendet werden, um eine beschreibende, zusammenfassende Ansicht des Gesundheitszustands des Patienten darzustellen, beispielsweise um eine kurze Zusammenfassung der stationären Aufnahme des Patienten als Bestandteil eines umfassenden und strukturierten Entlassungsberichtes zu übermitteln. Verwenden Sie zu diesem Zweck den Archetyp EVALUATION.clinical_synopsis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For at helsepersonell skal kunne lage og lagre en oppsummering i fritekst om helserelaterte hendelser eller status som er gyldig på tidspunktet det registreres.",
+          "keywords" : [ "kommentar", "notat", "løpende" ],
+          "use" : "Brukes for at helsepersonell skal kunne lage en oppsummering i fritekst om helserelaterte hendelser eller status som er gyldig på tidspunktet det registreres. Denne ustrukturerte beskrivelsen kan inkludere individets helsestatus og funn som er gyldige på registreringstidspunktet. Dette kan sammenlignes med et fritekst journalnotat, som et sykepleiernotat ved vaktskifte, eller et daglig notat fra lege, fysioterapeut eller annet helsepersonell. I praksis vil \"Tidfestet fritekst\" være observasjoner på overordnet nivå som vil komplettere eksisterende strukturert informasjon, og dermed tillate mer subtile, subjektive eller tolkende informasjon om et individ. Det vil være naturlig å kombinere denne arketypen med strukturerte arketyper i en COMPOSITION.\r\n\r\nArketypen kan også benyttes når det ikke finnes strukturerte arketyper tilgjengelig, eller til å lagre journaltekst som blir konvertert fra et annet journalsystem.",
+          "misuse" : "Skal ikke brukes for å registrere spesifikk strukturert eller semistrukturert helseinformasjon, for eksempel detaljert informasjon om problem/diagnose, laboratoriesvar og vitale tegn, undersøkelsesfunn og anamneseinformasjon. Denne type data skal registreres i de spesifikke relevante EVALUATION- eller OBSERVATION-arketypene.\r\n\r\nBrukes ikke for registrere en fritekstoppsummering av en pasients helse, for eksempel for å gi en konkret oppsummering av en sykehusinnleggelse som en del av en strukturert epikrise eller en sykepleiesammenfatning. Bruk arketypen EVALUATION.clinical_synopsis (Klinisk sammendrag) for dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para la síntesis y registro manuales de la descripción narrativa de eventos actuales relacionados con la salud, desde la perspectiva del proveedor de cuidados de la salud.",
+          "keywords" : [ "comentario", "nota", "evolución" ],
+          "use" : "utilizado para la síntesis y registro manuales de la descripción narrativa de eventos y actividades actuales relacionados con la salud, desde la perspectiva del proveedor de cuidados de la salud.\r\nEsta descripción no estructurada puede incluir el estado de salud y hallazgos propios del sujeto que corresponden al momento del registro. El caso mas común probablemente se relacione con las notas de enfermería al final de un turno o las notas diarias del proveedor de cuidados de la salud, como es el caso de un médico o un fisioterapeuta. En la práctica, la Nota de Evolución es una meta observación que complementará el registro estructurado, permitiendo la expresión de información sutil, subjetiva o interpretativa acerca del paciente que de otro modo podría no resultar obvia a partir de los datos estructurados solamente, proveyendo así balance y contexto al registro clínico. En muchas situaciones, este arquetipo puede usarse en combinación con otros arquetipos mas estructurados dentro de una misma COMPOSITION.\r\n\r\nEste arquetipo también puede ser utilizado si no existe un arquetipo estructurado disponible para un dato determinado, o para importar notas de evolución de sistemas legados.",
+          "misuse" : "No debe utilizarse para registrar información específica de salud estructurada o semiestructurada. Por ejemplo, la información detallada acerca de problemas o diagnósticos, resultados de exámenes y signos vitales, hallazgos del examen y la enfermedad actual descrita por el paciente deben ser registrada utilizando los arquetipos específicos relevantes del tipo EVALUATION u OBSERVATION.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To manually synthesise and record a narrative description about health related events that are current at the time of recording, from the perspective of a healthcare provider.",
+          "keywords" : [ "comment", "note", "progress" ],
+          "use" : "Use to manually synthesise and record a narrative description about contemporary health-related events and activities from the perspective of a healthcare provider.\r\n \r\nThis unstructured description may include the subject's health status and findings, that are current at the time of recording. Most commonly this description is likely to be related to nursing notes at the end of a shift, or the daily notes from healthcare providers such as a physician or a physiotherapist. In practice, Progress note is a meta observation that will complement the existing structured clinical record, allowing for expression of subtle, subjective or interpretive information about the patient that might not otherwise be obvious through structured data alone, providing balance and context to the EHR record. In many situations, this archetype will be combined alongside other more structured archetypes within a single COMPOSITION.\r\n\r\nThis archetype may also be used if there are no structured archetypes available, or to record progress notes imported from legacy systems.",
+          "misuse" : "Not to be used to record specific structured or semi-structured health information. For example, detailed information about problems/diagnoses, test results and vital signs, examination findings and patient story/history should be recorded using the specific relevant archetypes EVALUATION or OBSERVATION archetypes.\r\n\r\nNot to be used to record a narrative, summary view of the patient's health, for example to communicate a succinct summary of the patient's hospital admission as one component of a comprehensive and structured Discharge Summary document. Use the EVALUATION.clinical_synopsis archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To manually synthesise and record a narrative description about health related events that are current at the time of recording, from the perspective of a healthcare provider.(en)",
+          "keywords" : [ "*comment(en)", "*note(en)", "*progress(en)" ],
+          "use" : "*Use to manually synthesise and record a narrative description about contemporary health-related events and activities from the perspective of a healthcare provider. \r\nThis unstructured description may include the subject's health status and findings, that are current at the time of recording. Most commonly this description is likely to be related to nursing notes at the end of a shift, or the daily notes from healthcare providers such as a physician or a physioterapist. In practice, Progress note is a meta observation that will complement the existing structured clinical record, allowing for expression of subtle, subjective or interpretive information about the patient that might not otherwise be obvious through structured data alone, providing balance and context to the EHR record. In many situations, this archetype will be combined alongside other more structured archetypes within a single COMPOSITION.\r\n\r\nThis archetype may also be used if there are no structured archetypes available, or to record progress notes imported from legacy systems.(en)",
+          "misuse" : "*Not to be used to record specific structured or semistructured health information. For example, detailed information about problems/diagnoses, test results and vital signs, examination findings and patient story/history should be recorded using the specific relevant archetypes EVALUATION or OBSERVATION archetypes.\r\n\r\nNot to be used to record a narrative, summary view of the patient's health, for example to communicate a succinct summary of the patient's hospital admission as one component of a comprehensive and structured Discharge Summary document. Use the EVALUATION.clinical_synopsis archetype for this purpose.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.progress_note.v1",
     "differential" : true,
@@ -15403,7 +15498,99 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F3A7D36EBD28087AD91119914C081F32"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung einer Empfehlung, einer Beratung oder eines Vorschlags für die klinische Versorgung zu einem bestimmten Zeitpunkt.",
+          "keywords" : [ "Beratung", "Empfehlung", "Vorschlag" ],
+          "use" : "Verwenden Sie diesen Archetyp, um eine Empfehlung, eine Beratung oder einen Vorschlag für die klinische Versorgung zu einem bestimmten Zeitpunkt darzustellen.\r\n\r\nDer vorgesehene Anwendungsfall ist, um einen Kliniker bei der Aufzeichnung einer oder mehreren Empfehlung/en zu einem bestimmten Zeitpunkt zu unterstützen.\r\nZum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinischen Beratung getroffen werden.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um strukturierte Datenelemente einzuschließen, die zusätzliche Anweisungen wie Timing, Häufigkeit, Dauer oder Dosierung enthalten. Verwenden Sie zu diesem Zweck geeignete INSTRUCTION-Archetypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att föreslå eller ge råd om behandlingsåtgärd vid ett specifikt tillfälle.",
+          "keywords" : [ "råd", "förslag", "rekommendation" ],
+          "use" : "Att föreslå eller ge råd om behandlingsåtgärd vid ett specifikt tillfälle.\r\n\r\nÄr tänkt att ge stöd för att dokumentera en behandlingsrekommendation vid en specifik tidpunkt. Exempelvis som en del av slutsatsen vid en klinisk konsultation.",
+          "misuse" : "*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.",
+          "keywords" : [ "consejo", "propuesta", "sugerencia" ],
+          "use" : "Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.\r\n\r\nEl caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.",
+          "misuse" : "*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.",
+          "keywords" : [ "råd", "forslag", "anmodning", "tilråde", "tilrådning", "instruks" ],
+          "use" : "Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.\r\n\r\nArketypen er ment å understøtte klinikere som dokumenterer en eller flere anbefalinger på et spesifikt tidspunkt.\r\nAnbefalingen kan for eksempel benyttes som en del av dokumentasjonen av konklusjonene som trekkes i forbindelse med en klinisk konsultasjon.",
+          "misuse" : "Brukes ikke for å registrere strukturerte dataelementer for å beskrive ytterligere instruksjoner som for eksempel 'timing', frekvens, varighet eller dose. Bruk relevante INSTRUCTION-arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar uma sugestão, conselho ou proposta de manejo clínico num tempo específico.",
+          "keywords" : [ "conselho", "proposta", "sugestão" ],
+          "use" : "Utilizar para registrar uma sugestão, conselho ou proposta de manejo clínico num tempo específico.\r\n\r\nO caso de uso pretendido é apoiar o registro clínico de uma recomendação, ou recomendações, num ponto específico no tempo.\r\nPor exemplo, como um componente das conclusões tiradas como parte de uma consulta clínica.",
+          "misuse" : "*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a suggestion, advice or proposal for clinical management at a specific time.",
+          "keywords" : [ "advice", "proposal", "suggestion" ],
+          "use" : "Use to record a suggestion, advice or proposal for clinical management at a specific time.\r\n\r\nThe intended use case is to support a clinician recording a recommendation, or recommendations, at a specific point-in-time. \r\nFor example, as a component of the conclusions drawn as part of a clinical consultation.",
+          "misuse" : "Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.recommendation.v2",
     "differential" : true,
@@ -15501,16 +15688,7 @@
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0007.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -15926,6 +16104,383 @@
         "email" : "bfleao@terra.com.br"
       },
       "accreditation" : "MD, PhD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "25c74b63-3b89-42fa-9561-5b1fcbb477d3",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "aec697e7581e4290d4a6770d5056cbdb"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-INSTRUCTION.service_request.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-INSTRUCTION.ovl-service_request-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "INSTRUCTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "activities",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ACTIVITY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "description",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ITEM_TREE",
+              "nodeId" : "at0009",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0121.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "SNOMED-CT"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED-CT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "446583004",
+                            "value" : "Legg inn permanent blærekateter under behandling"
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0148.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0135.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0062.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0064.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0152.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0065.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0068.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "CODE_PHRASE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "local"
+                          },
+                          "constraint" : [ "at0136", "at0137", "at0138" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0040.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0145.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0144.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0147.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_BOOLEAN",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_BOOLEAN",
+                          "rmTypeName" : "Boolean",
+                          "occurrences" : "1..1",
+                          "constraint" : [ true ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0076.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_BOOLEAN",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_BOOLEAN",
+                          "rmTypeName" : "Boolean",
+                          "occurrences" : "1..1",
+                          "constraint" : [ true ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0078.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0150.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0008",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0010.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0011.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0127.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Permanent kateterisering under behandling",
+            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "e85cf2a6-6988-4ac7-bd03-f8551e1a087f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, Marit Alice Venheim",
+        "organisation" : "Nasjonal IKT HF, Norway, Helse Vest IKT",
+        "email" : "marit.alice.venheim@helse-vest-ikt.no"
+      },
       "otherDetails" : { }
     } ]
   } ],
