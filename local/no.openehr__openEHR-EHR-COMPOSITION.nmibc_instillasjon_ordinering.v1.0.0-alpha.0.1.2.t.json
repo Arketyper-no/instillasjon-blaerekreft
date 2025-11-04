@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "4f0bc75004d3bd2619551341198abcaa",
+      "MD5-CAM-1.0.1" : "b5e323a63ae28c753b00ae9e484f2539",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -248,7 +248,7 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
           "text" : "Blærekreft instillasjonsbehandling ordinering",
-          "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
+          "description" : ""
         }
       }
     },
@@ -577,7 +577,16 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0077.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -778,28 +787,28 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Diagnose",
-            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+            "description" : "",
             "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig."
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Hoveddiagnose",
-            "description" : "Detaljer om én identifisert helsetilstand, skade, funksjonshemming eller annet forhold som påvirker et individs fysiske, mentale og/eller sosiale velvære.",
+            "description" : "",
             "comment" : "Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose."
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Tidspunkt for stilt diagnose (operasjonsdato)",
-            "description" : "Anslått eller faktisk dato/tid da diagnosen eller problemet ble bekreftet av helsepersonell.",
+            "description" : "",
             "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer. Data registrert eller importert som \"alder ved tidspunkt når diagnosen stilles\" bør konverteres til en dato ved hjelp av individets fødselsdato."
           },
           "at0077.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0077.1",
             "text" : "Dato første blærekreftdiagnose",
-            "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert.",
+            "description" : "Brukes dersom aktuell diagnose er residiv.",
             "comment" : "Data registrert eller importert som \"alder ved debut\" bør konverteres til en dato ved hjelp av individets fødselsdato."
           }
         },
@@ -4877,7 +4886,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Diagnoser",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : ""
           }
         },
         "pt-br" : {
@@ -5072,7 +5081,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3097088E0BEB4781A1B26CB179543A86"
+        "PARENT:MD5-CAM-1.0.1" : "9865c6efd5810dece164e3322e516f78"
       },
       "details" : {
         "nb" : {
@@ -8812,7 +8821,35 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Identifikator",
+            "description" : "",
+            "comment" : "Forekomster for dette dataelementet er satt til 0..* for å tillatte registrering av mer enn én Identifikator. Legg merke til at DV_IDENTIFIER-datatypen inneholder flere underkomponenter for å registrere ID-verdi, type, utsteder og tilordnet. For eksempel: personnummer, førerkort eller passnummer."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Rolle",
+            "description" : "",
+            "comment" : "For eksempel: kopiinnhaver av et fremtidig behandlingsvalg, kontaktperson i en organisasjon, slektning, prøvetaker eller et vitne til et fall eller ulykke. Hvis personen som beskrives i denne arketypen er pasienten, er dette dataelementet unødvendig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Person",
+            "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Navn",
+            "description" : "",
+            "comment" : "Innholdet i dette elementet kan være en sammenstilling av en eller flere komponenter fra arketypen CLUSTER.structured_name. For eksempel: \"John Markham\", \"Professor Sir John Markham\", \"John Markham Jnr MP\"."
+          }
+        },
         "de" : { },
         "zh" : { },
         "sv" : { },
