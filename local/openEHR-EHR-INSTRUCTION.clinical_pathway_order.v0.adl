@@ -64,7 +64,7 @@ Not to be used to record orders for individualised protocols, care plans or guid
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"3097088E0BEB4781A1B26CB179543A86">
+		["MD5-CAM-1.0.1"] = <"9865c6efd5810dece164e3322e516f78">
 		["build_uid"] = <"d0035bf9-5e15-433c-89c3-9a6d95b49520">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -118,7 +118,6 @@ definition
 						}
 					}
 				}
-				action_archetype_id matches {/openEHR-EHR-ACTION\.clinical_pathway(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-ACTION\.clinical_pathway(-[a-zA-Z0-9_]+)*\.v1/}
 			}
 		}
 		protocol matches {
