@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "998137d90a2d6b2e56edd1caa583688e",
+      "MD5-CAM-1.0.1" : "e30bb3f6d0ca799cb304770740b5217f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -9145,7 +9145,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -9265,6 +9265,12 @@
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
                       "nodeId" : "at0009.1",
                       "attributes" : [ {
@@ -9313,7 +9319,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.4" ],
+                                  "constraint" : [ "ac0.5" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -9357,6 +9363,12 @@
                             } ]
                           } ],
                           "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0017.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -9384,10 +9396,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -9402,19 +9414,88 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
             "text" : "Kommer fra et område der tuberkulose er endemisk",
-            "description" : "Detaljer om omstendigheter rundt hver spesifikke eksponering."
+            "description" : "",
+            "comment" : "Detaljer om omstendigheter rundt hver spesifikke eksponering."
           },
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0011.1",
             "text" : "Kommer pasienten fra et område der tuberkulose er endemisk?",
-            "description" : "Har den spesifiserte eksponeringssituasjonen hendt?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
-          "ac0.4" : {
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om den spesifikke eksponeringssituasjonen som ikke er omfattet av andre felt."
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse om eksponering av agens og som er relevant for kartleggingsformålet."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Kartleggingsformål",
+            "description" : "",
+            "comment" : "Dette dataelementet er ment for å sette en kontekst for spørsmålene om man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: \"Preoperativ screening\" eller navnet på det faktiske spørreskjemaet eller screening for eksponering for en gruppe agenser, for eksempel resistente bakterier."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Agens",
+            "description" : "",
+            "comment" : "For eksempel støy, tobakksrøyk, insektgift, ioniserende stråling eller et virus. Det anbefales at \"Agens\" kodes med en terminologi der dette er mulig. Fritekst bør kun brukes dersom en passende terminologi ikke er tilgjengelig."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Situasjon",
+            "description" : "",
+            "comment" : "For eksempel bistikk, reise til et risikoområde, eksponering for infiserte kroppsvæsker, eller jobbet som helsearbeider. Det foretrekkes at \"Situasjon\" kodes med en terminologi der dette er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Kartleggingsspørsmål om eksponering",
+            "description" : "",
+            "comment" : "Svarene kan være selvrapporterte.\nSpørsmål og tilhørende svar som brukes til å kartlegge mulig eksponering for en kjemisk, fysisk eller biologisk agens som har forårsaket eller kan forårsake skade på individet."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Uspesifisert hendelse",
+            "description" : ""
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Beskrivelse",
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse om eksponering av agens og som er relevant for kartleggingsformålet."
+          },
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
+            "description" : ""
+          },
+          "at0017.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017.1",
+            "text" : "Kommentar",
             "description" : ""
           }
         },
@@ -9425,10 +9506,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -9454,6 +9535,11 @@
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
+          "members" : [ "at0012", "at0013" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
           "members" : [ "at0012", "at0013" ]
         }
       }
