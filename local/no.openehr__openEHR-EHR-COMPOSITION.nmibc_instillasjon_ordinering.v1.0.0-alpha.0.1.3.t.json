@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "0afb38cbf62830f41330963c941553c1",
+      "MD5-CAM-1.0.1" : "f1cfa6685b2b7b53802fe1df7779e92f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2690,7 +2690,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Forløp",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : "",
+            "comment" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
           }
         },
         "pt-br" : {
@@ -3035,7 +3036,22 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Notat",
-            "description" : "Fritekstbeskrivelse av et individs helserelaterte hendelser på et spesifikt tidspunkt, sett fra helsepersonellets synsvinkel."
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse av et individs helserelaterte hendelser på et spesifikt tidspunkt, sett fra helsepersonellets synsvinkel."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Tidfestet fritekst",
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse av helserelaterte hendelser, status, funn eller oppfatninger på et spesifikt tidspunkt."
           }
         },
         "es-ar" : { },
@@ -5336,7 +5352,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "nodeId" : "at0001",
+          "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "description",
@@ -5398,6 +5414,21 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0011.1",
                   "attributes" : [ {
@@ -5449,7 +5480,48 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Nåværende aktivitet",
+            "description" : "",
+            "comment" : "Nåværende aktivitet"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Planlagt dato/tid for oppstart",
+            "description" : "",
+            "comment" : "Dato/tid da forløpet er planlagt å startes."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Forløp",
+            "description" : "",
+            "comment" : "Navnet på det kliniske forløpet."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Ordinering av klinisk forløp",
+            "description" : "",
+            "comment" : "Ordinering av et overordnet, standardisert klinisk forløp for å styre behandlingen av et problem eller en tilstand."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Nåværende aktivitet",
+            "description" : ""
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Planlagt dato/tid for oppstart",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6055,7 +6127,22 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
             "text" : "Planlagt",
-            "description" : "Forløpet ble planlagt."
+            "description" : "",
+            "comment" : "Forløpet ble planlagt."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Forløp",
+            "description" : "",
+            "comment" : "Navnet på det kliniske forløpet."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Klinisk forløp",
+            "description" : "",
+            "comment" : "Et overordnet, standardisert klinisk forløp for å styre behandlingen av et problem eller en tilstand."
           }
         }
       },
@@ -10120,7 +10207,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Behandling",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : "",
+            "comment" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
           }
         },
         "pt-br" : { },
@@ -10407,7 +10495,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "nodeId" : "at0001",
+          "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "description",
@@ -10747,7 +10835,16 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0012.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DATE_TIME",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -10980,7 +11077,77 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Ordinering",
+            "description" : "",
+            "comment" : "Detaljer knyttet til ordineringen."
+          },
+          "at0177" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0177",
+            "text" : "Strukturerte anvisninger om dose og timing",
+            "description" : "",
+            "comment" : "Dette SLOTet er designet for å brukes med arketypen CLUSTER.therapeutic_direction for å tilrettelegge for å registrere et komplekst sett av anvisninger om dosering og timing. Det er mulig å bruke andre CLUSTER-arketyper i SLOTet, men det anbefales på det sterkeste å kun gjøre dette der det ikke er en prioritet å kunne gjøre forutsigbare spørringer på dataene."
+          },
+          "at0091.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0091",
+            "text" : "Administreringsvei",
+            "description" : "",
+            "comment" : "For eksempel \"oral bruk\", \"intravenøst\", \"på huden\" eller \"enteralt\".\r\nDet bør om mulig benyttes terminologi, f.eks. FEST, for å angi administreringsvei. Det kan spesifiseres flere mulige administreringsveier."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Legemiddel",
+            "description" : "",
+            "comment" : "Avhengig av kontekst kan dette elementet brukes enten for generisk eller varebasert ordinering. Dataelementet kan brukes til å registrere tett sammenbundne ordineringer av forskjellige legemidler når de ordineres som en pakke. Det anbefales sterkt at \"Legemiddel\" kodes med en terminologi som understøtter beslutningsstøtte der dette er mulig, f.eks. FEST. Nivå av koding kan variere fra legemiddelnavn til strukturerte detaljer om den aktuelle legemiddelforpakningen som skal brukes. Fritekst bør bare brukes om ingen passende terminologi er tilgjengelig."
+          },
+          "at0113.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0113",
+            "text" : "Ordineringsdetaljer",
+            "description" : "",
+            "comment" : "Detaljer om hele legemiddelordineringen."
+          },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094",
+            "text" : "Administreringsmetode",
+            "description" : "",
+            "comment" : "For eksempel \"via Z-trackinjeksjon\", \"via forstøver\". Koding av administreringsmetoden med en terminologi er anbefalt, der det er mulig."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Startdato/tid for ordineringen",
+            "description" : "",
+            "comment" : "Dato og valgfri tid for oppstart av den ordinerte varen."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Ordineringsidentifikator",
+            "description" : "",
+            "comment" : "Dette dataelementet tillater flere forekomster, som ved behov kan defineres mer spesifikt i applikasjonen."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Legemiddelordinering",
+            "description" : "",
+            "comment" : "Ordinering av et legemiddel, en vaksine, parenteral væske, ernæringsprodukt eller medisinsk forbruksmateriell, for et spesifikt individ."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Ordinering",
+            "description" : ""
+          }
+        },
         "pt-br" : { },
         "es-ar" : { },
         "de" : { },
@@ -12696,7 +12863,16 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0043.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -12847,31 +13023,92 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015.1",
             "text" : "Avbrutt",
-            "description" : "Legemiddelet er seponert etter at første dose er administrert, men før planlagt fullførelse av ordineringen."
+            "description" : "",
+            "comment" : "Legemiddelet er seponert etter at første dose er administrert, men før planlagt fullførelse av ordineringen."
           },
           "at0012.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0012.1",
             "text" : "Avlyst",
-            "description" : "Den planlagte medisineringen er avbrutt før den første dosen er administrert."
+            "description" : "",
+            "comment" : "Den planlagte medisineringen er avbrutt før den første dosen er administrert."
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Pågående",
-            "description" : "Legemiddelet er inntatt av eller administrert til pasienten for første gang. Selv om dette i noen bruksområder som f.eks. sykehus kan utledes fra den første av en rekke administreringer, må det i andre bruksområder som f.eks. allmennpraksis spesifiseres spesifikt siden administreringer ikke dokumenteres på samme måte."
+            "description" : "",
+            "comment" : "Legemiddelet er inntatt av eller administrert til pasienten for første gang. Selv om dette i noen bruksområder som f.eks. sykehus kan utledes fra den første av en rekke administreringer, må det i andre bruksområder som f.eks. allmennpraksis spesifiseres spesifikt siden administreringer ikke dokumenteres på samme måte."
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
             "text" : "Fullført",
-            "description" : "Medisineringen er fullført som ordinert."
+            "description" : "",
+            "comment" : "Medisineringen er fullført som ordinert."
           },
           "at0016.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0016.1",
             "text" : "Planlagt",
-            "description" : "Tidspunktet eller vilkår for å starte medisineringen er satt."
+            "description" : "",
+            "comment" : "Tidspunktet eller vilkår for å starte medisineringen er satt."
+          },
+          "at0147.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0147",
+            "text" : "Administreringsvei",
+            "description" : "",
+            "comment" : "For eksempel \"oral bruk\", \"intravenøst\" eller \"på huden\". Det bør om mulig benyttes terminologi, f.eks. FEST, for å angi administreringsvei. Det kan spesifiseres flere mulige administreringsveier."
+          },
+          "at0140.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0140",
+            "text" : "Administreringsdetaljer",
+            "description" : "",
+            "comment" : "Detaljer om administrering av legemiddelet."
+          },
+          "at0103.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0103",
+            "text" : "OrdineringsID",
+            "description" : "",
+            "comment" : "Dette dataelementet tillater flere forekomster som kan defineres mer eksplisitt ved behov."
+          },
+          "at0143.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0143",
+            "text" : "Administreringsmetode",
+            "description" : "",
+            "comment" : "For eksempel \"via Z-trackinjeksjon\", \"via forstøver\". Koding av administreringsmetoden med en terminologi er anbefalt, der det er mulig."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Årsak",
+            "description" : "",
+            "comment" : "For eksempel: Dersom administrering er utsatt pga pasienten ikke er tilgjengelig, velges prosesstrinnet \"Utsatt administrering\", og \"Pasienten er ikke tilgjengelig ved administreringstidspunktet\" dokumenteres i dette elementet. Dersom legemiddelet seponeres pga legemiddelreaksjon, velges prosesstrinnet \"Seponert\", og \"Legemiddelreaksjon\" dokumenteres i dette elementet. NB: Dette er ikke årsaken til legemiddelordineringen, men de spesifikke årsakene til at det aktuelle prosesstrinnet ble utført. Dette vil som regel brukes for å dokumentere varians fra den opprinnelige ordineringen."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Legemiddel",
+            "description" : "",
+            "comment" : "For eksempel: 'Atenolol 100mg' eller 'Tenormin 100mg tabletter'. Det anbefales sterkt at \"Legemiddel\" kodes med en terminologi som understøtter beslutningsstøtte der dette er mulig, f.eks. FEST. Nivå av koding kan variere fra legemiddelnavn til strukturerte detaljer om den aktuelle legemiddelforpakningen som skal brukes. Fritekst bør bare brukes om ingen passende terminologi er tilgjengelig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Legemiddelhåndtering",
+            "description" : "",
+            "comment" : "Dette er ikke begrenset til aktiviteter utført på bagrunn av legemiddelordineringer fra klinikere, men kan også omfatte å ta legemidler som ikke er reseptpliktige."
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Opprinnelig planlagt tid",
+            "description" : "",
+            "comment" : "Brukes til å sammenligne varians fra faktisk tidspunkt for en aktivitet, der dette ikke er mulig å beregne ut fra den opprinnelige ordineringen."
           }
         },
         "pt-br" : { },
@@ -15190,7 +15427,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -15382,8 +15619,42 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Informert pasienten om andre behandlingsmuligheter enn instillasjonsbehandling",
-            "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Navn på sykdomshåndtering",
+            "description" : "",
+            "comment" : "Navn på en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter.\nFor eksempel: \n- Innlagt på sykehus\n- Innlagt på intensivavdeling\n- Bruk av kompresjonstrømper\n- Daglige sårskift\n- ECMO\n\nKoding av \"Navn på sykdomshåndtering/behandling\" med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Kartleggingsspørsmål om sykdomshåndtering",
+            "description" : "",
+            "comment" : "Svarene kan være selvrapporterte.\nSpørsmål og tilhørende svar som brukes til å kartlegge sykdomshåndtering, inkludert men er ikke begrenset til behandlinger, terapier, sykehusinnleggelser."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Sykdomshåndteringsaktivitet",
+            "description" : "",
+            "comment" : "Detaljer om en spesifikk sykdomshåndterings- eller behandlingsaktivitet eller gruppering av sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Uspesifisert hendelse",
+            "description" : ""
           }
         },
         "de" : {
@@ -15689,7 +15960,22 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Terapeutisk anvisning BCG",
-            "description" : "Detaljer om en enkelt anvisning innenfor ordineringen av f.eks. et legemiddel eller en transfusjon."
+            "description" : "",
+            "comment" : "Detaljer om en enkelt anvisning innenfor ordineringen av f.eks. et legemiddel eller en transfusjon."
+          },
+          "at0172.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0172",
+            "text" : "Antall administreringer",
+            "description" : "",
+            "comment" : "For eksempel \"kun én dose\" = 1, eller \"3 doser à 400 mg hver 12. time\" = 3."
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066",
+            "text" : "Anvisningsvarighet",
+            "description" : "",
+            "comment" : "For eksempel \"i 7 dager\" eller \"på ubestemt tid\". Et eksempel som er sammensatt av flere ulike varigheter kan være: \"1 tablett daglig i 3 dager\", \"2 tabletter daglig i 4 dager\", \"3 tabletter på ubestemt tid\"."
           }
         },
         "pt-br" : { },
@@ -16227,7 +16513,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Pasientens ønsker",
-            "description" : "Fritekstbeskrivelse av et individs helserelaterte hendelser på et spesifikt tidspunkt, sett fra helsepersonellets synsvinkel."
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse av et individs helserelaterte hendelser på et spesifikt tidspunkt, sett fra helsepersonellets synsvinkel."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Tidfestet fritekst",
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse av helserelaterte hendelser, status, funn eller oppfatninger på et spesifikt tidspunkt."
           }
         },
         "es-ar" : {
@@ -16514,6 +16808,12 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -16549,7 +16849,42 @@
         "en" : { },
         "es-ar" : { },
         "pt-br" : { },
-        "nb" : { },
+        "nb" : {
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Begrunnelse",
+            "description" : "",
+            "comment" : "Begrunnelse for anbefalingen."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Anbefaling",
+            "description" : "",
+            "comment" : "Det bør om mulig benyttes terminologi for å angi anbefaling."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Tema",
+            "description" : "",
+            "comment" : "Dataelementet er hensiktsmessig om man skal registrere flere anbefalinger til samme tema."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anbefaling",
+            "description" : "",
+            "comment" : "Et forslag, råd eller anmodning om klinisk oppfølging."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Begrunnelse",
+            "description" : ""
+          }
+        },
         "sv" : { },
         "de" : { }
       },
@@ -16865,7 +17200,22 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Terapeutisk anvisning Mitomycin",
-            "description" : "Detaljer om en enkelt anvisning innenfor ordineringen av f.eks. et legemiddel eller en transfusjon."
+            "description" : "",
+            "comment" : "Detaljer om en enkelt anvisning innenfor ordineringen av f.eks. et legemiddel eller en transfusjon."
+          },
+          "at0172.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0172",
+            "text" : "Antall administreringer",
+            "description" : "",
+            "comment" : "For eksempel \"kun én dose\" = 1, eller \"3 doser à 400 mg hver 12. time\" = 3."
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066",
+            "text" : "Anvisningsvarighet",
+            "description" : "",
+            "comment" : "For eksempel \"i 7 dager\" eller \"på ubestemt tid\". Et eksempel som er sammensatt av flere ulike varigheter kan være: \"1 tablett daglig i 3 dager\", \"2 tabletter daglig i 4 dager\", \"3 tabletter på ubestemt tid\"."
           }
         },
         "pt-br" : {
@@ -17325,7 +17675,36 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Inneliggende kateterisering under behandling",
-            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
+            "description" : "",
+            "comment" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
+          },
+          "at0121.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0121",
+            "text" : "Tjenestenavn",
+            "description" : "",
+            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig. For eksempel: \"henvisning\" til en endokrinolog for diabetesoppfølging."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152",
+            "text" : "Klinisk indikasjon",
+            "description" : "",
+            "comment" : "Den kliniske årsaken for den forespurte tjenesten.\nFor eksempel \"angina\" eller \"diabetes mellitus type 1\". Koding av indikasjonen med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Rekvisisjonsidentifikator",
+            "description" : "",
+            "comment" : "Som regel tilsvarende HL7 Placer Order Identifier."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Forespørsel",
+            "description" : "",
+            "comment" : "Beskrivelse av tjenesten som forespørres."
           }
         }
       },
