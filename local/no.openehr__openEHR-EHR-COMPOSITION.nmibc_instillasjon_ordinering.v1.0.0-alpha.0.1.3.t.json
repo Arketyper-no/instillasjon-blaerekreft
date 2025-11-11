@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "47687b1324552fc9fac289443d332855",
+      "MD5-CAM-1.0.1" : "9450a8c319fdf93b92c0eeca3827162d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -13114,8 +13114,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.0.1",
             "text" : "Samtidig CIS",
-            "description" : "Registreres som 'Sann' hvis tilstedeværelse av carcinoma in situ i tilknytning til primærsvulsten.",
+            "description" : "",
             "comment" : "Angis ved å legge til prefikset \"is\" i \"TNM-vurdering\"."
+          },
+          "at0032.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "TNM-utgave",
+            "description" : "",
+            "comment" : "TNM-utgaven som er brukt for å bestemme TNM-klassifiseringen."
           },
           "at0000.1.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -13124,12 +13131,40 @@
             "description" : "",
             "comment" : "Betegnes som pTNM.\nEt rammeverk for patologisk klassifikasjon og gradering av maligne tumorer i henhold til TNM-systemet."
           },
+          "at0030.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "pTNM-vurdering",
+            "description" : "",
+            "comment" : "Sammentrekning av vurdering av \"pT\", \"pN\" og \"pM\", pluss eventuelle tilleggsvurderinger av \"G\", \"R\", \"L\", \"V\", prefiks og/eller tillegg der det er passende.\n"
+          },
+          "at0025.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Multiple primærtumorer (m)",
+            "description" : "",
+            "comment" : "Angis med en tilføyelse, enten bokstaven \"m\" eller antallet av primærsvulster, i parantes bak T-koden, for eksempel \"pT2(m)\" eller \"pT2(4)\". Fremkommer i \"TNM-vurdering\" som \"pm\"."
+          },
           "at0001.0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "Anatomisk lokalisering",
             "description" : "",
             "comment" : "Bruk verdien fra TNM for den enkelte typen tumor, for eksempel \"Magesekk\" eller \"Tynntarm\"."
+          },
+          "at0027.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Residiv (r)",
+            "description" : "",
+            "comment" : "Angis ved å legge til prefikset \"r\" i \"TNM-vurdering\"."
+          },
+          "at0003.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Primærtumor (pT)",
+            "description" : "",
+            "comment" : "Kodes med en T-kode som passer for tumortypen og den anatomiske lokaliseringen, for eksempel \"pT1\" eller \"pT3\". Fremkommer i \"TNM-vurdering\" som \"pT\"."
           }
         },
         "de" : {
@@ -13335,6 +13370,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*EAU NMIBC 2021 risk assessment (en)",
+            "description" : "",
+            "comment" : "*The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and grading systems (WHO 2004/2016 or WHO 1973). The classification supports treatment recommendations after transurethral resection of bladder tumour (TURBT). (en)"
           }
         }
       },
