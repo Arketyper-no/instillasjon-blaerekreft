@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e30bb3f6d0ca799cb304770740b5217f",
+      "MD5-CAM-1.0.1" : "0afb38cbf62830f41330963c941553c1",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1295,13 +1295,19 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.5" ],
+                                  "constraint" : [ "ac0.12" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0047.1",
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -1407,7 +1413,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.8" ],
+                                  "constraint" : [ "ac0.13" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -1519,7 +1525,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.11" ],
+                                  "constraint" : [ "ac0.14" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -1597,12 +1603,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "at0026.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026",
@@ -1616,15 +1616,27 @@
             "text" : "Specific investigation (3)",
             "description" : "Details about a specified investigation or grouping of investigations relevant for the screening purpose.",
             "comment" : "Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.14",
+            "description" : ""
           }
         },
         "de" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "at0026.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026",
@@ -1638,6 +1650,24 @@
             "text" : "*Specific investigation (en)",
             "description" : "*Details about a specified investigation or grouping of investigations relevant for the screening purpose. (en)",
             "comment" : "*Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations. (en)"
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.14",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1645,58 +1675,141 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Er det tatt røntgen thorax?",
-            "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0026.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.1",
             "text" : "RTG thorax",
-            "description" : "Detaljer om en spesifikk undersøkelse eller gruppe av undersøkelser som er innenfor kartleggingsformålet.",
+            "description" : "",
             "comment" : "Bruk separate instanser av dette CLUSTER'et for å skille mellom spesifikke undersøkelser eller gruppering av undersøkelser."
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
-            "description" : ""
           },
           "at0026.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.2",
             "text" : "TB-IGRA",
-            "description" : "Detaljer om en spesifikk undersøkelse eller gruppe av undersøkelser som er innenfor kartleggingsformålet.",
+            "description" : "",
             "comment" : "Bruk separate instanser av dette CLUSTER'et for å skille mellom spesifikke undersøkelser eller gruppering av undersøkelser."
           },
           "at0024.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.2",
             "text" : "Er det tatt TB-IGRA?",
-            "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0026.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.3",
             "text" : "Tatt biopsi",
-            "description" : "Detaljer om en spesifikk undersøkelse eller gruppe av undersøkelser som er innenfor kartleggingsformålet.",
+            "description" : "",
             "comment" : "Bruk separate instanser av dette CLUSTER'et for å skille mellom spesifikke undersøkelser eller gruppering av undersøkelser."
           },
           "at0024.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.3",
             "text" : "Er det tatt biopsi?",
-            "description" : "Er den spesifikke undersøkelsen noen gang blitt gjennomført?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "Type",
+            "description" : "",
+            "comment" : "For eksempel: kontrastforsterket mammografi, forstørrelsesmammografi, digital tomosyntese av bryst, kontrastbildeteknikk, fluorescens in situ hybridisering (FISH), immunoassay-metode."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om den spesifikke undersøkelsen som ikke er omfattet av andre felt."
+          },
+          "at0025.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om den spesifikke undersøkelsen som ikke er omfattet av andre felt."
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om den spesifikke undersøkelsen som ikke er omfattet av andre felt."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Kartleggingsformål",
+            "description" : "",
+            "comment" : "Dette dataelementet er ment for å sette en kontekst for samlingen av spørsmål/svar til bruk senere for å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: \"Preoperativ screening\" eller navnet på det faktiske spørreskjemaet."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Undersøkelsesnavn",
+            "description" : "",
+            "comment" : "For eksempel: \"Blodgass\",\" Røntgen thorax\", \"EKG\" eller \"Hørseltest\". Koding av \"Undersøkelsesnavn\" med en terminologi foretrekkes der det er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Kartleggingsspørsmål om diagnostiske undersøkelser",
+            "description" : "",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Uspesifikk hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+          },
+          "at0021.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Undersøkelsesnavn",
+            "description" : "",
+            "comment" : "For eksempel: \"Blodgass\",\" Røntgen thorax\", \"EKG\" eller \"Hørseltest\". Koding av \"Undersøkelsesnavn\" med en terminologi foretrekkes der det er mulig."
+          },
+          "at0021.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Undersøkelsesnavn",
+            "description" : "",
+            "comment" : "For eksempel: \"Blodgass\",\" Røntgen thorax\", \"EKG\" eller \"Hørseltest\". Koding av \"Undersøkelsesnavn\" med en terminologi foretrekkes der det er mulig."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "at0047.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047.1",
+            "text" : "Type",
+            "description" : "",
+            "comment" : "For eksempel: kontrastforsterket mammografi, forstørrelsesmammografi, digital tomosyntese av bryst, kontrastbildeteknikk, fluorescens in situ hybridisering (FISH), immunoassay-metode."
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.14",
+            "description" : ""
           }
         },
         "es" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "at0026.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026",
@@ -1710,15 +1823,27 @@
             "text" : "Investigación específica (3)",
             "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
             "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.14",
+            "description" : ""
           }
         },
         "ca" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
           "at0026.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026",
@@ -1732,6 +1857,24 @@
             "text" : "Investigació específica (3)",
             "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
             "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.13",
+            "description" : ""
+          },
+          "ac0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.14",
+            "description" : ""
           }
         }
       },
@@ -1786,6 +1929,21 @@
         "ac0.11" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.11",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
           "members" : [ "at0036", "at0037" ]
         }
       }
@@ -7009,7 +7167,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.8" ],
+                                  "constraint" : [ "ac0.15" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -7052,6 +7210,12 @@
                               "attributeTuples" : [ ]
                             } ]
                           } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0025.1",
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -7119,7 +7283,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.13" ],
+                                  "constraint" : [ "ac0.16" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -7218,7 +7382,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.14" ],
+                                  "constraint" : [ "ac0.17" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -7289,12 +7453,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022",
@@ -7306,6 +7464,24 @@
             "code" : "at0022",
             "text" : "Specific problem or diagnosis (3)",
             "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "nb" : {
@@ -7319,52 +7495,123 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
             "text" : "Urinlekkasje",
-            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+            "description" : "",
+            "comment" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Har pasienten urinlekkasje?",
-            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Annet",
-            "description" : "Fritekstbeskrivelse om bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse om bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.2",
             "text" : "Hyppig vannlating",
-            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+            "description" : "",
+            "comment" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
           "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
             "text" : "Har pasienten problemer med hyppig vannlating?",
-            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.3",
             "text" : "Holde seg i 1-2 timer",
-            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+            "description" : "",
+            "comment" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
           },
           "at0005.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.3",
             "text" : "Kan man holde seg i 1-2 timer?",
-            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om det spesifikke problem- eller diagnosespørsmålet som ikke er omfattet av andre felt."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Problem/diagnosenavn",
+            "description" : "",
+            "comment" : "Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0004.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Problem/diagnosenavn",
+            "description" : "",
+            "comment" : "Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0004.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Problem/diagnosenavn",
+            "description" : "",
+            "comment" : "Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Kartleggingsspørsmål om problemer eller diagnoser",
+            "description" : "",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "",
+            "comment" : "Dette dataelementet er ment for å sette en kontekst for spørsmålene, dersom man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: \"Preoperativ screening\" eller navnet på det faktiske spørreskjemaet."
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Kommentar",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "de" : {
@@ -7372,12 +7619,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
             "description" : ""
           },
           "at0022.2" : {
@@ -7391,6 +7632,24 @@
             "code" : "at0022",
             "text" : "Bestimmter Zustand (3)",
             "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "nl" : {
@@ -7398,12 +7657,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
             "description" : ""
           },
           "at0022.2" : {
@@ -7417,6 +7670,24 @@
             "code" : "at0022",
             "text" : "*Specifieke aandoening (3)",
             "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "ca" : {
@@ -7426,10 +7697,22 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.15" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
             "description" : ""
           }
         },
@@ -7440,10 +7723,22 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.8" : {
+          "ac0.15" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
             "description" : ""
           }
         }
@@ -7519,6 +7814,21 @@
         "ac0.14" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.14",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
           "members" : [ "at0023", "at0024" ]
         }
       }
@@ -14003,7 +14313,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -14093,7 +14403,35 @@
         "sl" : { },
         "es-ar" : { },
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Undersøkelsesdetaljer",
+            "description" : "",
+            "comment" : "Detaljerte kliniske funn vil bli registrert som CLUSTER-arketyper som kan nøstes i dette SLOT'et for å representere den fraktale tilnærmingen som brukes i kliniske undersøkelser og dermed tillater variasjoner i klinikerens behov for dokumentasjon. For eksempel kan CLUSTER.palpation_of_uterus, CLUSTER.palpation_of_cervix, CLUSTER.palpation_of_fetus, settes inn i dette elementet eller i hverandre, for å representere de spesifikke kravene en kliniker som arbeider innenfor obstetrikken har. Innhold, prioritet og detaljeringsnivå til CLUSTER-arketypene vil variere med klinisk kontekst, og klinikerens bakgrunn og spesialitet."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Funn ved fysisk undersøkelse",
+            "description" : "",
+            "comment" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Uspesifisert hendelse",
+            "description" : ""
+          }
+        },
         "es" : { },
         "pt-br" : { },
         "zh-cn" : { },
@@ -14439,6 +14777,12 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14554,14 +14898,49 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.2",
             "text" : "Tilheling",
-            "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.",
+            "description" : "",
             "comment" : "For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig."
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Cystoskopi",
-            "description" : "Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur."
+            "description" : "",
+            "comment" : "Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Klinisk beskrivelse",
+            "description" : "",
+            "comment" : "Fritekstbeskrivelse av de overordnede funnene ved den fysiske undersøkelsen."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Undersøkelse ikke utført",
+            "description" : "",
+            "comment" : "Detaljer for å eksplisitt registrere at denne undersøkelsen ikke ble utført."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Fortolkning",
+            "description" : "",
+            "comment" : "For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Undersøkt organsystem eller struktur",
+            "description" : "",
+            "comment" : "Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Klinisk beskrivelse",
+            "description" : ""
           }
         },
         "pt-br" : {
@@ -15454,7 +15833,41 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_BOOLEAN",
+                  "rmTypeName" : "BOOLEAN",
+                  "occurrences" : "1..1",
+                  "constraint" : [ true ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -15463,7 +15876,43 @@
       "termDefinitions" : {
         "en" : { },
         "de" : { },
-        "nb" : { }
+        "nb" : {
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Undersøkelse ikke utført",
+            "description" : "",
+            "comment" : "Registrer som Sann om undersøkelsen ikke ble utført."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Årsak",
+            "description" : "",
+            "comment" : "For eksempel: faktorer knyttet til pasient, utstyr eller tidsbegrensninger."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Eksklusjon av en undersøkelse",
+            "description" : "",
+            "comment" : "Eksplisitt utsagn for å registrere at en fysisk eller klinisk undersøkelse, skåring eller test ikke ble gjennomført."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Undersøkelse ikke utført",
+            "description" : "",
+            "comment" : "Registrer som Sann om undersøkelsen ikke ble utført."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Årsak",
+            "description" : "",
+            "comment" : "For eksempel: faktorer knyttet til pasient, utstyr eller tidsbegrensninger."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
