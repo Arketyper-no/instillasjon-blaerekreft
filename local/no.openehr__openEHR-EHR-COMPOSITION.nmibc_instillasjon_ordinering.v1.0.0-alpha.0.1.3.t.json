@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9450a8c319fdf93b92c0eeca3827162d",
+      "MD5-CAM-1.0.1" : "998137d90a2d6b2e56edd1caa583688e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -801,6 +801,20 @@
             "text" : "Dato første blærekreftdiagnose",
             "description" : "Brukes dersom aktuell diagnose er residiv.",
             "comment" : "Data registrert eller importert som \"alder ved debut\" bør konverteres til en dato ved hjelp av individets fødselsdato."
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Status",
+            "description" : "",
+            "comment" : "Bruk status eller kontekstkvalifikatorer med omhu, da bruken varierer og interoperabilitet kan ikke garanteres med mindre bruken er klart definert innen miljøet som bruker dem. F.eks. aktiv status - aktiv, inaktiv, løst, i bedring; utviklingsstatus - første, midlertidig, endelig; tidsstatus - nåværende, tidligere; episodisk status - første, ny, pågående; innleggelsesstatus - innleggelse, utskriving; eller prioritetsstatus - primær, sekundær."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Utdypende fritekst om problemet eller diagnosen, som ikke passer i andre felt."
           }
         },
         "sv" : { },
@@ -2115,7 +2129,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Kartlegging",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : "",
+            "comment" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
           }
         },
         "pt-br" : { },
@@ -3464,7 +3479,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.6" ],
+                  "constraint" : [ "ac0.7" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -3530,74 +3545,88 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.6" : {
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Diagnosisk kategori",
+            "description" : "",
+            "comment" : "Dette elementet inneholder et verdisett som er i vanlig bruk innen diagnosekategorisering. I episodiske behandlingssammenhenger (som regel spesialisthelsetjenesten) er det vanlig å kategorisere/organisere diagnoser i henhold til deres forhold til hoveddiagnosen som behandles i den aktuelle kontakten. Disse kategoriene kan også brukes for klinisk koding, rapportering og fakturering. I noen land omtales diagnosekategorien som \"en DRG\". I tillegg gjør muligheten for å legge til annen fri eller kodet tekst at det er mulig å bruke andre lokale verdisett ved behov."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Problem/diagnose-kvalifikator",
+            "description" : "",
+            "comment" : "Kontekst- eller tidsspesifikk kvalifikator for et problem eller en diagnose."
+          },
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "ko" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "it" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "zh" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         }
@@ -3640,6 +3669,11 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0064" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
           "members" : [ "at0064" ]
         }
       }
@@ -4292,7 +4326,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.11" ],
+                  "constraint" : [ "ac0.12" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -4358,74 +4392,88 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.11" : {
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Diagnosisk kategori",
+            "description" : "",
+            "comment" : "Dette elementet inneholder et verdisett som er i vanlig bruk innen diagnosekategorisering. I episodiske behandlingssammenhenger (som regel spesialisthelsetjenesten) er det vanlig å kategorisere/organisere diagnoser i henhold til deres forhold til hoveddiagnosen som behandles i den aktuelle kontakten. Disse kategoriene kan også brukes for klinisk koding, rapportering og fakturering. I noen land omtales diagnosekategorien som \"en DRG\". I tillegg gjør muligheten for å legge til annen fri eller kodet tekst at det er mulig å bruke andre lokale verdisett ved behov."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Problem/diagnose-kvalifikator",
+            "description" : "",
+            "comment" : "Kontekst- eller tidsspesifikk kvalifikator for et problem eller en diagnose."
+          },
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "ko" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "it" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "zh" : {
-          "ac0.11" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.12",
             "description" : ""
           }
         }
@@ -4493,6 +4541,11 @@
         "ac0.11" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.11",
+          "members" : [ "at0066" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
           "members" : [ "at0066" ]
         }
       }
@@ -6389,8 +6442,22 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Diagnose",
-            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+            "description" : "",
             "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket hvis mulig."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Utdypende fritekst om problemet eller diagnosen, som ikke passer i andre felt."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Problem/diagnose",
+            "description" : "",
+            "comment" : "Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose."
           }
         },
         "sv" : {
@@ -7711,7 +7778,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.11" ],
+                              "constraint" : [ "ac0.18" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -7979,18 +8046,18 @@
             "description" : "Timing of the procedure.",
             "comment" : "Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year."
           },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
           "at0037.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037",
             "text" : "Timing (2)",
             "description" : "Timing of the procedure.",
             "comment" : "Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year."
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
+            "description" : ""
           }
         },
         "nb" : {
@@ -7998,68 +8065,119 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.2",
             "text" : "BCG",
-            "description" : "Detaljer om en spesifikk prosedyre eller gruppe av prosedyrer som er innenfor kartleggingsformålet."
+            "description" : "",
+            "comment" : "Detaljer om en spesifikk prosedyre eller gruppe av prosedyrer som er innenfor kartleggingsformålet."
           },
           "at0037.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.2",
             "text" : "Hvilket år var forrige behandling?",
-            "description" : "Tidsangivelse for prosedyren.",
+            "description" : "",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
           },
           "at0037.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.3",
             "text" : "Når var forrige behandling?",
-            "description" : "Tidsangivelse for prosedyren.",
+            "description" : "",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
           },
           "at0028.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Har pasienten hatt tidligere instillasjonsbehandling?",
-            "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
           },
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
             "text" : "Mitomycin",
-            "description" : "Detaljer om en spesifikk prosedyre eller gruppe av prosedyrer som er innenfor kartleggingsformålet."
+            "description" : "",
+            "comment" : "Detaljer om en spesifikk prosedyre eller gruppe av prosedyrer som er innenfor kartleggingsformålet."
           },
           "at0037.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.2",
             "text" : "Hvilket år var forrige behandling?",
-            "description" : "Tidsangivelse for prosedyren.",
+            "description" : "",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
           },
           "at0037.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037.3",
             "text" : "Når var forrige behandling?",
-            "description" : "Tidsangivelse for prosedyren.",
+            "description" : "",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Mitomycin",
-            "description" : "Er den spesifikke prosedyren noen gang blitt gjennomført?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
             "text" : "BCG",
-            "description" : "Er den spesifikke prosedyren noen gang blitt gjennomført?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Uspesifisert hendelse",
+            "description" : "",
+            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om det spesifikke prosedyrespørsmålet som ikke er omfattet av andre felt."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Prosedyrenavn",
+            "description" : "",
+            "comment" : "Koding av \"Prosedyrenavn\" med en terminologi foretrekkes der det er mulig."
+          },
+          "at0004.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Prosedyrenavn",
+            "description" : "",
+            "comment" : "Koding av \"Prosedyrenavn\" med en terminologi foretrekkes der det er mulig."
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Kommentar",
+            "description" : "",
+            "comment" : "Ytterligere fritekst om det spesifikke prosedyrespørsmålet som ikke er omfattet av andre felt."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Kartleggingsspørsmål om prosedyrer",
+            "description" : "",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "",
+            "comment" : "Dette dataelementet er ment for å sette en kontekst for spørsmålene, dersom man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: \"Preoperativ screening\" eller navnet på det faktiske spørreskjemaet."
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
+            "description" : ""
           }
         },
         "de" : {
@@ -8076,18 +8194,18 @@
             "description" : "Zeitpunkt der Prozedur.",
             "comment" : "*Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)"
           },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
           "at0037.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037",
             "text" : "Zeitangaben (2)",
             "description" : "Zeitpunkt der Prozedur.",
             "comment" : "*Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)"
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
+            "description" : ""
           }
         },
         "it" : {
@@ -8104,25 +8222,25 @@
             "description" : "*Timing of the procedure. (en)",
             "comment" : "*Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)"
           },
-          "ac0.11" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
-            "description" : ""
-          },
           "at0037.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0037",
             "text" : "*Timing (en) (2)",
             "description" : "*Timing of the procedure. (en)",
             "comment" : "*Indication of timing related to the investigation.Comment: The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when an procedure was carried out. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for the procedure ; the interval of time during which the procedure was carried out; the duration of the procedure; the age of the individual at the time of the procedure; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)"
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
+            "description" : ""
           }
         },
         "fr" : {
-          "ac0.11" : {
+          "ac0.18" : {
             "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.11",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
             "description" : ""
           }
         }
@@ -8213,6 +8331,11 @@
         "ac0.17" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.17",
+          "members" : [ "at0031", "at0032" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
           "members" : [ "at0031", "at0032" ]
         }
       }
@@ -8490,7 +8613,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Bidiagnoser",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : "",
+            "comment" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
           }
         },
         "pt-br" : { },
@@ -13522,6 +13646,13 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.5",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*WHO histological grade of urothelial neoplasms (2004/2016) (en)",
+            "description" : "",
+            "comment" : "*A histological grading of urothelial tumors according to the WHO Histological Typing of Urinary Bladder Tumours (2004/2016). (en)"
           }
         }
       },
@@ -15358,7 +15489,15 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*WHO histological grade of urothelial neoplasms (1973) (en)",
+            "description" : "",
+            "comment" : "*A histological grading of urothelial tumors according to the WHO Histological Typing of Urinary Bladder Tumours (1973). (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
