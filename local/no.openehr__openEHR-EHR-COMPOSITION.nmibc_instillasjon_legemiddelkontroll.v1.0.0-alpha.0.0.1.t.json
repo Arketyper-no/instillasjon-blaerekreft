@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b612686b1ce58eb2ffabd2754d9b014e",
+      "MD5-CAM-1.0.1" : "d74db342fd2d293b5492fd6e6b8bed7f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -186,7 +186,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HBOT O2 klargjort",
+          "text" : "NMIBC instillasjonsbehandling legemiddelkontroll",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
