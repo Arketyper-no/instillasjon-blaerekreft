@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "72e83e5d7aaf8881e574342cbeb9df64",
+      "MD5-CAM-1.0.1" : "67e7a8b9569e54238d9daa0c36dbe6a0",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2038,13 +2038,6 @@
             "code" : "at0148.1",
             "text" : "Legemiddel istandgjort",
             "description" : "Legemiddelet er fysisk istandgjort, for eksempel istandgjøring av en intravenøs blanding."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Legemiddel mitomycin",
-            "description" : "Detaljer om enhver legemiddelrelatert oppgave som utføres fra et legemiddel er ordinert eller rekvirert til det er utdelt eller eventuelt kassert, for eksempel bestilling, istandgjøring, administrering, ekspedering eller seponering.",
-            "comment" : "Dette er ikke begrenset til aktiviteter utført på bagrunn av legemiddelordineringer fra klinikere, men kan også omfatte å ta legemidler som ikke er reseptpliktige."
           }
         },
         "pt-br" : { },
