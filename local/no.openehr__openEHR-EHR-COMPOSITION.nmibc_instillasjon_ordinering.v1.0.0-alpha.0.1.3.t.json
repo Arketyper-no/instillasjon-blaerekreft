@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "f1cfa6685b2b7b53802fe1df7779e92f",
+      "MD5-CAM-1.0.1" : "292e4f26fff10da189aacf178952f46e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -801,13 +801,6 @@
             "text" : "Dato første blærekreftdiagnose",
             "description" : "Brukes dersom aktuell diagnose er residiv.",
             "comment" : "Data registrert eller importert som \"alder ved debut\" bør konverteres til en dato ved hjelp av individets fødselsdato."
-          },
-          "at0046" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0046",
-            "text" : "Status",
-            "description" : "",
-            "comment" : "Bruk status eller kontekstkvalifikatorer med omhu, da bruken varierer og interoperabilitet kan ikke garanteres med mindre bruken er klart definert innen miljøet som bruker dem. F.eks. aktiv status - aktiv, inaktiv, løst, i bedring; utviklingsstatus - første, midlertidig, endelig; tidsstatus - nåværende, tidligere; episodisk status - første, ny, pågående; innleggelsesstatus - innleggelse, utskriving; eller prioritetsstatus - primær, sekundær."
           },
           "at0069.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1712,13 +1705,6 @@
             "text" : "Er det tatt biopsi?",
             "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0047" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0047",
-            "text" : "Type",
-            "description" : "",
-            "comment" : "For eksempel: kontrastforsterket mammografi, forstørrelsesmammografi, digital tomosyntese av bryst, kontrastbildeteknikk, fluorescens in situ hybridisering (FISH), immunoassay-metode."
           },
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -5415,16 +5401,7 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0013.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_DATE_TIME",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -5481,20 +5458,6 @@
       "termDefinitions" : {
         "en" : { },
         "nb" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Nåværende aktivitet",
-            "description" : "",
-            "comment" : "Nåværende aktivitet"
-          },
-          "at0013" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013",
-            "text" : "Planlagt dato/tid for oppstart",
-            "description" : "",
-            "comment" : "Dato/tid da forløpet er planlagt å startes."
-          },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
@@ -7626,13 +7589,6 @@
             "text" : "Kan man holde seg i 1-2 timer?",
             "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Kommentar",
-            "description" : "",
-            "comment" : "Ytterligere fritekst om det spesifikke problem- eller diagnosespørsmålet som ikke er omfattet av andre felt."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -9821,27 +9777,6 @@
             "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Uspesifisert hendelse",
-            "description" : "",
-            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
-          },
-          "at0017" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0017",
-            "text" : "Kommentar",
-            "description" : "",
-            "comment" : "Ytterligere fritekst om den spesifikke eksponeringssituasjonen som ikke er omfattet av andre felt."
-          },
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Beskrivelse",
-            "description" : "",
-            "comment" : "Fritekstbeskrivelse om eksponering av agens og som er relevant for kartleggingsformålet."
-          },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004",
@@ -10835,16 +10770,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0012.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_DATE_TIME",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -11078,20 +11004,6 @@
       "termDefinitions" : {
         "en" : { },
         "nb" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Ordinering",
-            "description" : "",
-            "comment" : "Detaljer knyttet til ordineringen."
-          },
-          "at0177" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0177",
-            "text" : "Strukturerte anvisninger om dose og timing",
-            "description" : "",
-            "comment" : "Dette SLOTet er designet for å brukes med arketypen CLUSTER.therapeutic_direction for å tilrettelegge for å registrere et komplekst sett av anvisninger om dosering og timing. Det er mulig å bruke andre CLUSTER-arketyper i SLOTet, men det anbefales på det sterkeste å kun gjøre dette der det ikke er en prioritet å kunne gjøre forutsigbare spørringer på dataene."
-          },
           "at0091.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0091",
@@ -12863,16 +12775,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0043.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -14032,7 +13935,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "30c4d0c2f3b7fe01f6fcd8a5fd73a692"
+        "PARENT:MD5-CAM-1.0.1" : "3444DEA86FDF8DC1A63F8AFE7B3C828C"
       },
       "details" : {
         "nb" : {
@@ -14186,7 +14089,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4c5cb6035485dbbaffd388d70024a111"
+        "PARENT:MD5-CAM-1.0.1" : "BC7634EC4BFD248CFDFD36662EC82D16"
       },
       "details" : {
         "nb" : {
@@ -14641,20 +14544,6 @@
         "es-ar" : { },
         "en" : { },
         "nb" : {
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Uspesifisert hendelse",
-            "description" : "",
-            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Undersøkelsesdetaljer",
-            "description" : "",
-            "comment" : "Detaljerte kliniske funn vil bli registrert som CLUSTER-arketyper som kan nøstes i dette SLOT'et for å representere den fraktale tilnærmingen som brukes i kliniske undersøkelser og dermed tillater variasjoner i klinikerens behov for dokumentasjon. For eksempel kan CLUSTER.palpation_of_uterus, CLUSTER.palpation_of_cervix, CLUSTER.palpation_of_fetus, settes inn i dette elementet eller i hverandre, for å representere de spesifikke kravene en kliniker som arbeider innenfor obstetrikken har. Innhold, prioritet og detaljeringsnivå til CLUSTER-arketypene vil variere med klinisk kontekst, og klinikerens bakgrunn og spesialitet."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -15145,20 +15034,6 @@
             "description" : "",
             "comment" : "Undersøkelsesfunn gjort ved fysisk undersøkelse av et organsystem eller anatomisk struktur."
           },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Klinisk beskrivelse",
-            "description" : "",
-            "comment" : "Fritekstbeskrivelse av de overordnede funnene ved den fysiske undersøkelsen."
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "Undersøkelse ikke utført",
-            "description" : "",
-            "comment" : "Detaljer for å eksplisitt registrere at denne undersøkelsen ikke ble utført."
-          },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
@@ -15621,13 +15496,6 @@
             "text" : "Informert pasienten om andre behandlingsmuligheter enn instillasjonsbehandling",
             "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Uspesifisert hendelse",
-            "description" : "",
-            "comment" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -16163,20 +16031,6 @@
         "en" : { },
         "de" : { },
         "nb" : {
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Undersøkelse ikke utført",
-            "description" : "",
-            "comment" : "Registrer som Sann om undersøkelsen ikke ble utført."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Årsak",
-            "description" : "",
-            "comment" : "For eksempel: faktorer knyttet til pasient, utstyr eller tidsbegrensninger."
-          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
@@ -16256,7 +16110,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "cf20e3510088e822fe6bf1a9a1c39926"
+        "PARENT:MD5-CAM-1.0.1" : "F257BE0F38D1BF64AAD4BFE303CDFA56"
       },
       "details" : {
         "nb" : {
@@ -16850,13 +16704,6 @@
         "es-ar" : { },
         "pt-br" : { },
         "nb" : {
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Begrunnelse",
-            "description" : "",
-            "comment" : "Begrunnelse for anbefalingen."
-          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
