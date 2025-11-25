@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "960fef783011733e24e5162432cb45a4",
+      "MD5-CAM-1.0.1" : "ce396ba77997febad10f83a432650b35",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -222,7 +222,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "nmibc_instillasjon_kontroll.v1.0.0-alpha.0.0.1",
+          "text" : "NMIBC instillasjonsbehandling kontroll",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
