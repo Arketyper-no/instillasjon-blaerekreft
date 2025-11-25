@@ -1,7 +1,7 @@
 archetype (adl_version=1.4; uid=2aa6b2ab-2dfe-4b4b-b873-6c379e56755a)
 	openEHR-EHR-CLUSTER.exam-urinary_bladder_no.v1
 specialize
-	openEHR-EHR-CLUSTER.exam.v2
+	openEHR-EHR-CLUSTER.exam_no.v2
 
 concept
 	[at0000.1]
