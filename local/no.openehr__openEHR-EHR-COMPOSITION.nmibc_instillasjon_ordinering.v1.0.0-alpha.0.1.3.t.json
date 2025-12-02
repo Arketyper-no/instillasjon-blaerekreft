@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b4fae0a57b3103f51bca214b2ecc3ad9",
+      "MD5-CAM-1.0.1" : "a301825a79d87cc9af41f2b5a9e65dae",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -189,10 +189,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.32",
+        "nodeId" : "at0.45",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "Ordinering av instillasjonsbehandling",
+        "archetypeRef" : "no.openehr__openEHR-EHR-SECTION.nmibc_ordinering.v1.0.0-alpha.0.0.1",
         "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
