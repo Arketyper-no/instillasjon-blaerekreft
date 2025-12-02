@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "014f6279c34e2cd10695d1d440268227",
+      "MD5-CAM-1.0.1" : "d999f5562eb40d6327a6555e26eadcd5",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -402,12 +402,20 @@
                           "selectedTerminologies" : [ "FEST" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "FEST",
-                            "code" : "ID_ECED16AE-42BF-4FEB-BBA7-57940A7318E1",
-                            "value" : "BCG"
+                            "code" : "ID_89065E43-4EE1-42E0-AA14-D0C51889A148",
+                            "value" : "BCG-Medac pulv og væske til intravesikalsusp"
                           }, {
                             "terminologyId" : "FEST",
-                            "code" : "ID_C51D65A4-1833-4899-B55A-BC0DDCDDB137",
-                            "value" : "Mitomycin"
+                            "code" : "ID_E4912678-FC42-42A6-BD15-BC9686618C8C",
+                            "value" : "OncoTICE pulv til intravesikalsusp"
+                          }, {
+                            "terminologyId" : "FEST",
+                            "code" : "ID_2E5F4669-D0FF-4B39-B39F-8922A740B051",
+                            "value" : "Mitomycin medac pulv og væske til intravesikaloppl 40 mg"
+                          }, {
+                            "terminologyId" : "FEST",
+                            "code" : "ID_F75D3D29-4787-4127-9F01-853D8306F6DB",
+                            "value" : "Mitomycin medac pulv til intravesikaloppl/inj/inf væske 40 mg"
                           } ]
                         } ]
                       } ],
