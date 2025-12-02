@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "373bac1aa782cda76a2b577e0ea61c56",
+      "MD5-CAM-1.0.1" : "7166f75a90625cd8cc4980e4100c0615",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -191,7 +191,14 @@
     "@type" : "ARCHETYPE_TERMINOLOGY",
     "conceptCode" : "at0000",
     "termDefinitions" : {
-      "en" : { },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Ordinering av instillasjonsbehandling",
+          "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+        }
+      },
       "ru" : { },
       "es-ar" : { },
       "sl" : { },
