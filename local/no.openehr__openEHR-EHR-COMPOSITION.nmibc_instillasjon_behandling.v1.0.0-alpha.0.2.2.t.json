@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "20bdf4e2fe1a92771eee544df5ed6196",
+      "MD5-CAM-1.0.1" : "91d7b9cbe2eea391d0d69705ac6c6673",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -4055,7 +4055,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -6531,7 +6530,9 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "122565001",
                     "value" : "Urinprøve fra kateter",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "Urinprøve fra kateter"
+                    }
                   } ]
                 } ]
               } ],
@@ -10648,7 +10649,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0046.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
