@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "f7f64ad6b4a3870925e102fd88d1d5c3",
+      "MD5-CAM-1.0.1" : "cf7fb251e2450716e9a09371c7135566",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1229,7 +1229,9 @@
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "18011004",
                                 "value" : "Instillation of urinary bladder (procedure)",
-                                "translations" : { }
+                                "translations" : {
+                                  "nb" : "Instillation of urinary bladder (procedure)"
+                                }
                               } ]
                             } ]
                           } ],
