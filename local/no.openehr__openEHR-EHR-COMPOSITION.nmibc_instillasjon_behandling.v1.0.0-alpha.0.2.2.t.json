@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c1eda74cf883b639d4950cf9cae4cc14",
+      "MD5-CAM-1.0.1" : "d309599e40d127938b3c2f3095b413b6",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -5958,16 +5958,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0149.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_BOOLEAN",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -14355,6 +14346,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0038.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14403,7 +14395,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0039.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14647,6 +14638,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0041.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -15007,11 +14999,11 @@
             "text" : "Avbrutt",
             "description" : "Prosedyren har blitt avbrutt."
           },
-          "at0038.1" : {
+          "at0039.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0038.1",
+            "code" : "at0039.1",
             "text" : "Ikke utført",
-            "description" : "Prosedyren er utsatt."
+            "description" : "Den planlagte prosedyren har blitt avlyst før den ble igangsatt."
           }
         },
         "es" : { },
