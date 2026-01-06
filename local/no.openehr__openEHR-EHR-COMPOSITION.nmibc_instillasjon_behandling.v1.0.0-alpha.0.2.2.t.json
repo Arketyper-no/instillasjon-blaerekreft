@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "d309599e40d127938b3c2f3095b413b6",
+      "MD5-CAM-1.0.1" : "bccc57e065a24163d7923d21fdf12ee8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -14541,6 +14541,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0047.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14687,7 +14688,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0043.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14987,12 +14987,6 @@
             "text" : "Tiltak ved urinsymptomer - Stix",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt."
           },
-          "at0047.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0047.1",
-            "text" : "Utført",
-            "description" : "Prosedyren eller en del av en prosedyre som består av flere delprosedyrer er utført."
-          },
           "at0041.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0041.1",
@@ -15004,6 +14998,12 @@
             "code" : "at0039.1",
             "text" : "Ikke utført",
             "description" : "Den planlagte prosedyren har blitt avlyst før den ble igangsatt."
+          },
+          "at0043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043.1",
+            "text" : "Utført",
+            "description" : "Prosedyren er utført og alle tilknyttede kliniske handlinger er fullførte."
           }
         },
         "es" : { },
