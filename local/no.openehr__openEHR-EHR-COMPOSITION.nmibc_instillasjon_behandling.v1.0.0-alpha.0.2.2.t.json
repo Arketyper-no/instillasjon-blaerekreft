@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "cf420177c8980362e4cd3e8ee7d5ce0e",
+      "MD5-CAM-1.0.1" : "d9e8e47a7cd80a210a381f397a5ccc96",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -17575,10 +17575,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU10505",
-                    "value" : "Leukocytter",
+                    "code" : "NPU02593",
+                    "value" : "B-Leukocytter",
                     "translations" : {
-                      "nb" : "Leukocytter"
+                      "nb" : "B-Leukocytter"
                     }
                   } ]
                 } ]
@@ -17633,6 +17633,22 @@
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
                     "constraint" : [ "10*6/L" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "10*9/L" ]
                   }, {
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
