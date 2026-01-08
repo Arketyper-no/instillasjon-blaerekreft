@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "45632b87bba433350677ac29ef0f6af6",
+      "MD5-CAM-1.0.1" : "6e08b9a85279a86b03f0206372919f0f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -18113,10 +18113,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU03958",
-                    "value" : "Protein",
+                    "code" : "NPU03278",
+                    "value" : "P-Protein",
                     "translations" : {
-                      "nb" : "Protein"
+                      "nb" : "P-Protein"
                     }
                   } ]
                 } ]
