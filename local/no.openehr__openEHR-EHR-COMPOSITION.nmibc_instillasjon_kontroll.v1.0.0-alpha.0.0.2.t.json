@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "8a351b87ae955163a50e347db94993c0",
+      "MD5-CAM-1.0.1" : "d711154390321fbae851fbb0e3da56b5",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.1.0",
       "build_uid" : ""
     },
     "details" : {
@@ -1078,7 +1078,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "34436003",
                                     "value" : "hematuri",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "hematuri"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -2878,6 +2880,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0023.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4050,6 +4053,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
           "nodeId" : "at0013.1.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4208,6 +4212,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
           "nodeId" : "at0013.1.2",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4366,6 +4371,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
           "nodeId" : "at0013.1.3",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -5409,7 +5415,9 @@
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "142505009",
                                 "value" : "Cystoscopy (procedure)",
-                                "translations" : { }
+                                "translations" : {
+                                  "nb" : "Cystoscopy (procedure)"
+                                }
                               } ]
                             } ]
                           } ],
@@ -5616,7 +5624,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "274037007",
                                     "value" : "Transurethral excision of papilloma of urinary bladder (procedure)",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Transurethral excision of papilloma of urinary bladder (procedure)"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -5850,7 +5860,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "287708003",
                                     "value" : "Transurethral excision of urinary bladder (procedure)",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Transurethral excision of urinary bladder (procedure)"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -5966,7 +5978,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "176162009",
                                     "value" : "Cystoscopy and laser destruction of lesion of urinary bladder (procedure)",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Cystoscopy and laser destruction of lesion of urinary bladder (procedure)"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -6082,7 +6096,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "176162009",
                                     "value" : "Cystoscopy and laser destruction of lesion of urinary bladder (procedure)",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Cystoscopy and laser destruction of lesion of urinary bladder (procedure)"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -6198,7 +6214,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "1208469004",
                                     "value" : "Cystoscopy and biopsy of urinary bladder (procedure)",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Cystoscopy and biopsy of urinary bladder (procedure)"
+                                    }
                                   } ]
                                 } ]
                               } ],
