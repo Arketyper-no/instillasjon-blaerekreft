@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "801757fc68669fd69ec7831edb6956b6",
+      "MD5-CAM-1.0.1" : "6e399e8f8fe2d175689c9fdd5f2d104d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -16961,50 +16961,66 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_QUANTITY",
+              "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
+                "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "openehr"
+                    "value" : "SNOMED-CT"
                   },
-                  "constraint" : [ "119" ]
-                } ]
-              } ],
-              "attributeTuples" : [ {
-                "@type" : "C_ATTRIBUTE_TUPLE",
-                "members" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "units",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "magnitude",
-                  "children" : [ ]
-                } ],
-                "tuples" : [ {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "g/L" ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167273002",
+                    "value" : "Negativ",
+                    "translations" : {
+                      "nb" : "Negativ"
+                    }
                   }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : true,
-                      "upperUnbounded" : true
-                    } ]
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167274008",
+                    "value" : "Trace",
+                    "translations" : {
+                      "nb" : "Trace"
+                    }
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167275009",
+                    "value" : "+",
+                    "translations" : {
+                      "nb" : "+"
+                    }
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167276005",
+                    "value" : "++",
+                    "translations" : {
+                      "nb" : "++"
+                    }
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167277001",
+                    "value" : "+++",
+                    "translations" : {
+                      "nb" : "+++"
+                    }
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167278006",
+                    "value" : "++++",
+                    "translations" : {
+                      "nb" : "++++"
+                    }
                   } ]
                 } ]
-              } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
