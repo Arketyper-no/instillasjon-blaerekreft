@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=49a739af-11f1-45e4-a5dc-4d8c6023a3b2)
+archetype (adl_version=1.4; uid=49a739af-11f1-45e4-a5dc-4d8c6023a3b2)
 	openEHR-EHR-CLUSTER.who_grade_urothelial_neoplasms_1973.v0
 
 concept
-	[at0000]	-- WHO histological grade of urothelial neoplasms (1973)
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -12,37 +13,37 @@ language
 			>
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2025-05-23">
 		["name"] = <"Silje Ljosland Bakke">
 		["organisation"] = <"Helse Vest IKT AS">
 		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
-		["date"] = <"2025-05-23">
 	>
+	lifecycle_state = <"in_development">
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"*To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973). (en)">
-			use = <"*Use to record the histological grade of according to the WHO Histological Typing of Urinary Bladder Tumours (1973).
+			keywords = <"*Urothelial (en)","*bladder (en)","*tumor (en)","*neoplasm (en)","*carcinoma (en)","*histology (en)","*pathology (en)","*grade (en)","*grading (en)","*classification (en)","*WHO (en)","*1973 (en)">
+			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).
 
 This archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result archetype context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate. (en)">
-			keywords = <"*Urothelial (en)", "*bladder (en)", "*tumor (en)", "*neoplasm (en)", "*carcinoma (en)", "*histology (en)", "*pathology (en)", "*grade (en)", "*grading (en)", "*classification (en)", "*WHO (en)", "*1973 (en)">
 			misuse = <"*Not to be used to record the 2004/2016 revision of the WHO histological grade of urothelial neoplasms. Use the CLUSTER.who_grade_urothelial_neoplasms_2004 archetype for this purpose. (en)">
-			copyright = <"© openEHR Foundation">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).">
-			use = <"Use to record the histological grade of according to the WHO Histological Typing of Urinary Bladder Tumours (1973).
+			keywords = <"Urothelial","bladder","tumor","neoplasm","carcinoma","histology","pathology","grade","grading","classification","WHO","1973">
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).
 
 This archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result archetype context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate.">
-			keywords = <"Urothelial", "bladder", "tumor", "neoplasm", "carcinoma", "histology", "pathology", "grade", "grading", "classification", "WHO", "1973">
 			misuse = <"Not to be used to record the 2004/2016 revision of the WHO histological grade of urothelial neoplasms. Use the CLUSTER.who_grade_urothelial_neoplasms_2004 archetype for this purpose.">
-			copyright = <"© openEHR Foundation">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -50,7 +51,7 @@ This archetype has been designed to be nested inside an ENTRY or appropriate CLU
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"F257BE0F38D1BF64AAD4BFE303CDFA56">
+		["MD5-CAM-1.0.1"] = <"af00ff9be44708b863cf92d5875fd55b">
 		["build_uid"] = <"d19000ed-c2bd-409f-9266-ef0fffa28d38">
 		["revision"] = <"0.0.1-alpha">
 	>
