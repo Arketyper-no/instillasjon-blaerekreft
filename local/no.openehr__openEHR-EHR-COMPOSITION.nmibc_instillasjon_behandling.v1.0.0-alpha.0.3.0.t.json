@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2fb6f704230c658a8168ccfe89cd8aee",
+      "MD5-CAM-1.0.1" : "b88a7e3cec16d843482f1f5ac1ed936f",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -16432,50 +16432,52 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_QUANTITY",
+              "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
+                "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "openehr"
+                    "value" : "SNOMED-CT"
                   },
-                  "constraint" : [ "119" ]
-                } ]
-              } ],
-              "attributeTuples" : [ {
-                "@type" : "C_ATTRIBUTE_TUPLE",
-                "members" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "units",
-                  "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "magnitude",
-                  "children" : [ ]
-                } ],
-                "tuples" : [ {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "10*9/L" ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167273002",
+                    "value" : "Negativ",
+                    "translations" : {
+                      "nb" : "Negativ"
+                    }
                   }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : true,
-                      "upperUnbounded" : true
-                    } ]
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167275009",
+                    "value" : "+",
+                    "translations" : {
+                      "nb" : "+"
+                    }
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167276005",
+                    "value" : "++",
+                    "translations" : {
+                      "nb" : "++"
+                    }
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "167277001",
+                    "value" : "+++",
+                    "translations" : {
+                      "nb" : "+++"
+                    }
                   } ]
                 } ]
-              } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -16993,13 +16995,6 @@
                     }
                   }, {
                     "terminologyId" : "SNOMED-CT",
-                    "code" : "167274008",
-                    "value" : "Trace",
-                    "translations" : {
-                      "nb" : "Trace"
-                    }
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
                     "code" : "167275009",
                     "value" : "+",
                     "translations" : {
@@ -17018,13 +17013,6 @@
                     "value" : "+++",
                     "translations" : {
                       "nb" : "+++"
-                    }
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "167278006",
-                    "value" : "++++",
-                    "translations" : {
-                      "nb" : "++++"
                     }
                   } ]
                 } ]
