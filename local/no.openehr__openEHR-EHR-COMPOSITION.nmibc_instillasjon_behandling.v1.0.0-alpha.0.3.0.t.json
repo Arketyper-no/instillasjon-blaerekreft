@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c0c004ab613ae8300b4b87dcd4f156c8",
+      "MD5-CAM-1.0.1" : "d1545d35a967e3f0ee983cf4412ec553",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -18523,13 +18523,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "NLK"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "NLK" ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "NLK",
-                    "code" : "?",
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "34436003",
                     "value" : "Blod",
                     "translations" : {
                       "nb" : "Blod"
@@ -19105,10 +19105,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU03278",
-                    "value" : "P-Protein",
+                    "code" : "NPU02415",
+                    "value" : "pH",
                     "translations" : {
-                      "nb" : "P-Protein"
+                      "nb" : "pH"
                     }
                   } ]
                 } ]
@@ -19647,10 +19647,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "?",
-                    "value" : "Blod",
+                    "code" : "NPU03936",
+                    "value" : "Glukose",
                     "translations" : {
-                      "nb" : "Blod"
+                      "nb" : "Glukose"
                     }
                   } ]
                 } ]
@@ -20230,10 +20230,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "?",
-                    "value" : "Blod",
+                    "code" : "NPU10504",
+                    "value" : "Ketoner",
                     "translations" : {
-                      "nb" : "Blod"
+                      "nb" : "Ketoner"
                     }
                   } ]
                 } ]
@@ -20806,10 +20806,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU02593",
-                    "value" : "B-Leukocytter",
+                    "code" : "NPU10506",
+                    "value" : "Nitrit",
                     "translations" : {
-                      "nb" : "B-Leukocytter"
+                      "nb" : "Nitrit"
                     }
                   } ]
                 } ]
@@ -21388,10 +21388,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU03278",
-                    "value" : "P-Protein",
+                    "code" : "NPU0396",
+                    "value" : "Erytrocytter",
                     "translations" : {
-                      "nb" : "P-Protein"
+                      "nb" : "Erytrocytter"
                     }
                   } ]
                 } ]
