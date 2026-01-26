@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b883ee705f0107b6f25031b292de72e8",
+      "MD5-CAM-1.0.1" : "66c1b0ad7178bee44f92eaea567d3384",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -562,7 +562,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -10032,7 +10031,9 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "89837001",
                     "value" : "urinblære",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "urinblære"
+                    }
                   } ]
                 } ]
               } ],
@@ -10074,17 +10075,23 @@
                     "terminologyId" : "no.onk.tnm",
                     "code" : "pTis",
                     "value" : "Primær CIS",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "Primær CIS"
+                    }
                   }, {
                     "terminologyId" : "no.onk.tnm",
                     "code" : "pTa",
                     "value" : "pTa",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "pTa"
+                    }
                   }, {
                     "terminologyId" : "no.onk.tnm",
                     "code" : "pT1",
                     "value" : "pT1",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "pT1"
+                    }
                   } ]
                 } ]
               } ],
