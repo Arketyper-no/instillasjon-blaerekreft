@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a301825a79d87cc9af41f2b5a9e65dae",
+      "MD5-CAM-1.0.1" : "b883ee705f0107b6f25031b292de72e8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1172,7 +1172,8 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "18011004",
-                                "value" : "Instillation of urinary bladder (procedure)"
+                                "value" : "Instillation of urinary bladder (procedure)",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -1259,7 +1260,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "399208008",
-                                    "value" : "Plain chest X-ray (procedure)"
+                                    "value" : "Plain chest X-ray (procedure)",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -5375,7 +5377,8 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "18011004",
-                            "value" : "Instillation of urinary bladder (procedure)"
+                            "value" : "Instillation of urinary bladder (procedure)",
+                            "translations" : { }
                           } ]
                         } ]
                       } ],
@@ -6006,7 +6009,8 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "18011004",
-                        "value" : "Instillation of urinary bladder (procedure)"
+                        "value" : "Instillation of urinary bladder (procedure)",
+                        "translations" : { }
                       } ]
                     } ]
                   } ],
@@ -7101,7 +7105,8 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "18011004",
-                                "value" : "Instillation of urinary bladder (procedure)"
+                                "value" : "Instillation of urinary bladder (procedure)",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -7188,7 +7193,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "165232002",
-                                    "value" : "Urinary incontinence (finding)"
+                                    "value" : "Urinary incontinence (finding)",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -7304,7 +7310,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "162116003",
-                                    "value" : "Increased frequency of urination (finding)"
+                                    "value" : "Increased frequency of urination (finding)",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -8102,7 +8109,8 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "18011004",
-                                "value" : "Instillation of urinary bladder (procedure)"
+                                "value" : "Instillation of urinary bladder (procedure)",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -8180,7 +8188,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "301879009",
-                                    "value" : "Instillation of Bacillus Calmette-Guerin into urinary bladder (procedure)"
+                                    "value" : "Instillation of Bacillus Calmette-Guerin into urinary bladder (procedure)",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -8291,7 +8300,8 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "443199009",
-                                    "value" : "Instillation of mitomycin C into urinary bladder (procedure)"
+                                    "value" : "Instillation of mitomycin C into urinary bladder (procedure)",
+                                    "translations" : { }
                                   } ]
                                 } ]
                               } ],
@@ -9535,7 +9545,8 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "18011004",
-                                "value" : "Instillation of urinary bladder (procedure)"
+                                "value" : "Instillation of urinary bladder (procedure)",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -9569,7 +9580,8 @@
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED-CT",
                                 "code" : "113861009",
-                                "value" : "Mycobacterium tuberculosis (organism)"
+                                "value" : "Mycobacterium tuberculosis (organism)",
+                                "translations" : { }
                               } ]
                             } ]
                           } ],
@@ -10019,7 +10031,8 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "89837001",
-                    "value" : "urinblære"
+                    "value" : "urinblære",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -10060,15 +10073,18 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.onk.tnm",
                     "code" : "pTis",
-                    "value" : "Primær CIS"
+                    "value" : "Primær CIS",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "no.onk.tnm",
                     "code" : "pTa",
-                    "value" : "pTa"
+                    "value" : "pTa",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "no.onk.tnm",
                     "code" : "pT1",
-                    "value" : "pT1"
+                    "value" : "pT1",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -10662,7 +10678,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3444DEA86FDF8DC1A63F8AFE7B3C828C"
+        "PARENT:MD5-CAM-1.0.1" : "7a4ad3ce72af321c9953be85d9758a23"
       },
       "details" : {
         "nb" : {
@@ -10816,7 +10832,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "BC7634EC4BFD248CFDFD36662EC82D16"
+        "PARENT:MD5-CAM-1.0.1" : "70610365d02517a90bdcb3560a96440b"
       },
       "details" : {
         "nb" : {
@@ -11612,7 +11628,8 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "89837001",
-                    "value" : "urinblære"
+                    "value" : "urinblære",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -11659,15 +11676,18 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "no.openehr.kreft.residualsvulst_etter_kirurgi",
                     "code" : "0",
-                    "value" : "Ikke gjenværende svulst"
+                    "value" : "Ikke gjenværende svulst",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "no.openehr.kreft.residualsvulst_etter_kirurgi",
                     "code" : "1",
-                    "value" : "Gjenværende svulst"
+                    "value" : "Gjenværende svulst",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "no.openehr.kreft.residualsvulst_etter_kirurgi",
                     "code" : "9",
-                    "value" : "Usikkert om det er gjenværende svulst"
+                    "value" : "Usikkert om det er gjenværende svulst",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -11701,11 +11721,13 @@
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "271618001",
-                    "value" : "Ikke god tilheling"
+                    "value" : "Ikke god tilheling",
+                    "translations" : { }
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "9501000202103",
-                    "value" : "God tilheling"
+                    "value" : "God tilheling",
+                    "translations" : { }
                   } ]
                 } ]
               } ],
@@ -12525,7 +12547,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F257BE0F38D1BF64AAD4BFE303CDFA56"
+        "PARENT:MD5-CAM-1.0.1" : "af00ff9be44708b863cf92d5875fd55b"
       },
       "details" : {
         "nb" : {
@@ -13046,7 +13068,8 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "18011004",
-                        "value" : "Instillation of urinary bladder (procedure)"
+                        "value" : "Instillation of urinary bladder (procedure)",
+                        "translations" : { }
                       } ]
                     } ]
                   } ],
@@ -13338,7 +13361,8 @@
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "446583004",
-                            "value" : "Legg inn inneliggende blærekateter under behandling"
+                            "value" : "Legg inn inneliggende blærekateter under behandling",
+                            "translations" : { }
                           } ]
                         } ]
                       } ],
