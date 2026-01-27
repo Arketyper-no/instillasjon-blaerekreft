@@ -53,7 +53,7 @@ EAU NMIBC Risk Calculator. In: [Internet]. Arnhem, Netherlands: European Associa
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7a4ad3ce72af321c9953be85d9758a23">
+		["MD5-CAM-1.0.1"] = <"bbc5ba981f83219c086a87166725a987">
 		["build_uid"] = <"9f5b8a08-418f-4648-a488-27b839cbe509">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -172,7 +172,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EAU NMIBC 2021 risk assessment">
-					description = <"The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and grading systems (WHO 2004/2016 or WHO 1973). The classification supports treatment recommendations after transurethral resection of bladder tumour (TURBT).">
+					description = <"The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and grading systems (WHO 2004/2016 or WHO 1973).">
 				>
 				["at0001"] = <
 					text = <"Risk group">
@@ -305,7 +305,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"*EAU NMIBC 2021 risk assessment (en)">
-					description = <"*The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and grading systems (WHO 2004/2016 or WHO 1973). The classification supports treatment recommendations after transurethral resection of bladder tumour (TURBT). (en)">
+					description = <"*The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and grading systems (WHO 2004/2016 or WHO 1973). (en)">
 				>
 				["at0001"] = <
 					text = <"Risikogruppe">
