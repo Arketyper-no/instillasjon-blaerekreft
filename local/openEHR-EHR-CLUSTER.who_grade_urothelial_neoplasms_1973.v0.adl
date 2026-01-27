@@ -26,7 +26,7 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"*To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973). (en)">
-			keywords = <"*Urothelial (en)","*bladder (en)","*tumor (en)","*neoplasm (en)","*carcinoma (en)","*histology (en)","*pathology (en)","*grade (en)","*grading (en)","*classification (en)","*WHO (en)","*1973 (en)">
+			keywords = <"*Urothelial (en)","*bladder (en)","*tumor (en)","*neoplasm (en)","*carcinoma (en)","*histology (en)","*pathology (en)","*grade (en)","*grading (en)","*classification (en)">
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).
 
@@ -36,7 +36,7 @@ This archetype has been designed to be nested inside an ENTRY or appropriate CLU
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).">
-			keywords = <"Urothelial","bladder","tumor","neoplasm","carcinoma","histology","pathology","grade","grading","classification","WHO","1973">
+			keywords = <"Urothelial","bladder","tumor","neoplasm","carcinoma","histology","pathology","grade","grading","classification">
 			copyright = <"© openEHR Foundation">
 			use = <"Use to record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).
 
