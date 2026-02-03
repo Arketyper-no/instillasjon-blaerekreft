@@ -53,13 +53,13 @@ EAU NMIBC Risk Calculator. In: [Internet]. Arnhem, Netherlands: European Associa
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7f9f811235a3a6030cb02afdd70d85d5">
+		["MD5-CAM-1.0.1"] = <"b998891cad286971d494445abb9c1635">
 		["build_uid"] = <"9f5b8a08-418f-4648-a488-27b839cbe509">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- EAU NMIBC 2021 risk assessment
+	CLUSTER[at0000] matches {    -- EAU NMIBC risk assessment (2021)
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Age
 				value matches {
@@ -171,7 +171,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"EAU NMIBC 2021 risk assessment">
+					text = <"EAU NMIBC risk assessment (2021)">
 					description = <"The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and WHO grading systems for urothelial neoplasms..">
 				>
 				["at0001"] = <
@@ -304,7 +304,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EAU NMIBC 2021 risk assessment (en)">
+					text = <"*EAU NMIBC risk assessment (2021) (en)">
 					description = <"*The European Association of Urology (EAU) 2021 risk assessment for non–muscle-invasive bladder cancer (NMIBC) stratify patients based on the prognostic factors tumour characteristics, patient age, and WHO grading systems for urothelial neoplasms.. (en)">
 				>
 				["at0001"] = <
