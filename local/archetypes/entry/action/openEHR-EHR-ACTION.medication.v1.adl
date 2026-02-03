@@ -473,7 +473,7 @@ Norwegian regulations for medication management (Forskrift om legemiddelhåndter
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"193f8f39d477d9e90d359904c358024a">
+		["MD5-CAM-1.0.1"] = <"577e46481ac53063055c6b57d3b9aba4">
 		["build_uid"] = <"310d3158-4100-4f1d-8b3f-100dce41edbd">
 		["revision"] = <"1.4.0">
 	>
@@ -787,6 +787,22 @@ definition
 					}
 				}
 			}
+			ISM_TRANSITION[at0158] matches {    -- Dose administration aborted
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0158]    -- Dose administration aborted
+						}
+					}
+				}
+			}
 			ISM_TRANSITION[at0008] matches {    -- Prescription supply delayed
 				current_state matches {
 					DV_CODED_TEXT matches {
@@ -879,22 +895,6 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::at0151]    -- Prescription invalid or expired
-						}
-					}
-				}
-			}
-			ISM_TRANSITION[at0158] matches {    -- Dose administration aborted
-				current_state matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[openehr::245]
-						}
-					}
-				}
-				careflow_step matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0158]    -- Dose administration aborted
 						}
 					}
 				}
