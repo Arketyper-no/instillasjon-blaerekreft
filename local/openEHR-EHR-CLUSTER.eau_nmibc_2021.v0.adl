@@ -25,17 +25,17 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"*To record each component parameter and the risk group for the EAU NMIBC 2021 risk assessment. (en)">
+			purpose = <"*To record each component parameter and the risk group for the EAU NMIBC risk assessment (2021). (en)">
 			keywords = <"*bladder (en)","*cancer (en)","*stratification (en)","*TURBT (en)","*non–muscle-invasive (en)","*urothelial (en)","*carcinoma (en)","*prognostic (en)","*group (en)">
 			copyright = <"© openEHR Foundation">
-			use = <"*Use to record each component parameter and the risk group for the EAU NMIBC 2021 risk assessment, based on the WHO 2004/2016 or WHO 1973 grading systems. (en)">
+			use = <"*Use to record each component parameter and the risk group for the EAU NMIBC risk assessment (2021), based on the WHO 2004/2016 or WHO 1973 grading systems. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record each component parameter and the risk group for the EAU NMIBC 2021 risk assessment.">
+			purpose = <"To record each component parameter and the risk group for the EAU NMIBC risk assessment (2021).">
 			keywords = <"bladder","cancer","stratification","TURBT","non–muscle-invasive","urothelial","carcinoma","prognostic","group">
 			copyright = <"© openEHR Foundation">
-			use = <"Use to record each component parameter and the risk group for the EAU NMIBC 2021 risk assessment, based on the WHO 2004/2016 or WHO 1973 grading systems.">
+			use = <"Use to record each component parameter and the risk group for the EAU NMIBC risk assessment (2021), based on the WHO 2004/2016 or WHO 1973 grading systems.">
 		>
 	>
 	other_details = <
