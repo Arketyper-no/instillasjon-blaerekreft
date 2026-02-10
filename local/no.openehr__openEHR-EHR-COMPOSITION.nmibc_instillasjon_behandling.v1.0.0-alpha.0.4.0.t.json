@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "d385a7a390598130cd61855b54f4d3d2",
+      "MD5-CAM-1.0.1" : "0f84835e694e1835d132b4da352266de",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -1789,12 +1789,16 @@
                         "terminologyId" : "SNOMED-CT",
                         "code" : "225088003",
                         "value" : "Inneliggende kateterisering",
-                        "translations" : { }
+                        "translations" : {
+                          "nb" : "Inneliggende kateterisering"
+                        }
                       }, {
                         "terminologyId" : "SNOMED-CT",
                         "code" : "37241000202101",
                         "value" : "Steril intermitterende kateterisering",
-                        "translations" : { }
+                        "translations" : {
+                          "nb" : "Steril intermitterende kateterisering"
+                        }
                       } ]
                     } ]
                   } ],
@@ -2328,7 +2332,9 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "34759008",
                     "value" : "Urethral catheter",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "Urethral catheter"
+                    }
                   } ]
                 } ]
               } ],
@@ -4411,7 +4417,7 @@
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Gitt instillasjon",
+            "text" : "Gitt behandling",
             "description" : "En enkelt administrering av legemiddelet er utført."
           },
           "at0157.1" : {
@@ -4429,13 +4435,13 @@
           "at0044.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0044.1",
-            "text" : "Behandling utsatt",
+            "text" : "Utsatt behandling",
             "description" : "Administrering av legemiddelet er utsatt/forsinket, men legemiddelet forventes administrert så raskt som mulig."
           },
           "at0158.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0158.1",
-            "text" : "Behandling avbrutt",
+            "text" : "Avbrutt behandling",
             "description" : "Administrering av en enkeltdose av legemiddelet ble påbegynt men deretter avbrutt."
           }
         },
