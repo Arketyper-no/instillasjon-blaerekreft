@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "921ee9fab5e0da981c4dfb06a9364fba",
+      "MD5-CAM-1.0.1" : "8597846a326ff3e064bae276d0ed7c07",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -149,7 +149,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-SECTION.adhoc heading.v1"
+    "value" : "openEHR-EHR-SECTION.adhoc_heading.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -241,7 +241,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "2d6b1e06-e506-31a0-9cc7-2e16519b0e29",
+  "buildUid" : "71fe0c75-f3cb-310e-93e7-28584b99b736",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -572,7 +572,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "58250006",
                                     "value" : "Svie ved vannlating",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Svie ved vannlating"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -689,7 +691,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "162116003",
                                     "value" : "Hyppig vannlating",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Hyppig vannlating"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -925,7 +929,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "386661006",
                                     "value" : "Feber",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Feber"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -1013,16 +1019,39 @@
                 } ]
               }, {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "640" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "width",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_DURATION",
+                  "occurrences" : "0..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
+                      "occurrences" : "0..1",
                       "constraint" : [ {
                         "lower" : "P2D",
                         "upper" : "P2D",
@@ -1206,7 +1235,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "165232002",
                                     "value" : "Urinary incontinence (finding)",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Urinary incontinence (finding)"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -1469,7 +1500,7 @@
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.2",
-            "text" : "Etter forrige behandling",
+            "text" : "Under forrige behandling",
             "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
           },
           "at0036.2" : {
