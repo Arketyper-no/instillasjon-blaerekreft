@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2ff108de9e0a6913f5cf0b8cfa02734c",
+      "MD5-CAM-1.0.1" : "b41d2eb23cd67a256143e06ed3d3b1bf",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -4706,7 +4706,7 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU03936",
+                    "code" : "NPU04207",
                     "value" : "Glukose",
                     "translations" : {
                       "nb" : "Glukose"
@@ -5865,10 +5865,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU02593",
-                    "value" : "B-Leukocytter",
+                    "code" : "NPU03987",
+                    "value" : "Leukocytter",
                     "translations" : {
-                      "nb" : "B-Leukocytter"
+                      "nb" : "Leukocytter"
                     }
                   } ]
                 } ]
@@ -6425,10 +6425,10 @@
                   "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NLK",
-                    "code" : "NPU03278",
-                    "value" : "P-Protein",
+                    "code" : "NPU04206",
+                    "value" : "Protein",
                     "translations" : {
-                      "nb" : "P-Protein"
+                      "nb" : "Protein"
                     }
                   } ]
                 } ]
@@ -6995,13 +6995,13 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "NLK"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "selectedTerminologies" : [ "NLK" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "34436003",
+                    "terminologyId" : "NLK",
+                    "code" : "NPU04208",
                     "value" : "Blod",
                     "translations" : {
                       "nb" : "Blod"
