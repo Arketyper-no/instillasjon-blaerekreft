@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8597846a326ff3e064bae276d0ed7c07",
+      "MD5-CAM-1.0.1" : "2ff108de9e0a6913f5cf0b8cfa02734c",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -9146,13 +9146,13 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOMED-CT"
+                        "value" : "NLK"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "selectedTerminologies" : [ "NLK" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED-CT",
-                        "code" : "117010004",
+                        "terminologyId" : "NLK",
+                        "code" : "NPU14924",
                         "value" : "Dyrkning av urin",
                         "translations" : {
                           "nb" : "Dyrkning av urin"
