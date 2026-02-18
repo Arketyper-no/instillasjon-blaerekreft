@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "efdb338771da95ee10b43f2075b8e079",
+      "MD5-CAM-1.0.1" : "15fb900c8abd1f135485151800ac38ab",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -7580,7 +7580,7 @@
                     "code" : "NPU10506",
                     "value" : "Nitrit",
                     "translations" : {
-                      "nb" : "Nitrit"
+                      "nb" : "Nitritt"
                     }
                   } ]
                 } ]
