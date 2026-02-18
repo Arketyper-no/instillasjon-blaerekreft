@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "b41d2eb23cd67a256143e06ed3d3b1bf",
+      "MD5-CAM-1.0.1" : "daeebb8650ce711c625c382e1eb2351f",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -7181,7 +7181,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Blod/Hb",
+            "text" : "Hemoglobin",
             "description" : "Resultatet av en individuell laboratorieanalyse."
           }
         },
@@ -7743,7 +7743,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Nitrit",
+            "text" : "Nitritt",
             "description" : "Resultatet av en individuell laboratorieanalyse."
           }
         },
