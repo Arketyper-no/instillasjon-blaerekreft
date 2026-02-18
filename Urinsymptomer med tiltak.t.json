@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "daeebb8650ce711c625c382e1eb2351f",
+      "MD5-CAM-1.0.1" : "ca2f4f21381d6c4334b98cef8ebc8c30",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -7004,7 +7004,7 @@
                     "code" : "NPU04208",
                     "value" : "Blod",
                     "translations" : {
-                      "nb" : "Blod"
+                      "nb" : "Hemoglobin"
                     }
                   } ]
                 } ]
