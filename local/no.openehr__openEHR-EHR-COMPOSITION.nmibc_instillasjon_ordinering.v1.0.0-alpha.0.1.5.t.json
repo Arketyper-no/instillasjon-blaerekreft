@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "3ea2f1e013d4987deca4fea0722d2a61",
+      "MD5-CAM-1.0.1" : "53aee665d870dae4e9118373f249da5b",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -743,6 +743,15 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
+              "nodeId" : "at0043.5",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnosis_dips-001.v1",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0043.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -774,15 +783,6 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-who_grade_urothelial_neoplasms_1973-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0043.5",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_diagnosis_dips-001.v1",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
