@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9502208e70196490e600c39821831a8a",
+      "MD5-CAM-1.0.1" : "323fc28f629963e7081c249956f505e1",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -597,7 +597,7 @@
                         "code" : "89837001",
                         "value" : "urinblære",
                         "translations" : {
-                          "nb" : "urinblære"
+                          "nb" : "Urinblære"
                         }
                       } ]
                     } ]
