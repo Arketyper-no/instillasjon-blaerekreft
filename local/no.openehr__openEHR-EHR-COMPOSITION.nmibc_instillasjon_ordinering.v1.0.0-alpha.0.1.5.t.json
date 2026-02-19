@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "323fc28f629963e7081c249956f505e1",
+      "MD5-CAM-1.0.1" : "4eb50eb9cda5c1330d9b3aba57f59063",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -543,10 +543,73 @@
                       "selectedTerminologies" : [ "SNOMED-CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED-CT",
+                        "code" : "188239000",
+                        "value" : "Malign tumor i trigonum vesicae",
+                        "translations" : {
+                          "nb" : "Malign tumor i trigonum vesicae"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188240003",
+                        "value" : "Malign tumor i urinblærekuppel",
+                        "translations" : {
+                          "nb" : "Malign tumor i urinblærekuppel"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188241004",
+                        "value" : "Malign tumor i sidevegg i urinblære",
+                        "translations" : {
+                          "nb" : "Malign tumor i sidevegg i urinblære"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188242006",
+                        "value" : "Malign tumor i fremre vegg i urinblære",
+                        "translations" : {
+                          "nb" : "Malign tumor i fremre vegg i urinblære"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188243001",
+                        "value" : "Malign tumor i bakre vegg i urinblære",
+                        "translations" : {
+                          "nb" : "Malign tumor i bakre vegg i urinblære"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188244007",
+                        "value" : "Malign tumor i blærehals",
+                        "translations" : {
+                          "nb" : "Malign tumor i blærehals"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188245008",
+                        "value" : "Malign tumor i ureterostium",
+                        "translations" : {
+                          "nb" : "Malign tumor i ureterostium"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "363456000",
+                        "value" : "Malign tumor i urachus",
+                        "translations" : {
+                          "nb" : "Malign tumor i urachus"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "188247000",
+                        "value" : "Overlappende malign tumor i urinblære",
+                        "translations" : {
+                          "nb" : "Overlappende malign tumor i urinblære"
+                        }
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
                         "code" : "399326009",
                         "value" : "Malignant neoplasm of urinary bladder (disorder)",
                         "translations" : {
-                          "nb" : "Malignant neoplasm of urinary bladder (disorder)"
+                          "nb" : "Malign tumor i urinblære"
                         }
                       } ]
                     } ]
