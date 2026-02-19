@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=72f0c6cb-8c66-4c64-91d6-a1c34e7f8e42)
+archetype (adl_version=1.4; uid=ad9a97e4-d675-44c1-a2bc-5ad334bd7f48)
 	openEHR-EHR-CLUSTER.device_catheter.v0
 
 concept
@@ -26,37 +26,45 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere detaljer om fysiske og funksjonelle egenskaper ved fleksible tubulære medisinsk utstyr som settes inn i kroppen, som katetere, slanger, kanyla eller dren.">
-			use = <"Brukes for å registrere detaljer om fleksible tubulære medisinsk utstyr som settes inn i kroppen. Denne arketypen støtter ulike enhettyper inkludert endotrakeal slanger, urinkatetere, arteriallinjer, sentrale venøse katetere, thoraxdren, sårdren og lignende enheter.
-
-Denne arketypen er designet for å nestes i SLOTet 'Egenskaper' (at0009) i CLUSTER.device-arketypen.
-
-Alle dataelementer er valgfritt for å støtte de mangfoldige kravene til ulike enhetstyper. Registrer kun egenskaper som er relevant for det spesifikke utstyret som dokumenteres.">
+			purpose = <"For å registrere fysiske og funksjonelle egenskaper ved fleksible tubulære medisinsk utstyr som settes inn i kroppen.">
+			use = <"Brukes for å registrere egenskaper ved fleksible tubulære medisinsk utstyr som settes inn i kroppen, som endotrakealkateter, urinkatetere, arteriekatetere, sentralvenøse katetere, thoraxdren eller sårdren. Denne arketypen er designet for å brukes i SLOTet 'Egenskaper' i CLUSTER.device-arketypen.">
+			misuse = <"Brukes ikke for å registrere tidspunkt for innsetting eller fjerning av utstyr; bruk ACTION.procedure i stedet. Brukes ikke for å registrere anatomisk lokalisering av utstyrsetting; bruk body_site attributt i arketypen i stedet.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record details about the physical and functional properties of any flexible tubular medical device inserted into the body, such as catheters, tubes, cannulae, or drains.">
-			use = <"Use to record details about a flexible tubular medical device inserted into the body. This archetype supports diverse device types including endotracheal tubes, urinary catheters, arterial lines, central venous catheters, chest tubes, wound drains, and other similar devices.
-
-This archetype has been designed to be nested within the 'Properties' SLOT (at0009) within the CLUSTER.device archetype.
-
-All data elements are optional to support the diverse requirements of different device types. Record only the properties relevant to the specific device being documented.">
+			purpose = <"To record the physical and functional properties of any flexible tubular medical device inserted into the body.">
+			use = <"Use to record properties of a flexible tubular medical device inserted into the body, such as endotracheal tubes, urinary catheters, arterial lines, central venous catheters, chest tubes, or wound drains. This archetype is designed to be nested within the 'Properties' SLOT of the CLUSTER.device archetype.">
+			misuse = <"Not to be used to record the timing of insertion or removal of the device; use ACTION.procedure instead. Not to be used to record the anatomical location of device insertion; use the archetype body_site attribute instead.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Schadow, G. and McDonald, C. J. Unified Code for Units of Measure (UCUM). Regenstrief Institute; 2024. Available from: http://unitsofmeasure.org/ucum.html.
+
+International Organization for Standardization. ISO 13485:2016 Quality management systems for medical devices – Requirements for regulatory compliance. Geneva: ISO; 2016.
+
+International Organization for Standardization. ISO 80601-1:2017 Medical electrical equipment – Part 1: General requirements and tests. Geneva: ISO; 2017.
+
+International Health Terminology Standards Development Organisation. SNOMED CT – Systematized Nomenclature of Medicine Clinical Terms. Available from: https://www.snomed.org/.
+
+Health Level Seven International. FHIR R4 device resource. Available from: https://www.hl7.org/fhir/device.html.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9B8F3C4E1A5D2F7G8H9I0J1K2L3M4N5O">
-		["build_uid"] = <"72f0c6cb-8c66-4c64-91d6-a1c34e7f8e42">
-		["revision"] = <"0.0.1">
+		["MD5-CAM-1.0.1"] = <"A318DC60805B26323C6613B43BAA76DB">
+		["build_uid"] = <"fd9f8214-2448-4b11-9137-a642417ba25d">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Catheter/tube properties
-		items cardinality matches {0..*; unordered} matches {
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0038] occurrences matches {0..1} matches {    -- Tip type
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Material
 				value matches {
 					DV_CODED_TEXT matches {
@@ -65,9 +73,7 @@ definition
 							at0002,    -- Silicone
 							at0003,    -- Latex
 							at0004,    -- Polyurethane
-							at0005,    -- Rubber
-							at0006,    -- PVC
-							at0007]    -- Other
+							at0006]    -- PVC
 						}
 					}
 				}
@@ -94,6 +100,11 @@ definition
 								units = <"mm">
 								magnitude = <|>=0.0|>
 							>
+							["2"] = <
+								units = <"[Ch]">
+								magnitude = <|>=0.0|>
+								precision = <|0|>
+							>
 						>
 					>
 				}
@@ -104,8 +115,8 @@ definition
 				}
 			}
 			CLUSTER[at0011] occurrences matches {0..*} matches {    -- Per lumen
-				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Lumen identifier
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Lumen identifier.
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -145,14 +156,13 @@ definition
 									at0017,    -- Medication delivery
 									at0018,    -- Fluid administration
 									at0019,    -- Monitoring/pressure
-									at0020,    -- Drainage
-									at0021]    -- Other
+									at0020]    -- Drainage
 								}
 							}
 						}
 					}
-					CLUSTER[at0022] occurrences matches {0..1} matches {    -- Connector
-						items cardinality matches {0..*; unordered} matches {
+					CLUSTER[at0022] occurrences matches {0..*} matches {    -- Connector
+						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0023] occurrences matches {0..1} matches {    -- Connector type
 								value matches {
 									DV_CODED_TEXT matches {
@@ -160,8 +170,7 @@ definition
 											[local::
 											at0024,    -- Push-fit
 											at0025,    -- Luer-lock
-											at0026,    -- Slip-fit
-											at0027]    -- Other
+											at0026]    -- Slip-fit
 										}
 									}
 								}
@@ -184,8 +193,8 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0029] occurrences matches {0..*} matches {    -- Cuff/balloon
-				items cardinality matches {0..*; unordered} matches {
+			CLUSTER[at0029] occurrences matches {0..1} matches {    -- Cuff/balloon
+				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Cuff type
 						value matches {
 							DV_CODED_TEXT matches {
@@ -221,7 +230,7 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Inflation pressure range
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Inflation pressure range.
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -255,17 +264,9 @@ ontology
 					text = <"Polyurethane">
 					description = <"The device is made of polyurethane material.">
 				>
-				["at0005"] = <
-					text = <"Rubber">
-					description = <"The device is made of rubber material.">
-				>
 				["at0006"] = <
 					text = <"PVC">
 					description = <"The device is made of polyvinyl chloride (PVC) material.">
-				>
-				["at0007"] = <
-					text = <"Other">
-					description = <"The device is made of another material.">
 				>
 				["at0008"] = <
 					text = <"Overall length">
@@ -279,13 +280,19 @@ ontology
 					text = <"Radiopaque">
 					description = <"Indicator of whether the device is visible on X-ray imaging.">
 				>
+				["at0038"] = <
+					text = <"Tip type">
+					description = <"The design characteristics of the tip of the device that may affect insertion, positioning, or function.">
+					comment = <"For example: rounded, beveled, Tiemann, Murphy eye, weighted. Coding with a terminology system is preferred where possible.">
+				>
 				["at0011"] = <
 					text = <"Per lumen">
 					description = <"Details about an individual lumen of the device.">
 				>
 				["at0012"] = <
-					text = <"Lumen identifier">
-					description = <"A label or identifier for this lumen (e.g., 'main', 'distal', 'proximal', 'vent', 'suction').">
+					text = <"Lumen identifier.">
+					description = <"A label or identifier for this lumen.">
+					comment = <"For example: 'main', 'distal', 'proximal', 'vent', or 'suction'.">
 				>
 				["at0013"] = <
 					text = <"Internal diameter">
@@ -319,10 +326,6 @@ ontology
 					text = <"Drainage">
 					description = <"The lumen is used for drainage of fluids.">
 				>
-				["at0021"] = <
-					text = <"Other">
-					description = <"The lumen is used for another purpose.">
-				>
 				["at0022"] = <
 					text = <"Connector">
 					description = <"Details about the connector for this lumen.">
@@ -342,10 +345,6 @@ ontology
 				["at0026"] = <
 					text = <"Slip-fit">
 					description = <"A slip-fit connector.">
-				>
-				["at0027"] = <
-					text = <"Other">
-					description = <"Another type of connector.">
 				>
 				["at0028"] = <
 					text = <"Connector size">
@@ -384,16 +383,17 @@ ontology
 					description = <"The volume of fluid required to fully inflate the cuff.">
 				>
 				["at0037"] = <
-					text = <"Inflation pressure range">
-					description = <"The recommended pressure range for cuff inflation (e.g., '20-30 cmH2O').">
+					text = <"Inflation pressure range.">
+					description = <"The recommended pressure range for cuff inflation.">
+					comment = <"For example: '20-30 cmH₂O'.">
 				>
 			>
 		>
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Kateter-/slangeegenskaper">
-					description = <"Detaljer om fysiske og funksjonelle egenskaper ved fleksibel tubulær medisinsk utstyr som settes inn i kroppen.">
+					text = <"Kateteregenskaper">
+					description = <"Detaljer om fysiske og funksjonelle egenskaper ved fleksibelt tubulært medisinsk utstyr som settes inn i kroppen.">
 				>
 				["at0001"] = <
 					text = <"Materiale">
@@ -411,17 +411,9 @@ ontology
 					text = <"Polyurethan">
 					description = <"Enheten er laget av polyurethanmateriale.">
 				>
-				["at0005"] = <
-					text = <"Gummi">
-					description = <"Enheten er laget av gummimateriale.">
-				>
 				["at0006"] = <
 					text = <"PVC">
 					description = <"Enheten er laget av polyvinylklorid (PVC) materiale.">
-				>
-				["at0007"] = <
-					text = <"Annet">
-					description = <"Enheten er laget av et annet materiale.">
 				>
 				["at0008"] = <
 					text = <"Samlet lengde">
@@ -432,60 +424,62 @@ ontology
 					description = <"Enhetens ytre diameter.">
 				>
 				["at0010"] = <
-					text = <"Radioopak">
+					text = <"Røntgenopak">
 					description = <"Indikator på om enheten er synlig ved røntgenbildebehandling.">
+				>
+				["at0038"] = <
+					text = <"Type tupp">
+					description = <"Designkarakteristika ved spissen av enheten som kan påvirke innsetting, posisjonsering eller funksjon.">
+					comment = <"For eksempel: rundspiss, skrå, Tiemann, Murphy, vektet. Koding med et terminologisystem foretrekkes der det er mulig.">
 				>
 				["at0011"] = <
 					text = <"Per lumen">
-					description = <"Detaljer om en individuell lumen av enheten.">
+					description = <"Detaljer om et individuelt lumen av enheten.">
 				>
 				["at0012"] = <
-					text = <"Lumen-identifikator">
-					description = <"Et navn eller identifikator for denne lumenen (f.eks. 'hoved', 'distal', 'proksimal', 'ventil', 'sugsjon').">
+					text = <"Lumen-identifikator.">
+					description = <"Et navn eller identifikator for dette lumenet.">
+					comment = <"For eksempel 'hoved', 'distal', 'proksimal', 'ventil' eller 'sug'.">
 				>
 				["at0013"] = <
 					text = <"Indre diameter">
-					description = <"Den indre diameter av denne lumenen.">
+					description = <"Den indre diameter av dette lumenet.">
 				>
 				["at0014"] = <
-					text = <"Lumen lengde">
-					description = <"Lengden eller dybden på denne lumenen.">
+					text = <"Lumenlengde">
+					description = <"Lengden eller dybden på dette lumenet.">
 				>
 				["at0015"] = <
-					text = <"Lumen-formål">
-					description = <"Den primære funksjonen eller formålet med denne lumenen.">
+					text = <"Formål">
+					description = <"Den primære funksjonen eller formålet med dette lumenet.">
 				>
 				["at0016"] = <
 					text = <"Luftvei">
-					description = <"Lumenen brukes til luftveisbehandling.">
+					description = <"Lumenet brukes til luftveisbehandling.">
 				>
 				["at0017"] = <
 					text = <"Legemiddellevering">
-					description = <"Lumenen brukes til levering av legemidler.">
+					description = <"Lumenet brukes til administrering av legemidler.">
 				>
 				["at0018"] = <
 					text = <"Væskeadministrasjon">
-					description = <"Lumenen brukes til administrasjon av væsker.">
+					description = <"Lumenet brukes til administrering av væsker.">
 				>
 				["at0019"] = <
 					text = <"Overvåking/trykk">
-					description = <"Lumenen brukes til overvåking eller trykkmåling.">
+					description = <"Lumenet brukes til overvåking eller trykkmåling.">
 				>
 				["at0020"] = <
-					text = <"Drenering">
-					description = <"Lumenen brukes til drenering av væsker.">
-				>
-				["at0021"] = <
-					text = <"Annet">
-					description = <"Lumenen brukes til et annet formål.">
+					text = <"Dren">
+					description = <"Lumenet brukes til drenering av væsker.">
 				>
 				["at0022"] = <
 					text = <"Kobling">
-					description = <"Detaljer om koblingen for denne lumenen.">
+					description = <"Detaljer om koblingen for dette lumenet.">
 				>
 				["at0023"] = <
 					text = <"Koblingtype">
-					description = <"Typen kobling som brukes for denne lumenen.">
+					description = <"Typen kobling som brukes for dette lumenet.">
 				>
 				["at0024"] = <
 					text = <"Push-fit">
@@ -499,13 +493,9 @@ ontology
 					text = <"Slip-fit">
 					description = <"En slip-fit kobling.">
 				>
-				["at0027"] = <
-					text = <"Annet">
-					description = <"En annen type kobling.">
-				>
 				["at0028"] = <
 					text = <"Koblingsstørrelse">
-					description = <"Størrelsen på koblingen for denne lumenen.">
+					description = <"Størrelsen på koblingen for dette lumenet.">
 				>
 				["at0029"] = <
 					text = <"Mansjett/ballong">
@@ -540,8 +530,8 @@ ontology
 					description = <"Volumet av væske som kreves for fullstendig oppblåsing av mansjetten.">
 				>
 				["at0037"] = <
-					text = <"Oppblåsingstrykksområde">
-					description = <"Det anbefalte trykksområde for oppblåsing av mansjett (f.eks. '20-30 cmH2O').">
+					text = <"Oppblåsingstrykksområde.">
+					description = <"Det anbefalte trykksområde for oppblåsing av mansjett, for eksempel '20-30 cmH₂O'.">
 				>
 			>
 		>
