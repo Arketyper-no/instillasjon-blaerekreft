@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c10fa66eac44c009274670050058ab51",
+      "MD5-CAM-1.0.1" : "b8f787c0f0203a05b642b807a376552e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -537,10 +537,18 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "ICD-10"
+                        "value" : "SNOMED-CT"
                       },
-                      "constraint" : [ "ac0.1" ],
-                      "selectedTerminologies" : [ "ICD-10" ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "399326009",
+                        "value" : "Malignant neoplasm of urinary bladder (disorder)",
+                        "translations" : {
+                          "nb" : "Malignant neoplasm of urinary bladder (disorder)"
+                        }
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3656,13 +3664,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "defaultValue" : {
-                "defining_code" : {
-                  "code_string" : "at0064",
-                  "@type" : "CODE_PHRASE"
-                },
-                "@type" : "DV_CODED_TEXT"
-              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -3671,10 +3672,18 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "SNOMED-CT"
                   },
-                  "constraint" : [ "ac0.7" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "55342001",
+                    "value" : "Neoplastisk sykdom",
+                    "translations" : {
+                      "nb" : "Neoplastisk sykdom"
+                    }
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -3738,30 +3747,9 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
-        "sl" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
-        "pt-br" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
+        "en" : { },
+        "sl" : { },
+        "pt-br" : { },
         "nb" : {
           "at0063.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3776,54 +3764,13 @@
             "text" : "Problem/diagnose-kvalifikator",
             "description" : "",
             "comment" : "Kontekst- eller tidsspesifikk kvalifikator for et problem eller en diagnose."
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
           }
         },
-        "ko" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
-        "it" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
-        "sv" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        },
-        "zh" : {
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : ""
-          }
-        }
+        "ko" : { },
+        "de" : { },
+        "it" : { },
+        "sv" : { },
+        "zh" : { }
       },
       "termBindings" : {
         "SNOMED-CT" : {
@@ -3869,6 +3816,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.7",
           "members" : [ "at0064" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0064" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ ]
         }
       }
     },
