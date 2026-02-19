@@ -1,0 +1,548 @@
+archetype (adl_version=1.4; uid=72f0c6cb-8c66-4c64-91d6-a1c34e7f8e42)
+	openEHR-EHR-CLUSTER.device_catheter.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2021-05-04">
+		["name"] = <"Heather Leslie">
+		["organisation"] = <"Atomica Informatics">
+		["email"] = <"heather.leslie@atomicainformatics.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere detaljer om fysiske og funksjonelle egenskaper ved fleksible tubulære medisinsk utstyr som settes inn i kroppen, som katetere, slanger, kanyla eller dren.">
+			use = <"Brukes for å registrere detaljer om fleksible tubulære medisinsk utstyr som settes inn i kroppen. Denne arketypen støtter ulike enhettyper inkludert endotrakeal slanger, urinkatetere, arteriallinjer, sentrale venøse katetere, thoraxdren, sårdren og lignende enheter.
+
+Denne arketypen er designet for å nestes i SLOTet 'Egenskaper' (at0009) i CLUSTER.device-arketypen.
+
+Alle dataelementer er valgfritt for å støtte de mangfoldige kravene til ulike enhetstyper. Registrer kun egenskaper som er relevant for det spesifikke utstyret som dokumenteres.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details about the physical and functional properties of any flexible tubular medical device inserted into the body, such as catheters, tubes, cannulae, or drains.">
+			use = <"Use to record details about a flexible tubular medical device inserted into the body. This archetype supports diverse device types including endotracheal tubes, urinary catheters, arterial lines, central venous catheters, chest tubes, wound drains, and other similar devices.
+
+This archetype has been designed to be nested within the 'Properties' SLOT (at0009) within the CLUSTER.device archetype.
+
+All data elements are optional to support the diverse requirements of different device types. Record only the properties relevant to the specific device being documented.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"9B8F3C4E1A5D2F7G8H9I0J1K2L3M4N5O">
+		["build_uid"] = <"72f0c6cb-8c66-4c64-91d6-a1c34e7f8e42">
+		["revision"] = <"0.0.1">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Catheter/tube properties
+		items cardinality matches {0..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Material
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Silicone
+							at0003,    -- Latex
+							at0004,    -- Polyurethane
+							at0005,    -- Rubber
+							at0006,    -- PVC
+							at0007]    -- Other
+						}
+					}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Overall length
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+								magnitude = <|>=0.0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- External diameter
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+								magnitude = <|>=0.0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Radiopaque
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			CLUSTER[at0011] occurrences matches {0..*} matches {    -- Per lumen
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Lumen identifier
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Internal diameter
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"mm">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Lumen length
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"cm">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Lumen purpose
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0016,    -- Airway
+									at0017,    -- Medication delivery
+									at0018,    -- Fluid administration
+									at0019,    -- Monitoring/pressure
+									at0020,    -- Drainage
+									at0021]    -- Other
+								}
+							}
+						}
+					}
+					CLUSTER[at0022] occurrences matches {0..1} matches {    -- Connector
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0023] occurrences matches {0..1} matches {    -- Connector type
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0024,    -- Push-fit
+											at0025,    -- Luer-lock
+											at0026,    -- Slip-fit
+											at0027]    -- Other
+										}
+									}
+								}
+							}
+							ELEMENT[at0028] occurrences matches {0..1} matches {    -- Connector size
+								value matches {
+									C_DV_QUANTITY <
+										property = <[openehr::122]>
+										list = <
+											["1"] = <
+												units = <"mm">
+												magnitude = <|>=0.0|>
+											>
+										>
+									>
+									DV_CODED_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0029] occurrences matches {0..*} matches {    -- Cuff/balloon
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Cuff type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0031,    -- High pressure/low volume (HPLV)
+									at0032]    -- Low pressure/high volume (LPHV)
+								}
+							}
+						}
+					}
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Cuff position
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0034,    -- Proximal
+									at0035]    -- Distal
+								}
+							}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Cuff capacity
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"ml">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Inflation pressure range
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Catheter/tube properties">
+					description = <"Details about the physical and functional properties of a flexible tubular medical device inserted into the body.">
+				>
+				["at0001"] = <
+					text = <"Material">
+					description = <"The material from which the device is constructed.">
+				>
+				["at0002"] = <
+					text = <"Silicone">
+					description = <"The device is made of silicone material.">
+				>
+				["at0003"] = <
+					text = <"Latex">
+					description = <"The device is made of latex material.">
+				>
+				["at0004"] = <
+					text = <"Polyurethane">
+					description = <"The device is made of polyurethane material.">
+				>
+				["at0005"] = <
+					text = <"Rubber">
+					description = <"The device is made of rubber material.">
+				>
+				["at0006"] = <
+					text = <"PVC">
+					description = <"The device is made of polyvinyl chloride (PVC) material.">
+				>
+				["at0007"] = <
+					text = <"Other">
+					description = <"The device is made of another material.">
+				>
+				["at0008"] = <
+					text = <"Overall length">
+					description = <"The total length of the device.">
+				>
+				["at0009"] = <
+					text = <"External diameter">
+					description = <"The external diameter of the device.">
+				>
+				["at0010"] = <
+					text = <"Radiopaque">
+					description = <"Indicator of whether the device is visible on X-ray imaging.">
+				>
+				["at0011"] = <
+					text = <"Per lumen">
+					description = <"Details about an individual lumen of the device.">
+				>
+				["at0012"] = <
+					text = <"Lumen identifier">
+					description = <"A label or identifier for this lumen (e.g., 'main', 'distal', 'proximal', 'vent', 'suction').">
+				>
+				["at0013"] = <
+					text = <"Internal diameter">
+					description = <"The internal diameter of this lumen.">
+				>
+				["at0014"] = <
+					text = <"Lumen length">
+					description = <"The length or depth of this lumen.">
+				>
+				["at0015"] = <
+					text = <"Lumen purpose">
+					description = <"The primary function or purpose of this lumen.">
+				>
+				["at0016"] = <
+					text = <"Airway">
+					description = <"The lumen is used for airway management.">
+				>
+				["at0017"] = <
+					text = <"Medication delivery">
+					description = <"The lumen is used for delivery of medications.">
+				>
+				["at0018"] = <
+					text = <"Fluid administration">
+					description = <"The lumen is used for administration of fluids.">
+				>
+				["at0019"] = <
+					text = <"Monitoring/pressure">
+					description = <"The lumen is used for monitoring or pressure measurement.">
+				>
+				["at0020"] = <
+					text = <"Drainage">
+					description = <"The lumen is used for drainage of fluids.">
+				>
+				["at0021"] = <
+					text = <"Other">
+					description = <"The lumen is used for another purpose.">
+				>
+				["at0022"] = <
+					text = <"Connector">
+					description = <"Details about the connector for this lumen.">
+				>
+				["at0023"] = <
+					text = <"Connector type">
+					description = <"The type of connector used for this lumen.">
+				>
+				["at0024"] = <
+					text = <"Push-fit">
+					description = <"A push-fit connector.">
+				>
+				["at0025"] = <
+					text = <"Luer-lock">
+					description = <"A Luer-lock connector.">
+				>
+				["at0026"] = <
+					text = <"Slip-fit">
+					description = <"A slip-fit connector.">
+				>
+				["at0027"] = <
+					text = <"Other">
+					description = <"Another type of connector.">
+				>
+				["at0028"] = <
+					text = <"Connector size">
+					description = <"The size of the connector for this lumen.">
+				>
+				["at0029"] = <
+					text = <"Cuff/balloon">
+					description = <"Details about an inflatable cuff or balloon on the device.">
+				>
+				["at0030"] = <
+					text = <"Cuff type">
+					description = <"The classification of the cuff based on pressure and volume characteristics.">
+				>
+				["at0031"] = <
+					text = <"High pressure/low volume (HPLV)">
+					description = <"A high-pressure, low-volume cuff design.">
+				>
+				["at0032"] = <
+					text = <"Low pressure/high volume (LPHV)">
+					description = <"A low-pressure, high-volume cuff design.">
+				>
+				["at0033"] = <
+					text = <"Cuff position">
+					description = <"The anatomical position of the cuff on the device.">
+				>
+				["at0034"] = <
+					text = <"Proximal">
+					description = <"The cuff is located near the insertion end of the device.">
+				>
+				["at0035"] = <
+					text = <"Distal">
+					description = <"The cuff is located away from the insertion end of the device.">
+				>
+				["at0036"] = <
+					text = <"Cuff capacity">
+					description = <"The volume of fluid required to fully inflate the cuff.">
+				>
+				["at0037"] = <
+					text = <"Inflation pressure range">
+					description = <"The recommended pressure range for cuff inflation (e.g., '20-30 cmH2O').">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Kateter-/slangeegenskaper">
+					description = <"Detaljer om fysiske og funksjonelle egenskaper ved fleksibel tubulær medisinsk utstyr som settes inn i kroppen.">
+				>
+				["at0001"] = <
+					text = <"Materiale">
+					description = <"Materialet som enheten er laget av.">
+				>
+				["at0002"] = <
+					text = <"Silikon">
+					description = <"Enheten er laget av silikonmateriale.">
+				>
+				["at0003"] = <
+					text = <"Latex">
+					description = <"Enheten er laget av lateksmateriale.">
+				>
+				["at0004"] = <
+					text = <"Polyurethan">
+					description = <"Enheten er laget av polyurethanmateriale.">
+				>
+				["at0005"] = <
+					text = <"Gummi">
+					description = <"Enheten er laget av gummimateriale.">
+				>
+				["at0006"] = <
+					text = <"PVC">
+					description = <"Enheten er laget av polyvinylklorid (PVC) materiale.">
+				>
+				["at0007"] = <
+					text = <"Annet">
+					description = <"Enheten er laget av et annet materiale.">
+				>
+				["at0008"] = <
+					text = <"Samlet lengde">
+					description = <"Den totale lengden på enheten.">
+				>
+				["at0009"] = <
+					text = <"Ytre diameter">
+					description = <"Enhetens ytre diameter.">
+				>
+				["at0010"] = <
+					text = <"Radioopak">
+					description = <"Indikator på om enheten er synlig ved røntgenbildebehandling.">
+				>
+				["at0011"] = <
+					text = <"Per lumen">
+					description = <"Detaljer om en individuell lumen av enheten.">
+				>
+				["at0012"] = <
+					text = <"Lumen-identifikator">
+					description = <"Et navn eller identifikator for denne lumenen (f.eks. 'hoved', 'distal', 'proksimal', 'ventil', 'sugsjon').">
+				>
+				["at0013"] = <
+					text = <"Indre diameter">
+					description = <"Den indre diameter av denne lumenen.">
+				>
+				["at0014"] = <
+					text = <"Lumen lengde">
+					description = <"Lengden eller dybden på denne lumenen.">
+				>
+				["at0015"] = <
+					text = <"Lumen-formål">
+					description = <"Den primære funksjonen eller formålet med denne lumenen.">
+				>
+				["at0016"] = <
+					text = <"Luftvei">
+					description = <"Lumenen brukes til luftveisbehandling.">
+				>
+				["at0017"] = <
+					text = <"Legemiddellevering">
+					description = <"Lumenen brukes til levering av legemidler.">
+				>
+				["at0018"] = <
+					text = <"Væskeadministrasjon">
+					description = <"Lumenen brukes til administrasjon av væsker.">
+				>
+				["at0019"] = <
+					text = <"Overvåking/trykk">
+					description = <"Lumenen brukes til overvåking eller trykkmåling.">
+				>
+				["at0020"] = <
+					text = <"Drenering">
+					description = <"Lumenen brukes til drenering av væsker.">
+				>
+				["at0021"] = <
+					text = <"Annet">
+					description = <"Lumenen brukes til et annet formål.">
+				>
+				["at0022"] = <
+					text = <"Kobling">
+					description = <"Detaljer om koblingen for denne lumenen.">
+				>
+				["at0023"] = <
+					text = <"Koblingtype">
+					description = <"Typen kobling som brukes for denne lumenen.">
+				>
+				["at0024"] = <
+					text = <"Push-fit">
+					description = <"En push-fit kobling.">
+				>
+				["at0025"] = <
+					text = <"Luer-lock">
+					description = <"En Luer-lock kobling.">
+				>
+				["at0026"] = <
+					text = <"Slip-fit">
+					description = <"En slip-fit kobling.">
+				>
+				["at0027"] = <
+					text = <"Annet">
+					description = <"En annen type kobling.">
+				>
+				["at0028"] = <
+					text = <"Koblingsstørrelse">
+					description = <"Størrelsen på koblingen for denne lumenen.">
+				>
+				["at0029"] = <
+					text = <"Mansjett/ballong">
+					description = <"Detaljer om en oppblåsbar mansjett eller ballong på enheten.">
+				>
+				["at0030"] = <
+					text = <"Mansjetttype">
+					description = <"Klassifiseringen av mansjetten basert på trykk- og volumkarakteristika.">
+				>
+				["at0031"] = <
+					text = <"Høyt trykk/lavt volum (HPLV)">
+					description = <"En høyttrykk, lavvolum mansjettdesign.">
+				>
+				["at0032"] = <
+					text = <"Lavt trykk/høyt volum (LPHV)">
+					description = <"En lavttrykk, høytvolum mansjettdesign.">
+				>
+				["at0033"] = <
+					text = <"Mansjettposisjon">
+					description = <"Den anatomiske posisjonen på mansjetten på enheten.">
+				>
+				["at0034"] = <
+					text = <"Proksimal">
+					description = <"Mansjetten er plassert nær innsettelsesenden av enheten.">
+				>
+				["at0035"] = <
+					text = <"Distal">
+					description = <"Mansjetten er plassert bort fra innsettelsesenden av enheten.">
+				>
+				["at0036"] = <
+					text = <"Mansjettkapasitet">
+					description = <"Volumet av væske som kreves for fullstendig oppblåsing av mansjetten.">
+				>
+				["at0037"] = <
+					text = <"Oppblåsingstrykksområde">
+					description = <"Det anbefalte trykksområde for oppblåsing av mansjett (f.eks. '20-30 cmH2O').">
+				>
+			>
+		>
+	>
