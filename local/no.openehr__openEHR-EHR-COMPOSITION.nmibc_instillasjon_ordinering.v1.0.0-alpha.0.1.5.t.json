@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ad190f9a3010b7e6fda65d935475a5c7",
+      "MD5-CAM-1.0.1" : "a7261044141fdc8dc6da3a61f33cbcca",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -13783,12 +13783,6 @@
           }
         },
         "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Problem/diagnose-kvalifikator (2)",
-            "description" : "Kontekst- eller tidsspesifikk kvalifikator for et problem eller en diagnose."
-          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
