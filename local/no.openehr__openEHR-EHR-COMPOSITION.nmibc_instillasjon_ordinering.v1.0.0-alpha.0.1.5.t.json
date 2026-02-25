@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a40b5f10d222d35e6eb6efa36f905bea",
+      "MD5-CAM-1.0.1" : "48a4517f7230dd088e36f8733572ded8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
       "sem_ver" : "1.0.0",
       "build_uid" : ""
@@ -833,19 +833,19 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0043.4",
+              "nodeId" : "at0046.2",
               "attributes" : [ ],
               "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-who_grade_urothelial_neoplasms_1973-001.v0",
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_qualifier-003.v2",
               "referenceType" : "archetypeOverlay"
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0046.2",
+              "nodeId" : "at0043.2",
               "attributes" : [ ],
               "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-problem_qualifier-003.v2",
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-who_grade_urothelial_neoplasms_1973-001.v1",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -11490,108 +11490,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "f94dee95-bfdb-4eed-8548-0b2408d8b248",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "af00ff9be44708b863cf92d5875fd55b"
-      },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "*To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973). (en)",
-          "keywords" : [ "*Urothelial (en)", "*bladder (en)", "*tumor (en)", "*neoplasm (en)", "*carcinoma (en)", "*histology (en)", "*pathology (en)", "*grade (en)", "*grading (en)", "*classification (en)", "*WHO (en)", "*1973 (en)" ],
-          "use" : "*Use to record the histological grade of according to the WHO Histological Typing of Urinary Bladder Tumours (1973).\n\nThis archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result archetype context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate. (en)",
-          "misuse" : "*Not to be used to record the 2004/2016 revision of the WHO histological grade of urothelial neoplasms. Use the CLUSTER.who_grade_urothelial_neoplasms_2004 archetype for this purpose. (en)",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the histological grade of urothelial neoplasms according to the WHO Histological Typing of Urinary Bladder Tumours (1973).",
-          "keywords" : [ "Urothelial", "bladder", "tumor", "neoplasm", "carcinoma", "histology", "pathology", "grade", "grading", "classification", "WHO", "1973" ],
-          "use" : "Use to record the histological grade of according to the WHO Histological Typing of Urinary Bladder Tumours (1973).\n\nThis archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result archetype context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate.",
-          "misuse" : "Not to be used to record the 2004/2016 revision of the WHO histological grade of urothelial neoplasms. Use the CLUSTER.who_grade_urothelial_neoplasms_2004 archetype for this purpose.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.who_grade_urothelial_neoplasms_1973.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-who_grade_urothelial_neoplasms_1973-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "*WHO histological grade of urothelial neoplasms (1973) (en)",
-            "description" : "",
-            "comment" : "*A histological grading of urothelial tumors according to the WHO Histological Typing of Urinary Bladder Tumours (1973). (en)"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "2b1f6cfa-1603-326c-8bd0-2b5e89b627fd",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "74549f0f-f7b5-4272-89b5-68be77e28908",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -14456,6 +14354,72 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "4ab7ac84-732d-425c-81d4-c3010a72425b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b63b1d58-fb28-426a-a402-fc00be866817",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "25DD5B3B07B8D7C1BED56F26C9EB0A56"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.who_grade_urothelial_neoplasms_1973.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-who_grade_urothelial_neoplasms_1973-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "fb3d1fbc-b6c4-4bd7-8756-5b18fe67b369",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
